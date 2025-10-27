@@ -1,0 +1,28 @@
+list of events from Cosmic test:
+
+events with bad West PMT value, but decent East PMT value:
+15,17,34,37,73*,104,108,129,143,162,168,292,333,334,356,374**,381,436,481,556,558,668,675,688,716,718,748,756,905,998
+
+*still has a peak in West PMT - but not above 150mV threshold
+**very small peak in East PMT
+
+events with 2 (or more) peaks in West PMT (decided by discriminator value -
+150mV):
+19,47,70,92,110,116,117,169,179,193,204,206,208,249,262,286,342,344,358,395,414^,419,464,498,503,518,533,535,554,565,570,573,600,613,634,691,700,708,709,714,752,914,972,991
+
+^discriminator didn't catch the correct peak
+
+sometimes see two peaks on East PMT:
+214,
+
+Lots of noise:
+576-582,584-588,590-591,594-595,601-609,674,719-747,766-779,797-833,835-878,880
+
+No signal on either channel:
+696,890,981,
+
+
+
+in vim:
+
+let i=0 | g/Event 0/s/0/\=i/ | let i=i+1

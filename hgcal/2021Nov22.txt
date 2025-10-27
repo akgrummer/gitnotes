@@ -1,0 +1,76 @@
+polarity impacted by connector flips?
+cable oriented in the wingboard configuration
+
+act as a target
+econt as and addressable from the gbtsca    
+mode switch to listen to axi instead of i2c? no.
+
+might be pull ups?
+weak pull up resisters? on the pull up links?
+ran the update... traced the lines on the pcbs?
+on the sch
+bus scan - empty bus- terminated properly
+new design
+ran update - fetches newest design
+
+weak pull ups? electrically 
+schematic for pull resisters on the wagon
+sometimes need pull ups at both ends? bus would see a fault 
+both busses are terminated 
+random behavior 
+i2c that go to hexaboard
+fpga go right in
+gbtsca to connector on zynq transmodule
+pull up resister in the line- no series resister
+direct line other interposer connector
+trens into the trens
+doesn't cross - roc lines are split
+into econ t emulator - not true for econ d emulator
+
+run i2c at a lower speed? no - 100kHz is slowest we can
+reset issue in emulator?
+
+using the internal i2c master?
+
+did joe have all emulator interface done through axi interface?
+
+remove the internal i2c 
+no switch
+connected together
+internal i2 c master connection
+
+backend firmware - no bash script
+
+remove the  i2c master?
+
+
+econ d connection that goes in to the chip?
+pins that go out to the econ d
+
+configuration commands in e-links
+potential problems of interposer not answering
+clock and fast command
+engine v1 backend  so that it does
+hard config should do that
+toolkit
+pyhton 
+zcu
+lpgbt setup script
+i2c or ic path
+
+-- help
+
+yaml like system could be written for lpgbt setup 
+what is enabled in what mode
+inside python there is a function for each output and input
+of lpGBT
+that then returns the settings for that channel
+ic instead of i2c
+lpgbt manual -o corresponds to 
+zcu sets up the backend part
+
+unless the transmission settings
+default is to send the fast control stream
+
+test points
+

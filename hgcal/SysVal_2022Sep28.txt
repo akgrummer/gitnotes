@@ -1,0 +1,10 @@
+what is the preamp gain?
+gain,
+preamp
+bandwidth
+LDO : low dropout regulator?
+
+hexaboards with step holes?
+not full size cells have lower capacitance
+
+common mode is subtracted, then noise is measured

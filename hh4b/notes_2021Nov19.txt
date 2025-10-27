@@ -1,0 +1,18 @@
+- want to run Higgs combine code (google provide it on first hit)
+- have to create a datacard and the input histogram root file 
+---It will also run the limits (?) which is the next step in the analysis
+- in the datacard you have to provide the datasets - instead of signal and
+  background we will have model and target
+- you can set 3 different statistics - saturated, KS, and anderson darling
+- want to improve the plots (as discussed in the group meeting)
+- Fabio sent the outplotter and the datacard
+- in a limits file, Fabio set a - "run blind" option
+- Should submit the test in a sliced option?
+- output will be one number(?)
+- the toys take a long time to run
+- want all the trainings first and then submit the jobs to for combine
+- this will take some time, so I will aim to also perform the KS tests on
+  individual variables, the AUC with the classifier BDT, and the 2d ks test
+- in the end you can compare the results
+
+

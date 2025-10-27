@@ -1,0 +1,49 @@
+Chan 1: East 1 - good but not great signal - tube 7, base 2 
+Chan 2: West 1 - bad signal - tube 9, base 7
+Chan 3: West - good - PMT and base 3
+Chan 4: East - good - PMT and base 1
+
+Chan 1: East 1 - good - tube 7, base 7 
+Chan 2: West 1 - bad - tube 9, base 2
+Chan 3: West - good - PMT and base 3
+Chan 4: East - good - PMT and base 1
+
+
+Chan 1: East 1 - good - tube 7, base 7 
+Chan 2: West 1 - bad - tube 9, base 4
+Chan 3: West - good - PMT 3
+Chan 4: East - good - PMT 1
+
+
+----------------------
+90 MHz filters on all channels for all runs
+
+Run 2:
+trigger levels 0.03V (30 mV) on all channels
+Chan 1: East 1 - good - tube 7, base 7 
+Chan 2: West 1 - good - PMT 3
+Chan 3: West - good - tube 9, base 4
+Chan 4: East - good - PMT 1
+
+Run 3:
+trigger levels 0.01V (10 mV) on all channels
+Chan 1: East 1 - good - tube 7, base 7 
+Chan 2: West 1 - good - PMT 3
+Chan 3: West - good - tube 9, base 4
+Chan 4: East - good - PMT 1
+
+Run 4:
+CFD - threshold 30 mV - on all channels
+Chan 1: East 1 - good - tube 7, base 7 
+Chan 2: West 1 - good - PMT 3
+Chan 3: West - good - tube 9, base 4
+Chan 4: East - good - PMT 1
+
+Run 5:
+CFD - threshold 30 mV - on all channels
+trigger on ch1 AND ch2 
+Chan 1: Mean Time of E1 and W1
+Chan 2: Mean Time of E and W
+Chan 3: West - good - tube 9, base 4
+Chan 4: East - good - PMT 1
+

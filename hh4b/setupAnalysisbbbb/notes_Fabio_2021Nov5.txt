@@ -1,0 +1,61 @@
+To_bbbbAnalysis2 is aliased to `cd nobackup/DiHiggs_v2/CMSSW_10_2_5/src/bbbbAnalysis/ && cmsenv && source scripts/setup.sh && enableGrid'
+
+fravera@cmslpc141 bbbbAnalysis]$ more ~/.profile
+
+alias enableGrid='voms-proxy-init --rfc --voms cms -hours 72'
+alias enableGridLocal='voms-proxy-init --rfc --voms cms --out ~/x509up_u40737'
+alias getDasScript='curl -k https://cmsweb.cern.ch/das/cli > das_client.py && chmod a+x das_client.py'
+alias enableCrab='source /cvmfs/cms.cern.ch/crab3/crab.sh'
+alias notifyDone='notify-send -t 10000 "Terminal" "Job done" --icon=dialog-information'
+alias cmsRunCustom='cmsRunCustomEx'
+alias goTo_bbbbAnalysis='cd nobackup/DiHiggs_v1/CMSSW_10_2_5/src/bbbbAnalysis/ && cmsenv && source scripts/setup.sh && enableGrid'
+alias goTo_bbbbAnalysis2='cd nobackup/DiHiggs_v2/CMSSW_10_2_5/src/bbbbAnalysis/ && cmsenv && source scripts/setup.sh && enableGrid'
+alias goTo_DASbbbbAnalysis='cd nobackup/DAS/2021/CMSSW_10_2_24/src/CMSDAS-bbbbAnalysis/ && cmsenv && enableGrid'
+#alias brutalCrab='~fravera/usefulScripts/brutalCrab.py'
+alias brutalCrab='python ~fravera/usefulScripts/brutalCrab.py'
+alias crabResubmitter='python ~fravera/usefulScripts/crabResubmitter.py'
+alias enableRoot='source /cvmfs/sft.cern.ch/lcg/views/LCG_89/x86_64-slc6-gcc62-opt/setup.sh'
+alias checkCondorJobs='while true; do echo "`date +%Y\/%m\/%d---%H-%M-%S`"; condor_q | grep "Total\ for\ fravera:"; echo; sleep 5; done'
+alias checkX11='xmessage -center hello!'
+alias goTo_Limits='cd nobackup/DiHiggs_v1/CMSSW_10_2_13/src/HiggsAnalysis/CombinedLimit/ && cmsenv && enableCrab && enableGrid && cd limits'
+alias goTo_Limits2='cd nobackup/DiHiggs_v2/CMSSW_10_2_13/src/HiggsAnalysis/CombinedLimit/ && cmsenv && enableCrab && enableGrid && cd limits'
+export VO_CMS_SW_DIR='/cvmfs/cms.cern.ch'
+source $VO_CMS_SW_DIR/cmsset_default.sh
+export GRID='root://cms-xrd-global.cern.ch/'
+export EOS='root://cmseos.fnal.gov/'
+
+function cmsRunCustomEx {
+   commandLineStr=""
+   for input in "$@"; do
+      if [[ "$input" != "cmsRunCustom" && "$input" != "cmsRunCustomEx" ]]; then
+         commandLineStr+=" ${input}"
+      fi
+   done
+   cmsRun $commandLineStr ; notify-send "Terminal" "cmsRun $commandLineStr done" --icon=dialog-information
+
+}
+
+PS1="[\u@\h \W]\$ "
+
+const arr = { 'one',
+    'two',
+    'three',
+    'one',
+    'two',
+    'three',
+    'one',
+    'two',
+    'three',
+    'one',
+    'two',
+    'three',
+    'one',
+    'two',
+    'three',
+    'one',
+    'two',
+    'three',
+    'one',
+    'two',
+    'three',
+}

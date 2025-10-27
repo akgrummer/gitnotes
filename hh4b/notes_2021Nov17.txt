@@ -1,0 +1,28 @@
+further
+hyper parameters
+training the 
+apply classifier to the validation region
+optimization in the control regions
+run the limits in the validation region lets you know if there are problems in
+the 
+
+apply, hold for now
+can optimize the classifier to separate on the stuff before training
+
+classifier to distinguish the 3b and 4b before training
+plot in the original file
+
+goodness of fit - 
+tries to fit the data with the background, generic 
+toy with background
+goodness of fit score
+ M_X vs M_Y
+branches are called HH and 
+H = H1
+Y = H2
+X = HH
+
+HH_kinFit_m
+H2_m
+
+

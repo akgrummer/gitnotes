@@ -1,0 +1,33 @@
+  883  sudo yum install qt-creator
+  884  yum info qt5-qtbase
+  885  sudo yum install qt5-qtbase
+  886  sudo yum install qt-creator
+  887  sudo yum install qt-creator --skip-broken
+  888  qtcreator
+  889  yum search qt5
+  890  yum install qt5-qtbase-devel
+  891  sudo yum install qt5-qtbase-devel
+  892  sudo yum install qt-creator
+  893  yum info qt-creator
+  894  pwd
+  895  ls
+  896  ./demo 
+  897  ls -ltr demo
+  898  yum info qt-creator-data
+  899  ls -ltr
+  900  ./demo
+  901  qtcreator
+  902  pwd
+  903  ls
+  904  git clone git@github.com:akgrummer/qtgui.git
+  905  ls
+  906  cd qtgui/
+  907  ls
+  908  cd demo/
+  909  ls
+  910  mkdir build
+  911  cd build
+  912  cmake ..
+  913  cmake --version
+  914  yum info cmake3
+  915  sudo yum install cmake3

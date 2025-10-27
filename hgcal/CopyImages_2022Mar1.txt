@@ -1,0 +1,94 @@
+https://blog.jaimyn.dev/the-fastest-way-to-clone-sd-card-macos/
+see also:
+https://www.raspberrypi.com/documentation/computers/getting-started.html#downloading-an-image
+https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-images-on-mac-os
+
+saving them in agrummer-local home directory, under:
+(now moved to /Users/agrummer/agrummer-local/)
+~/HexaBoardImages/
+
+to copy image from an sd card:
+sudo diskutil unmountDisk /dev/disk4
+in ~/HexaBoardImages/zcu102:
+sudo gdd if=/dev/rdisk4 of=zcu102Fermi_2022Mar2.dmg status=progress bs=16M
+sudo gdd if=/dev/rdisk4 of=zcu102Fermi_2022Jun2.dmg status=progress bs=16M
+
+to copy the image to an sd card:
+unmount the sd card first:
+(check the dev name with `diskutil list`)
+sudo diskutil unmountDisk /dev/disk4
+then copy the image with:
+sudo gdd of=/dev/rdisk4 if=zcu102Fermi_2022Mar2.dmg status=progress bs=16M
+
+in ~/HexaBoardImages/interposer:
+(from CERN):
+interposer.zip
+and
+interposer.img (double click on the zip file to extract)
+(removed it after loading to save space)
+
+to copy the image to an sd card:
+unmount the sd card first:
+(check the dev name with `diskutil list`)
+sudo diskutil unmountDisk /dev/disk4
+then copy the image with:
+sudo gdd of=/dev/rdisk4 if=interposer.img status=progress bs=16M
+sudo gdd of=/dev/rdisk4 if=fnalInterposer91_2022May20.dmg status=progress bs=16M
+sudo gdd of=/dev/rdisk4 if=FNALhexaROCv2_2022Aug15.dmg status=progress bs=16M
+sudo gdd of=/dev/rdisk4 if=FNALhexaROCv3_2022Sep23.dmg status=progress bs=16M
+sudo gdd of=/dev/rdisk4 if=UnicornImage_beamtest_2023Aug4.dmg status=progress bs=16M
+
+for CERN zcu image in ~/HexaBoardImages/zcu102/:
+(check the dev name with `diskutil list`)
+sudo diskutil unmountDisk /dev/disk4
+then copy the image with:
+sudo gdd of=/dev/rdisk4 if=zcu.img status=progress bs=16M
+sudo gdd of=/dev/rdisk4 if=zcu_2023Jul23.dmg status=progress bs=16M
+sudo gdd of=/dev/rdisk4 if=zcu_unicorn.img status=progress bs=16M
+
+
+Copy fnal hexa image in :
+(check the dev name with `diskutil list`)
+sudo diskutil unmountDisk /dev/disk4
+then copy the image with:
+sudo gdd if=/dev/rdisk4 of=fnalInterposer91.dmg status=progress bs=16M
+sudo gdd if=/dev/rdisk4 of=fnalInterposer91_2022May20.dmg status=progress bs=16M
+sudo gdd if=/dev/rdisk4 of=fnalInterposer90_2022May27.dmg status=progress bs=16M
+sudo gdd if=/dev/rdisk4 of=FNALhexaROCv2_2022Aug15.dmg status=progress bs=16M
+sudo gdd if=/dev/rdisk4 of=FNALhexa_2022Aug15_joeUhalBackup.dmg status=progress bs=16M
+
+sudo gdd if=/dev/rdisk4 of=FNALhexaROCv3_2022Sep23.dmg status=progress bs=16M
+sudo gdd if=/dev/rdisk4 of=FNALhexaROCv3_2023Apr24.dmg status=progress bs=16M
+sudo gdd if=/dev/rdisk4 of=UnicornImage_beamtest_2023Aug4.dmg status=progress bs=16M
+sudo gdd if=/dev/rdisk4 of=SpareSDfromCERNplasticBox_2023Aug4.dmg status=progress bs=16M
+sudo gdd if=/dev/rdisk4 of=CERNzcu_2024Feb19.dmg status=progress bs=16M
+
+zcu:
+sudo gdd if=/dev/rdisk4 of=zcu_2023Jul23.dmg status=progress bs=16M
+sudo gdd if=/dev/rdisk4 of=zcu_stavrosCERN.dmg status=progress bs=16M
+
+Eject disk:
+sudo diskutil eject /dev/rdiskN
+sudo diskutil eject /dev/rdisk4
+
+## AlmaLinux images
+
+in `AlmaLinuxImages/`
+
+cd ~/AlmaLinuxImages
+
+1. verify disk device location (name, number)
+check the dev name with `diskutil list`
+
+2. unmount the device
+sudo diskutil unmountDisk /dev/disk4
+
+3. flash the device (this is almalinux 9.5)
+sudo gdd of=/dev/rdisk4 if=AlmaLinux-9-latest-x86_64-dvd.iso status=progress bs=16M
+sudo gdd of=/dev/rdisk4 if=AlmaLinux-9.6-x86_64-dvd.iso status=progress bs=16M
+sudo gdd of=/dev/rdisk4 if=AlmaLinux-10.0-x86_64_v2-dvd.iso status=progress bs=16M
+
+4. eject
+sudo diskutil eject /dev/rdiskN
+sudo diskutil eject /dev/rdisk4
+

@@ -1,0 +1,15 @@
+Dear all,
+
+We have updated the cadi line with a new version of the [paper](https://cms.cern.ch/iCMS/analysisadmin/cadilines?line). The changes to the paper are listed below.
+Please let me know what the next steps should be, in case you are happy with the changes.
+
+The PAS is already public and has not been updated at this time.
+
+Kind regards,
+Aidan
+
+- All plots have been updated.
+- Values in table 1 and discussion in the 2 surrounding paragraphs (lines 123-132) have been updated.
+- Yield ratios have been updated (line 176).
+- Some uncertainties in section 7 have been updated to reflect minor changes to the systematic uncertainties that occurred due to changes in the event selection criteria. Lines 234, 249, 252.
+- All references to the largest excess have been replaced with the largest deviation in the analysis (now at mX=600,mY=150, which is a deficit). Updates are in the abstract, caption of fig 5, and lines 281-284.

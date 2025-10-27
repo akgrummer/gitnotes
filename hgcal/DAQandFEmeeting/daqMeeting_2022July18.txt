@@ -1,0 +1,28 @@
+- Setting up the Train V2 systems:
+    - Load firmware images (ZCU and HCB)
+    - Set up environments
+    - Lock FE <-> BE
+        - Set the 320 reference clock
+    - Configure lpGBTs, ROCv2s, pseudo-EconD
+    - Generate Fast Commands and verify they are properly received, etc.
+    - Send psuedo econD to the ZCU
+
+- this all worked with the previous version of the firmware, occasionally links did not align coming from the ROCs, but was able to disable these links
+
+- Observed differences between firmwares (Joe Pastika's firmware, Jon Wilson's new interposer-ROCv2 firmware)
+    - link alignments - no links align with the new firmware
+    - eye diagram widths are very small (measurement made with firmware, from Jon's instructions)
+    - many bit errors coming from ROCs, even from Joe's firmware
+
+- Configure the ROCs
+    - from the Trenz - met with Arnaud, working on getting this software working 
+        - goal is to send the YAML file configurations to the ROCs
+    - Worked with Milos - to try to setup GBT-SCA communication to the ROCs
+        - saw ECONT on the I2C bus scan
+
+
+- EC = external control
+
+
+
+

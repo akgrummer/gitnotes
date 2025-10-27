@@ -1,0 +1,6 @@
+- more detail on how the CFD works. It should pick a time along the peak based on percentage of the peak
+- connect to zcu through a cable to load firmware directly 
+- put it in the box on the CMM - has a different cover
+- we should have 8 bases - and we can switch out the PMTs
+- the i9 core for the computer has a slightly lower frequency compared to i7 and is twice as expensive 
+- need to load linux on the computer

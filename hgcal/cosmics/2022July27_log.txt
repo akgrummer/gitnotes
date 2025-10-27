@@ -1,0 +1,12 @@
+
+Run 1
+
+External trigger: amp 10x, 90MHz filters, CFD, meantimer of chan 1 and chan 2, level adapter
+all channels amp 10x, no filters
+Channel 1: East 1
+Channel 2: West 1
+Channel 3: West
+Channel 4: East
+
+
+Run 2

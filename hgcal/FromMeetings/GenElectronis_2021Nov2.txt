@@ -1,0 +1,4 @@
+Apologies, I have to leave now. Three main things I see in the characterisation data format are: 
+1) whether we need ADC+TOT (Seems like Artur no longer sees a need for it; a DPG pronouncement would be useful), 
+2) whether we will have ability to perform TOA scans as a function of injection timing phase and injected charge amplitude (that the DPG should also have a word on), and 
+3) how it interacts with the async clock generator mode for the TDC (TOA and TOT) calibration (that is something that I am not sure is well understood).

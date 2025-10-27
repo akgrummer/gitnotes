@@ -1,0 +1,3 @@
+can I align links on zcu?
+run in capture mode 3?
+if yes, does BXor L1 a offset have an impact?

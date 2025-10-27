@@ -1,0 +1,7 @@
+Different cuts on events for first peak:
+- peak must be at least 20 MHz amplitude
+- Time for PMTs on the same fiber must be within 40 ns
+- First peak to main peak must be at least 40 ns
+
+taking time at 50% of the first peak value.
+if peak value is very large - take time at 25% of the value

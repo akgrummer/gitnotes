@@ -1,0 +1,6 @@
+Some notes
+
+2021Nov05
+:put=strftime('%Y%h%d')
+2021Nov05
+vim myfilename_"`date +"%Y%h%d"`".txt

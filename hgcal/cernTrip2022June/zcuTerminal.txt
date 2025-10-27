@@ -1,0 +1,1856 @@
+boardInterrupt'>, 'ImportError': <class 'ImportError'>, 'ModuleNotFoundError': <class 'ModuleNotFoundError'>, 'OSError': <class 'OSError'>, 'EnvironmentError': <class 'OSError'>, 'IOError': <class 'OSError'>, 'EOFError': <class 'EOFError'>, 'RuntimeError': <class 'RuntimeError'>, 'RecursionError': <class 'RecursionError'>, 'NotImplementedError': <class 'NotImplementedError'>, 'NameError': <class 'NameError'>, 'UnboundLocalError': <class 'UnboundLocalError'>, 'AttributeError': <class 'AttributeError'>, 'SyntaxError': <class 'SyntaxError'>, 'IndentationError': <class 'IndentationError'>, 'TabError': <class 'TabError'>, 'LookupError': <class 'LookupError'>, 'IndexError': <class 'IndexError'>, 'KeyError': <class 'KeyError'>, 'ValueError': <class 'ValueError'>, 'UnicodeError': <class 'UnicodeError'>, 'UnicodeEncodeError': <class 'UnicodeEncodeError'>, 'UnicodeDecodeError': <class 'UnicodeDecodeError'>, 'UnicodeTranslateError': <class 'UnicodeTranslateError'>, 'AssertionError': <class 'AssertionError'>, 'ArithmeticError': <class 'ArithmeticError'>, 'FloatingPointError': <class 'FloatingPointError'>, 'OverflowError': <class 'OverflowError'>, 'ZeroDivisionError': <class 'ZeroDivisionError'>, 'SystemError': <class 'SystemError'>, 'ReferenceError': <class 'ReferenceError'>, 'BufferError': <class 'BufferError'>, 'MemoryError': <class 'MemoryError'>, 'Warning': <class 'Warning'>, 'UserWarning': <class 'UserWarning'>, 'DeprecationWarning': <class 'DeprecationWarning'>, 'PendingDeprecationWarning': <class 'PendingDeprecationWarning'>, 'SyntaxWarning': <class 'SyntaxWarning'>, 'RuntimeWarning': <class 'RuntimeWarning'>, 'FutureWarning': <class 'FutureWarning'>, 'ImportWarning': <class 'ImportWarning'>, 'UnicodeWarning': <class 'UnicodeWarning'>, 'BytesWarning': <class 'BytesWarning'>, 'ResourceWarning': <class 'ResourceWarning'>, 'ConnectionError': <class 'ConnectionError'>, 'BlockingIOError': <class 'BlockingIOError'>, 'BrokenPipeError': <class 'BrokenPipeError'>, 'ChildProcessError': <class 'ChildProcessError'>, 'ConnectionAbortedError': <class 'ConnectionAbortedError'>, 'ConnectionRefusedError': <class 'ConnectionRefusedError'>, 'ConnectionResetError': <class 'ConnectionResetError'>, 'FileExistsError': <class 'FileExistsError'>, 'FileNotFoundError': <class 'FileNotFoundError'>, 'IsADirectoryError': <class 'IsADirectoryError'>, 'NotADirectoryError': <class 'NotADirectoryError'>, 'InterruptedError': <class 'InterruptedError'>, 'PermissionError': <class 'PermissionError'>, 'ProcessLookupError': <class 'ProcessLookupError'>, 'TimeoutError': <class 'TimeoutError'>, 'open': <built-in function open>, 'quit': Use quit() or Ctrl-D (i.e. EOF) to exit, 'exit': Use exit() or Ctrl-D (i.e. EOF) to exit, 'copyright': Copyright (c) 2001-2018 Python Software Foundation.
+All Rights Reserved.
+
+Copyright (c) 2000 BeOpen.com.
+All Rights Reserved.
+
+Copyright (c) 1995-2001 Corporation for National Research Initiatives.
+All Rights Reserved.
+
+Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam.
+All Rights Reserved., 'credits':     Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands
+    for supporting Python development.  See www.python.org for more information., 'license': See https://www.python.org/psf/license/, 'help': Type help() for interactive help, or help(object) for help about object., '_': None}, 'libgpiod': <module 'gpiod.libgpiod' from '/usr/local/lib/python3.6/site-packages/gpiod/libgpiod/__init__.py'>, 'libgpiodcxx': <module 'gpiod.libgpiodcxx' from '/usr/local/lib/python3.6/site-packages/gpiod/libgpiodcxx/__init__.py'>, 'chip': <class 'gpiod.chip'>, 'line': <class 'gpiod.line'>, 'line_bulk': <class 'gpiod.line_bulk'>, 'find_line': <function find_line at 0x7fad0e2598>, 'line_event': <class 'gpiod.line_event'>, 'line_request': <class 'gpiod.line_request'>, 'chip_iter': <class 'gpiod.chip_iter'>, 'make_chip_iter': <function make_chip_iter at 0x7facc7aae8>, 'line_iter': <class 'gpiod.line_iter'>}
+>>> 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ jobs
+[1]   Stopped                 vim ../setup.sh  (wd: ~/uhal101/hgc-engine-tools)
+[2]-  Stopped                 vim setup_lpgbt.py  (wd: ~/uhal101/hgc-engine-tools)
+[3]+  Stopped                 vim gbtsca_reset.py
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ fg %3
+vim gbtsca_reset.py
+
+[3]+  Stopped                 vim gbtsca_reset.py
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ ls
+address_table             gbtsca_bus.py        gbtsca_bus_test.log  gbtsca_econt_config.py  gbtsca.py        __pycache__
+connect_to_interposer.py  gbtsca_bus_scan.log  gbtsca_bus_test.py   gbtsca_exception.py     gbtsca_reset.py  README.md
+env.sh                    gbtsca_bus_scan.py   gbtsca_constants.py  gbtsca_gpio_init.py     i2c_utils.py
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ python3 gbtsca_bus_test.py 
+01-07-22 10:45:10.068053 [547766173696] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-fastcontrol-axi-0.xml.txt"
+01-07-22 10:45:10.073227 [547766173696] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0_global.xml.txt"
+01-07-22 10:45:10.077203 [547766173696] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0.xml.txt"
+01-07-22 10:45:10.081084 [547766173696] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1_global.xml.txt"
+01-07-22 10:45:10.086209 [547766173696] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1.xml.txt"
+01-07-22 10:45:10.090369 [547766173696] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-fw_block_addresses.xml.txt"
+^C^C^C^C
+
+
+^C
+
+
+^Z
+[4]+  Stopped                 python3 gbtsca_bus_test.py
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ kill %4
+
+[4]+  Stopped                 python3 gbtsca_bus_test.py
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[4]+  Terminated              python3 gbtsca_bus_test.py
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ vim gbtsca_bus_test.py 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ vim gbtsca_reset.py 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ fg
+vim gbtsca_reset.py
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ vim gbtsca_bus_scan.py 
+
+
+Press ENTER or type command to continue
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ python3 gbtsca_bus_scan.py
+01-07-22 10:49:09.110107 [548465328128] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-fastcontrol-axi-0.xml.txt"
+01-07-22 10:49:09.115297 [548465328128] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0_global.xml.txt"
+01-07-22 10:49:09.119294 [548465328128] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0.xml.txt"
+01-07-22 10:49:09.123213 [548465328128] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1_global.xml.txt"
+01-07-22 10:49:09.128340 [548465328128] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1.xml.txt"
+01-07-22 10:49:09.132518 [548465328128] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-fw_block_addresses.xml.txt"
+Scanning all 16 SCA I2C busses on both SCAs
+Enabling I2Cs
+I2C busses are enabled, starting the Scan
+I2C-Address scan on Bus 0 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 1 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 2 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 3 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 4 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 5 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 6 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 7 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 8 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 9 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 10 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 11 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 12 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 13 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 14 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 15 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 0 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 1 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 2 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 3 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 4 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 5 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 6 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 7 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 8 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 9 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 10 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 11 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 12 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 13 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 14 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+10: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+20: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+30: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+40: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+50: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+60: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+70: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE --
+
+I2C-Address scan on Bus 15 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+-- : Not connected
+LE : Bus voltage level error
+IV : Invalid Command
+ (i2c address) : received a vaild answer
+The scan of all I2C busses of both SCAs took 0:00:15.276795 seconds
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ python3 gbtsca_bus_test.py
+01-07-22 10:50:03.104047 [548398346240] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-fastcontrol-axi-0.xml.txt"
+01-07-22 10:50:03.109259 [548398346240] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0_global.xml.txt"
+01-07-22 10:50:03.113280 [548398346240] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0.xml.txt"
+01-07-22 10:50:03.117197 [548398346240] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1_global.xml.txt"
+01-07-22 10:50:03.122347 [548398346240] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1.xml.txt"
+01-07-22 10:50:03.126524 [548398346240] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-fw_block_addresses.xml.txt"
+East Device ID: 29366
+West Device ID: 29416
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ ls
+address_table             gbtsca_bus.py        gbtsca_bus_test.log  gbtsca_econt_config.py  gbtsca.py        __pycache__
+connect_to_interposer.py  gbtsca_bus_scan.log  gbtsca_bus_test.py   gbtsca_exception.py     gbtsca_reset.py  README.md
+env.sh                    gbtsca_bus_scan.py   gbtsca_constants.py  gbtsca_gpio_init.py     i2c_utils.py
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ vim gbtsca_gpio_init.py 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ python3 gbtsca_gpio_init.py 
+01-07-22 10:54:19.618020 [547924951040] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-fastcontrol-axi-0.xml.txt"
+01-07-22 10:54:19.623203 [547924951040] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0_global.xml.txt"
+01-07-22 10:54:19.627190 [547924951040] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0.xml.txt"
+01-07-22 10:54:19.631064 [547924951040] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1_global.xml.txt"
+01-07-22 10:54:19.636165 [547924951040] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1.xml.txt"
+01-07-22 10:54:19.640288 [547924951040] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-fw_block_addresses.xml.txt"
+--------------------------------------------------------
+Fetching device IDs to see if they are alive... 
+WARNING:root:Received Message with invalid TID:
+	Address: 255	Control: 173	Transaction ID: 0	Channel: 0x0	Error: 0x0	length: 0	    data: [0, 0, 0, 0]
+WARNING:root:Received Message with invalid TID:
+	Address: 255	Control: 173	Transaction ID: 0	Channel: 0x0	Error: 0x0	length: 0	    data: [0, 0, 0, 0]
+East Device ID: 29366
+West Device ID: 29416
+--------------------------------------------------------
+Configuring the East Device
+Enabling the GPIOs...
+Configuring the GPIO settings... 
+Reading the status of the GPIO settings... 
+DIRECTION = 0x00000090
+DATAOUT   = 0x00000090
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ python3 gbtsca_bus_scan.py
+01-07-22 10:55:31.513370 [548476194816] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-fastcontrol-axi-0.xml.txt"
+01-07-22 10:55:31.518555 [548476194816] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0_global.xml.txt"
+01-07-22 10:55:31.522547 [548476194816] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0.xml.txt"
+01-07-22 10:55:31.526442 [548476194816] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1_global.xml.txt"
+01-07-22 10:55:31.531553 [548476194816] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1.xml.txt"
+01-07-22 10:55:31.535716 [548476194816] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-fw_block_addresses.xml.txt"
+Scanning all 16 SCA I2C busses on both SCAs
+Enabling I2Cs
+I2C busses are enabled, starting the Scan
+I2C-Address scan on Bus 0 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 1 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 2 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 3 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 4 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 5 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 6 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 7 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 8 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 9 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 10 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 11 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 12 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 13 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 14 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 15 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 0 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 1 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 2 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 3 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 31 LE 33 LE 35 LE 37 LE 39 LE 3B LE 3D LE 3F
+40: LE 41 LE 43 LE 45 LE 47 LE 49 LE 4B LE 4D LE 4F
+50: LE 51 LE 53 LE 55 LE 57 LE 59 LE 5B LE 5D LE 5F
+60: LE 61 LE 63 LE 65 LE 67 LE 69 LE 6B LE 6D LE 6F
+70: LE 71 LE 73 LE 75 LE 77 LE 79 LE 7B LE 7D LE --
+
+I2C-Address scan on Bus 4 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 5 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 6 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 7 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 8 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 9 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: 20 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 10 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 11 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+10: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+20: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+30: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+40: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+50: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+60: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+70: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE --
+
+I2C-Address scan on Bus 12 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 13 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+10: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+20: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+30: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+40: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+50: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+60: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+70: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE --
+
+I2C-Address scan on Bus 14 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+10: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+20: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+30: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+40: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+50: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+60: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+70: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE --
+
+I2C-Address scan on Bus 15 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+-- : Not connected
+LE : Bus voltage level error
+IV : Invalid Command
+ (i2c address) : received a vaild answer
+The scan of all I2C busses of both SCAs took 0:00:15.210419 seconds
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ la
+-bash: la: command not found
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ ls
+address_table             gbtsca_bus.py        gbtsca_bus_test.log  gbtsca_econt_config.py  gbtsca.py        __pycache__
+connect_to_interposer.py  gbtsca_bus_scan.log  gbtsca_bus_test.py   gbtsca_exception.py     gbtsca_reset.py  README.md
+env.sh                    gbtsca_bus_scan.py   gbtsca_constants.py  gbtsca_gpio_init.py     i2c_utils.py
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ vim gbtsca_econt_config.py 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ python3 gbtsca_econt_config.py 
+01-07-22 10:58:30.514753 [548424536064] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-fastcontrol-axi-0.xml.txt"
+01-07-22 10:58:30.519969 [548424536064] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0_global.xml.txt"
+01-07-22 10:58:30.523982 [548424536064] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0.xml.txt"
+01-07-22 10:58:30.527911 [548424536064] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1_global.xml.txt"
+01-07-22 10:58:30.533062 [548424536064] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1.xml.txt"
+01-07-22 10:58:30.537252 [548424536064] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-fw_block_addresses.xml.txt"
+reading the Master SCA device ID to check that SCA comms are working
+Master Device ID: 29366
+Received 1 bytes from start address 0x0000:  0x01
+Received 1 bytes from start address 0x0380:  0x02
+Received 8 bytes from start address 0x0381:  0x000000009ccccccc
+Received 8 bytes from start address 0x0389:  0xffffffff00000000
+Received 2 bytes from start address 0x0392:  0x0deb
+Received 2 bytes from start address 0x0394:  0x0db9
+Received 2 bytes from start address 0x0396:  0x0002
+Received 2 bytes from start address 0x03a9:  0x070f
+Received 2 bytes from start address 0x03ab:  0x0030
+Received 2 bytes from start address 0x03ad:  0x01ff
+Received 1 bytes from start address 0x03af:  0x00
+Received 1 bytes from start address 0x03b0:  0x25
+Received 1 bytes from start address 0x0454:  0x00
+Received 3 bytes from start address 0x0455:  0x000000
+Received 3 bytes from start address 0x0458:  0x000000
+Received 3 bytes from start address 0x045b:  0x000000
+Received 3 bytes from start address 0x045e:  0x000000
+Received 3 bytes from start address 0x0461:  0x000000
+Received 3 bytes from start address 0x0464:  0x000000
+Received 3 bytes from start address 0x0467:  0x000000
+Received 3 bytes from start address 0x046a:  0x000000
+Received 3 bytes from start address 0x046d:  0x000000
+Received 3 bytes from start address 0x0470:  0x000000
+Received 3 bytes from start address 0x0473:  0x000000
+Received 3 bytes from start address 0x0476:  0x000000
+Received 3 bytes from start address 0x0479:  0x000000
+Received 3 bytes from start address 0x047c:  0x000000
+Received 3 bytes from start address 0x047f:  0x000000
+Received 3 bytes from start address 0x0482:  0x000000
+Received 3 bytes from start address 0x0485:  0x000000
+Received 3 bytes from start address 0x0488:  0x000000
+Received 3 bytes from start address 0x048b:  0x000000
+Received 3 bytes from start address 0x048e:  0x000000
+Received 3 bytes from start address 0x0491:  0x000000
+Received 3 bytes from start address 0x0494:  0x000000
+Received 3 bytes from start address 0x0497:  0x000000
+Received 3 bytes from start address 0x049a:  0x000000
+Received 3 bytes from start address 0x049d:  0x000000
+Received 3 bytes from start address 0x04a0:  0x000000
+Received 3 bytes from start address 0x04a3:  0x000000
+Received 3 bytes from start address 0x04a6:  0x000000
+Received 3 bytes from start address 0x04a9:  0x000000
+Received 3 bytes from start address 0x04ac:  0x000000
+Received 3 bytes from start address 0x04af:  0x000000
+Received 3 bytes from start address 0x04b2:  0x000000
+Received 3 bytes from start address 0x04b5:  0x000000
+Received 3 bytes from start address 0x04b8:  0x000000
+Received 3 bytes from start address 0x04bb:  0x000000
+Received 3 bytes from start address 0x04be:  0x000000
+Received 3 bytes from start address 0x04c1:  0x000000
+Received 3 bytes from start address 0x04c4:  0x000000
+Received 3 bytes from start address 0x04c7:  0x000000
+Received 3 bytes from start address 0x04ca:  0x000000
+Received 3 bytes from start address 0x04cd:  0x000000
+Received 3 bytes from start address 0x04d0:  0x000000
+Received 3 bytes from start address 0x04d3:  0x000000
+Received 3 bytes from start address 0x04d6:  0x000000
+Received 3 bytes from start address 0x04d9:  0x000000
+Received 3 bytes from start address 0x04dc:  0x000000
+Received 3 bytes from start address 0x04df:  0x000000
+Received 3 bytes from start address 0x04e2:  0x000000
+Received 1 bytes from start address 0x04e5:  0x00
+Writing to registers
+Writing 0x01 to start address 0x0000
+Writing 0x03 to start address 0x0380
+Writing 0x9cccccccaccccccc to start address 0x0381
+Writing 0x0000000000000000 to start address 0x0389
+Writing 0x0deb to start address 0x0392
+Writing 0x0000 to start address 0x0394
+Writing 0x0004 to start address 0x0396
+Writing 0x01aa to start address 0x03a9
+Writing 0x0152 to start address 0x03ab
+Writing 0x013a to start address 0x03ad
+Writing 0x19 to start address 0x03af
+Writing 0x44 to start address 0x03b0
+Writing 0x08 to start address 0x0454
+Writing 0x3fffff to start address 0x0455
+Writing 0x3fffff to start address 0x0458
+Writing 0x3fffff to start address 0x045b
+Writing 0x3fffff to start address 0x045e
+Writing 0x3fffff to start address 0x0461
+Writing 0x3fffff to start address 0x0464
+Writing 0x3fffff to start address 0x0467
+Writing 0x3fffff to start address 0x046a
+Writing 0x000001 to start address 0x046d
+Writing 0x3fffff to start address 0x0470
+Writing 0x3fffff to start address 0x0473
+Writing 0x3fffff to start address 0x0476
+Writing 0x3fffff to start address 0x0479
+Writing 0x3fffff to start address 0x047c
+Writing 0x3fffff to start address 0x047f
+Writing 0x3fffff to start address 0x0482
+Writing 0x000001 to start address 0x0485
+Writing 0x3fffff to start address 0x0488
+Writing 0x3fffff to start address 0x048b
+Writing 0x3fffff to start address 0x048e
+Writing 0x3fffff to start address 0x0491
+Writing 0x3fffff to start address 0x0494
+Writing 0x3fffff to start address 0x0497
+Writing 0x3fffff to start address 0x049a
+Writing 0x3fffff to start address 0x049d
+Writing 0x3fffff to start address 0x04a0
+Writing 0x3fffff to start address 0x04a3
+Writing 0x3fffff to start address 0x04a6
+Writing 0x3fffff to start address 0x04a9
+Writing 0x3fffff to start address 0x04ac
+Writing 0x3fffff to start address 0x04af
+Writing 0x3fffff to start address 0x04b2
+Writing 0x000001 to start address 0x04b5
+Writing 0x3fffff to start address 0x04b8
+Writing 0x3fffff to start address 0x04bb
+Writing 0x3fffff to start address 0x04be
+Writing 0x3fffff to start address 0x04c1
+Writing 0x3fffff to start address 0x04c4
+Writing 0x3fffff to start address 0x04c7
+Writing 0x000001 to start address 0x04ca
+Writing 0x3fffff to start address 0x04cd
+Writing 0x3fffff to start address 0x04d0
+Writing 0x3fffff to start address 0x04d3
+Writing 0x3fffff to start address 0x04d6
+Writing 0x3fffff to start address 0x04d9
+Writing 0x3fffff to start address 0x04dc
+Writing 0x3fffff to start address 0x04df
+Writing 0x000001 to start address 0x04e2
+Writing 0x03 to start address 0x04e5
+Reading from registers
+Received 1 bytes from start address 0x0000:  0x01
+Received 1 bytes from start address 0x0380:  0x03
+Received 8 bytes from start address 0x0381:  0x9cccccccaccccccc
+Received 8 bytes from start address 0x0389:  0x0000000000000000
+Received 2 bytes from start address 0x0392:  0x0deb
+Received 2 bytes from start address 0x0394:  0x0000
+Received 2 bytes from start address 0x0396:  0x0004
+Received 2 bytes from start address 0x03a9:  0x01aa
+Received 2 bytes from start address 0x03ab:  0x0152
+Received 2 bytes from start address 0x03ad:  0x013a
+Received 1 bytes from start address 0x03af:  0x19
+Received 1 bytes from start address 0x03b0:  0x44
+Received 1 bytes from start address 0x0454:  0x08
+Received 3 bytes from start address 0x0455:  0x3fffff
+Received 3 bytes from start address 0x0458:  0x3fffff
+Received 3 bytes from start address 0x045b:  0x3fffff
+Received 3 bytes from start address 0x045e:  0x3fffff
+Received 3 bytes from start address 0x0461:  0x3fffff
+Received 3 bytes from start address 0x0464:  0x3fffff
+Received 3 bytes from start address 0x0467:  0x3fffff
+Received 3 bytes from start address 0x046a:  0x3fffff
+Received 3 bytes from start address 0x046d:  0x000001
+Received 3 bytes from start address 0x0470:  0x3fffff
+Received 3 bytes from start address 0x0473:  0x3fffff
+Received 3 bytes from start address 0x0476:  0x3fffff
+Received 3 bytes from start address 0x0479:  0x3fffff
+Received 3 bytes from start address 0x047c:  0x3fffff
+Received 3 bytes from start address 0x047f:  0x3fffff
+Received 3 bytes from start address 0x0482:  0x3fffff
+Received 3 bytes from start address 0x0485:  0x000001
+Received 3 bytes from start address 0x0488:  0x3fffff
+Received 3 bytes from start address 0x048b:  0x3fffff
+Received 3 bytes from start address 0x048e:  0x3fffff
+Received 3 bytes from start address 0x0491:  0x3fffff
+Received 3 bytes from start address 0x0494:  0x3fffff
+Received 3 bytes from start address 0x0497:  0x3fffff
+Received 3 bytes from start address 0x049a:  0x3fffff
+Received 3 bytes from start address 0x049d:  0x3fffff
+Received 3 bytes from start address 0x04a0:  0x3fffff
+Received 3 bytes from start address 0x04a3:  0x3fffff
+Received 3 bytes from start address 0x04a6:  0x3fffff
+Received 3 bytes from start address 0x04a9:  0x3fffff
+Received 3 bytes from start address 0x04ac:  0x3fffff
+Received 3 bytes from start address 0x04af:  0x3fffff
+Received 3 bytes from start address 0x04b2:  0x3fffff
+Received 3 bytes from start address 0x04b5:  0x000001
+Received 3 bytes from start address 0x04b8:  0x3fffff
+Received 3 bytes from start address 0x04bb:  0x3fffff
+Received 3 bytes from start address 0x04be:  0x3fffff
+Received 3 bytes from start address 0x04c1:  0x3fffff
+Received 3 bytes from start address 0x04c4:  0x3fffff
+Received 3 bytes from start address 0x04c7:  0x3fffff
+Received 3 bytes from start address 0x04ca:  0x000001
+Received 3 bytes from start address 0x04cd:  0x3fffff
+Received 3 bytes from start address 0x04d0:  0x3fffff
+Received 3 bytes from start address 0x04d3:  0x3fffff
+Received 3 bytes from start address 0x04d6:  0x3fffff
+Received 3 bytes from start address 0x04d9:  0x3fffff
+Received 3 bytes from start address 0x04dc:  0x3fffff
+Received 3 bytes from start address 0x04df:  0x3fffff
+Received 3 bytes from start address 0x04e2:  0x000001
+Received 1 bytes from start address 0x04e5:  0x03
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ vim gbtsca_gpio_init.py 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ python3 gbtsca_gpio_init.py 
+01-07-22 11:09:19.346875 [548387749888] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-fastcontrol-axi-0.xml.txt"
+01-07-22 11:09:19.352070 [548387749888] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0_global.xml.txt"
+01-07-22 11:09:19.356076 [548387749888] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0.xml.txt"
+01-07-22 11:09:19.360001 [548387749888] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1_global.xml.txt"
+01-07-22 11:09:19.365119 [548387749888] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1.xml.txt"
+01-07-22 11:09:19.369256 [548387749888] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-fw_block_addresses.xml.txt"
+--------------------------------------------------------
+Fetching device IDs to see if they are alive... 
+WARNING:root:Received Message with invalid TID:
+	Address: 255	Control: 109	Transaction ID: 0	Channel: 0x0	Error: 0x0	length: 0	    data: [0, 0, 0, 0]
+East Device ID: 29366
+West Device ID: 29416
+--------------------------------------------------------
+Configuring the East Device
+Enabling the GPIOs...
+Configuring the GPIO settings... 
+Reading the status of the GPIO settings... 
+DIRECTION = 0x00022090
+DATAOUT   = 0x00022090
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ python3 gbtsca_bus_scan.py
+01-07-22 11:10:21.956585 [547875041280] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-fastcontrol-axi-0.xml.txt"
+01-07-22 11:10:21.961818 [547875041280] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0_global.xml.txt"
+01-07-22 11:10:21.965808 [547875041280] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0.xml.txt"
+01-07-22 11:10:21.969697 [547875041280] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1_global.xml.txt"
+01-07-22 11:10:21.974849 [547875041280] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1.xml.txt"
+01-07-22 11:10:21.978989 [547875041280] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-fw_block_addresses.xml.txt"
+Scanning all 16 SCA I2C busses on both SCAs
+Enabling I2Cs
+I2C busses are enabled, starting the Scan
+I2C-Address scan on Bus 0 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 1 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 2 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 3 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 4 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 5 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 6 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 7 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 8 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 9 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 10 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 11 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 12 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 13 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 14 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 15 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 0 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 1 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 2 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 3 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 4 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 5 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 6 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 7 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 8 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 9 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: 20 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 10 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 11 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+10: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+20: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+30: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+40: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+50: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+60: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+70: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE --
+
+I2C-Address scan on Bus 12 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 13 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+10: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+20: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+30: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+40: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+50: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+60: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+70: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE --
+
+I2C-Address scan on Bus 14 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+10: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+20: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+30: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+40: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+50: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+60: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+70: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE --
+
+I2C-Address scan on Bus 15 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+-- : Not connected
+LE : Bus voltage level error
+IV : Invalid Command
+ (i2c address) : received a vaild answer
+The scan of all I2C busses of both SCAs took 0:00:15.320590 seconds
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ jobs
+[1]-  Stopped                 vim ../setup.sh  (wd: ~/uhal101/hgc-engine-tools)
+[2]+  Stopped                 vim setup_lpgbt.py  (wd: ~/uhal101/hgc-engine-tools)
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ fg
+vim setup_lpgbt.py	(wd: ~/uhal101/hgc-engine-tools)
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ fg
+vim ../setup.sh	(wd: ~/uhal101/hgc-engine-tools)
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ vim gbtsca_gpio_init.py 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ python3 gbtsca_gpio_init.py 
+01-07-22 11:35:29.971135 [548261621760] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-fastcontrol-axi-0.xml.txt"
+01-07-22 11:35:29.976368 [548261621760] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0_global.xml.txt"
+01-07-22 11:35:29.980374 [548261621760] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0.xml.txt"
+01-07-22 11:35:29.984265 [548261621760] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1_global.xml.txt"
+01-07-22 11:35:29.989377 [548261621760] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1.xml.txt"
+01-07-22 11:35:29.993521 [548261621760] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-fw_block_addresses.xml.txt"
+--------------------------------------------------------
+Fetching device IDs to see if they are alive... 
+East Device ID: 29366
+West Device ID: 29416
+--------------------------------------------------------
+Configuring the East Device
+Enabling the GPIOs...
+Configuring the GPIO settings... 
+Reading the status of the GPIO settings... 
+DIRECTION = 0x00022090
+DATAOUT   = 0x00000090
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ python3 gbtsca_bus_scan.py
+01-07-22 11:35:49.399715 [548005269504] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-fastcontrol-axi-0.xml.txt"
+01-07-22 11:35:49.404895 [548005269504] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0_global.xml.txt"
+01-07-22 11:35:49.408898 [548005269504] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0.xml.txt"
+01-07-22 11:35:49.412801 [548005269504] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1_global.xml.txt"
+01-07-22 11:35:49.417925 [548005269504] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1.xml.txt"
+01-07-22 11:35:49.422075 [548005269504] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-fw_block_addresses.xml.txt"
+Scanning all 16 SCA I2C busses on both SCAs
+Enabling I2Cs
+I2C busses are enabled, starting the Scan
+I2C-Address scan on Bus 0 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 1 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 2 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 3 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 4 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 5 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 6 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 7 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 8 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 9 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 10 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 11 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 12 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 13 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 14 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 15 of SCA-west
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 0 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 1 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 2 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 3 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE  2 LE  4 LE  6 LE  8 LE  A LE  C LE  E LE
+10: 10 LE 12 LE 14 LE 16 LE 18 LE 1A LE 1C LE 1E LE
+20: 20 LE 22 LE 24 LE 26 LE 28 LE 2A LE 2C LE 2E LE
+30: 30 LE 32 LE 34 LE 36 LE 38 LE 3A LE 3C LE 3E LE
+40: 40 LE 42 LE 44 LE 46 LE 48 LE 4A LE 4C LE 4E LE
+50: 50 LE 52 LE 54 LE 56 LE 58 LE 5A LE 5C LE 5E LE
+60: 60 LE 62 LE 64 LE 66 LE 68 LE 6A LE 6C LE 6E LE
+70: 70 LE 72 LE 74 LE 76 LE 78 LE 7A LE 7C LE 7E --
+
+I2C-Address scan on Bus 4 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 5 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+I2C-Address scan on Bus 6 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+10: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+20: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+30: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+40: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+50: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+60: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+70: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE --
+drwxrwxr-x 2 agrummer agrummer 4096 Jul  1 09:56 __pycache__
+I2C-Address scan on Bus 7 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+cp: cannot create directory ‘/usr/local/lib/python3.6/site-packages/gpiod’: Permission denied
+I2C-Address scan on Bus 8 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+10: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+20: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+30: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+40: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+50: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+60: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+70: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE --
+drwxr-xr-x 2 root root  4096 May 22 20:08 __pycache__
+I2C-Address scan on Bus 9 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: 20 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+drwxr-xr-x 2 root root 4096 Jul  1 10:42 __pycache__
+I2C-Address scan on Bus 10 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+10: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+20: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+30: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+40: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+50: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+60: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+70: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE --
+[agrummer@fnal-zcu102-a milos]$ cd hgc-engine-tools/
+I2C-Address scan on Bus 11 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+10: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+20: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+30: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+40: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+50: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+60: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+70: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE --
+t.py            zcu102_wagon.xml
+I2C-Address scan on Bus 12 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0:  0 LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+10: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+20: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+30: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+40: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+50: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+60: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+70: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE --
+ README.md
+I2C-Address scan on Bus 13 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+10: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+20: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+30: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+40: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+50: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+60: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+70: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE --
+tion the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the So
+I2C-Address scan on Bus 14 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+10: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+20: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+30: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+40: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+50: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+60: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE
+70: LE LE LE LE LE LE LE LE LE LE LE LE LE LE LE --
+]), '__path__': ['/usr/local/lib/python3.6/site-packages/gpiod'], '__file__': '/usr/local/lib/python3.6/site
+I2C-Address scan on Bus 15 of SCA-east
+     0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+ 0: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+-- : Not connected
+LE : Bus voltage level error
+IV : Invalid Command
+ (i2c address) : received a vaild answer
+The scan of all I2C busses of both SCAs took 0:00:15.333726 seconds
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ vim gbtsca_gpio_init.py 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ ls
+address_table             gbtsca_bus.py        gbtsca_bus_test.log  gbtsca_econt_config.log  gbtsca_gpio_init.py  i2c_utils.py
+connect_to_interposer.py  gbtsca_bus_scan.log  gbtsca_bus_test.py   gbtsca_econt_config.py   gbtsca.py            __pycache__
+env.sh                    gbtsca_bus_scan.py   gbtsca_constants.py  gbtsca_exception.py      gbtsca_reset.py      README.md
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ vim gbtsca.py 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ vim gbtsca_gpio_init.py 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ python3 gbtsca_gpio_init.py 
+01-07-22 11:43:56.753647 [547706552320] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-fastcontrol-axi-0.xml.txt"
+01-07-22 11:43:56.758836 [547706552320] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0_global.xml.txt"
+01-07-22 11:43:56.762813 [547706552320] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-0.xml.txt"
+01-07-22 11:43:56.766702 [547706552320] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1_global.xml.txt"
+01-07-22 11:43:56.771831 [547706552320] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-modules-link-capture-AXI-1.xml.txt"
+01-07-22 11:43:56.775970 [547706552320] WARNING - Address overlaps observed - report file written at "/tmp/agrummer/uhal/OverlapReport-opt-cms-hgcal-firmware-hgc-test-systems-active-uHAL_xml-fw_block_addresses.xml.txt"
+--------------------------------------------------------
+Fetching device IDs to see if they are alive... 
+East Device ID: 29366
+West Device ID: 29416
+--------------------------------------------------------
+Configuring the East Device
+Enabling the GPIOs...
+Configuring the GPIO settings... 
+Reading the status of the GPIO settings... 
+DIRECTION = 0x00022090
+DATAOUT   = 0x00000090
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ vim gbtsca_gpio_init.py 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ 
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ pwd
+/home/agrummer/uhal101/milos/hgc-engine-tools/gbt-sca-sw
+[agrummer@fnal-zcu102-a gbt-sca-sw]$ client_loop: send disconnect: Broken pipe

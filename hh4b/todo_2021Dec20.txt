@@ -1,0 +1,7 @@
+for 2d plot - make different versions with:
+    1) z axis range from 0 to inf
+    2) model - target and z axis range from 0 to inf
+    3) z axis range from -2 to 2
+for 1d plot:
+    add the slices of sig to 1d sub/range
+    add lines to sub over range

@@ -1,0 +1,174 @@
+ Capture block  0     (bram size: 4096)
+  Link                  : <1>         <2>         <3>         <4>         <5>         <6>         
+ --------------------------------------------------------------------------------------------
+  enable                : 1           1           1           1           1           1           
+  delay mode            : 0           0           0           0           0           0           
+  delay input           : 0           0           0           0           0           0           
+  delay offset          : 0           0           0           0           0           0           
+  delay output P        : 0           0           0           0           0           0           
+  delay output N        : 0           0           0           0           0           0           
+  delay ready           : 0           0           0           0           0           0           
+  align pattern         : accccccc    accccccc    accccccc    accccccc    accccccc    accccccc    
+  align inhibit         : 0           0           0           0           0           0           
+  link aligned          : 0           1           1           1           1           1           
+  aligned count         : 20          128         128         128         128         128         
+  error count           : 255         0           0           16          0           0           
+  align state           : 0           0           0           0           0           0           
+  capture mode          : 3           3           3           3           3           3           
+  l1 offset or BX       : 0           0           0           0           0           0           
+  fifo latency          : 0           0           0           0           0           0           
+  cont. acquire         : 0           0           0           0           0           0           
+  inhibit acquire       : 0           0           0           0           0           0           
+  acquire length        : 64          64          64          64          64          64          
+  total length          : 0           0           0           0           0           0           
+  interlink align       : 0           0           0           0           0           0           
+  waiting for trig      : 0           0           0           0           0           0           
+  writing data          : 0           0           0           0           0           0           
+  fifo occupancy        : 0           0           0           0           0           0           
+  interrupt             : 1           1           1           1           1           1           
+  word error count      : 0           0           0           0           0           0           
+  bit error count       : 0           0           0           0           0           0           
+ --------------------------------------------------------------------------------------------
+
+   STATUS       Get link status
+   LINK         Set active link
+   ENABLE       Enable/disable link
+   RESET        Reset link
+   ARESET       Reset acquire state machine
+   CRESET       Reset error counters
+   ALIGN        Trigger link alignment
+   INHIBITALIGN Inhibit link alignment
+   DMODE        Set idelay mode
+   DELAY        Set idelay setting
+   OFFSET       Set idelay offset
+   PATTERN      Set alignment pattern
+   CAPTUREMODE  Set capture mode
+   BXOROFFSET   Set bx or length
+   LATENCY      Set fifo latency
+   LENGTH       Set aquire length
+   BLENGTH      Set BRAM length to use for burst acquire
+   ACQUIRE      Trigger data acquisition
+   CACQUIRE     Trigger continous data acquisition
+   IACQUIRE     Inhibit data acquisition
+   DUMP         Print data to screen
+   CLEAR        Clear BRAM
+   QUIT         Back to top menu.
+ > dump
+Link :         1         2         3         4         5         6 
+-------------------------------------------------------------------
+
+   STATUS       Get link status
+   LINK         Set active link
+   ENABLE       Enable/disable link
+   RESET        Reset link
+   ARESET       Reset acquire state machine
+   CRESET       Reset error counters
+   ALIGN        Trigger link alignment
+   INHIBITALIGN Inhibit link alignment
+   DMODE        Set idelay mode
+   DELAY        Set idelay setting
+   OFFSET       Set idelay offset
+   PATTERN      Set alignment pattern
+   CAPTUREMODE  Set capture mode
+   BXOROFFSET   Set bx or length
+   LATENCY      Set fifo latency
+   LENGTH       Set aquire length
+   BLENGTH      Set BRAM length to use for burst acquire
+   ACQUIRE      Trigger data acquisition
+   CACQUIRE     Trigger continous data acquisition
+   IACQUIRE     Inhibit data acquisition
+   DUMP         Print data to screen
+   CLEAR        Clear BRAM
+   QUIT         Back to top menu.
+ > acq
+
+   STATUS       Get link status
+   LINK         Set active link
+   ENABLE       Enable/disable link
+   RESET        Reset link
+   ARESET       Reset acquire state machine
+   CRESET       Reset error counters
+   ALIGN        Trigger link alignment
+   INHIBITALIGN Inhibit link alignment
+   DMODE        Set idelay mode
+   DELAY        Set idelay setting
+   OFFSET       Set idelay offset
+   PATTERN      Set alignment pattern
+   CAPTUREMODE  Set capture mode
+   BXOROFFSET   Set bx or length
+   LATENCY      Set fifo latency
+   LENGTH       Set aquire length
+   BLENGTH      Set BRAM length to use for burst acquire
+   ACQUIRE      Trigger data acquisition
+   CACQUIRE     Trigger continous data acquisition
+   IACQUIRE     Inhibit data acquisition
+   DUMP         Print data to screen
+   CLEAR        Clear BRAM
+   QUIT         Back to top menu.
+ > dump
+Link :         1         2         3         4         5         6 
+-------------------------------------------------------------------
+     0  aa1f0cbd  aa1f059d            aa1f059d  aa1f059d  aa1f059d 
+     1        2a        6e                   0     31004         9 
+     2        49        3a                   d        19        1d 
+     3        2f        63                   4        16        19 
+     4         f        4b                  16        1d        36 
+     5        1b        9a                  10        1e        2c 
+     6         0        74                   0        11        10 
+     7         0     fcc52                   c         0        31 
+     8        22        72                  31        3d        2a 
+     9        1c        17                  24        3b        4b 
+    10         e        51                   0        12        24 
+    11  80000000        57               84400         9        20 
+    12         0        63                   0         0        15 
+    13        1c        4e                   0         0         9 
+    14         a        53                   e        35        41 
+    15  80000000        69                   0        32     10819 
+    16        21        5a                   0        14         d 
+    17  80000003     fcc72                   8        44        1b 
+    18         1        1a                  49         0        2f 
+    19  c000c000  80037c2f            80000041  8001044d  8000ec5b 
+    20  80000008        20                   0         0        50 
+    21        1e        5f                   b        40        37 
+    22  8000001f        5a                   d         0        1a 
+    23  8000001c        35                   0        16        2a 
+    24         0        40                   b        31        18 
+    25        50        2f                   0         0        11 
+    26         1        25                   5        29        27 
+    27        10        29                   2         0        19 
+    28        51        19                   0        1d        2e 
+    29         5        40                   4         1        2b 
+    30         4        31                  45        20        26 
+    31     6f837        31               53416     2042a        3b 
+    32         0        25                   0         8         0 
+    33        40        39                   0        2f        28 
+    34        31     f2441                   0         5        18 
+    35         0        7f                   8         d        25 
+    36        2f        66                  19         2        19 
+    37         f        20                  15        44        21 
+    38        11        44                  16         8        16 
+    39  acccc44c  accccccc            accccccc  accccccc  accccccc 
+    40  acccc444  accccccc            accccccc  accccccc  accccccc 
+    41  acccc444  accccccc            accccccc  accccccc  accccccc 
+    42  2cc44444  accccccc            accccccc  accccccc  accccccc 
+    43   4c44664  accccccc            accccccc  accccccc  accccccc 
+    44   4c44644  accccccc            accccccc  accccccc  accccccc 
+    45   4c44644  accccccc            accccccc  accccccc  accccccc 
+    46   4c44644  accccccc            accccccc  accccccc  accccccc 
+    47   4446666  accccccc            8ccccccc  accccccc  accccccc 
+    48   4c46664  accccccc            8ccccccc  accccccc  accccccc 
+    49   4c46666  accccccc            8ccccccc  accccccc  accccccc 
+    50   4c46666  accccccc            8ccccccc  accccccc  accccccc 
+    51   4446666  accccccc            8ccccccc  accccccc  accccccc 
+    52   4446666  accccccc            8ccccccc  accccccc  accccccc 
+    53   6446666  accccccc            accccccc  accccccc  accccccc 
+    54   4446666  accccccc            accccccc  accccccc  accccccc 
+    55   6446666  accccccc            accccccc  accccccc  accccccc 
+    56   4446666  accccccc            accccccc  accccccc  accccccc 
+    57   4446644  accccccc            accccccc  accccccc  accccccc 
+    58   4c46666  accccccc            accccccc  accccccc  accccccc 
+    59   6446666  accccccc            accccccc  accccccc  accccccc 
+    60   6446666  accccccc            accccccc  accccccc  accccccc 
+    61   4444644  accccccc            accccccc  accccccc  accccccc 
+    62   4c46666  accccccc            accccccc  accccccc  accccccc 
+    63   4446664  accccccc            accccccc  accccccc  accccccc 

@@ -1,0 +1,20 @@
+hgcrocs self injection mode
+pedestals on the trigger? or 0s on the trigger path?
+only DAQ line FE to BE communication...
+
+from the engine onward - equivalent test 
+engine configuration depends on each setup
+
+
+Data valid rate is 0
+
+
+GTH recovers? for 
+
+add inversions of FC and clk 
+
+eventually want to play with DriveStrength later on
+
+sfp+
+
+https://gitlab.cern.ch/cms-hgcal-firmware/hgc-enginev1/-/blob/trunk/setup_lpgbt.py#L246

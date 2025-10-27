@@ -1,0 +1,75 @@
+
+two fibers: 
+one for timing and resolution - space-time resolution
+other for trigger
+
+
+Phase I system
+optical decoder units
+SiPMs and hp readout modules
+
+DCS and DSS
+multimodule tester
+prototype of large number of multimodule testers that will go to test around the world
+has a prototype DCS and DSS
+humidity, temperatuer, chiller, powersupply
+At CERN will start building the prototype
+opterate or control the cold room
+
+what is the system based on?
+PLCs? - what are?
+
+48 temperater
+8 humidity
+multimodule testers
+info from humidity - which also have temperateru
+all go to PLCs
+
+prototype
+
+bldg 186 at CERN has hardware
+
+Semen's type 1200?
+
+would be nice ot use same system
+more sensors if needed
+
+whatever we have right now 
+make evolution to handle cold rooms
+
+~1 yr ago, need to make sure control safety system
+report on what needs to be purchased
+
+spec for DSS DCS in edms... where?
+--- I still haven't been added to edms
+- cassette testing is a developement system for the HGCal final system
+
+perfect
+
+what budget? not much
+we must get a prototype and start operating 
+have experts at Fermilab on PLC - who can help if we get resources
+
+CERN will have a comment in 2-3 months
+
+capcity to handle 
+and doors
+
+our cold room - need to drill holes in the concrete to anchor it
+
+CERN has a 1/2 year wait time on the cold room
+
+bolt the rack to the floor
+rigid?
+anchored to it?
+holes in the bottom of the cold room floor
+
+push the cassette - the room doesn't move sideways 
+
+meet again in 2 weeks
+
+weeks
+
+
+
+

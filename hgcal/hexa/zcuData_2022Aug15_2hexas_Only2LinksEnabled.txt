@@ -1,0 +1,302 @@
+       link 0  link 1      link 2    link 3  link 4      link 5
+---  --------  --------  --------  --------  --------  --------
+  0       nan  acccccc0       nan       nan  acccccc0       nan
+  1       nan  acccccc0       nan       nan  acccccc0       nan
+  2       nan  acccccc0       nan       nan  acccccc0       nan
+  3       nan  acccccc0       nan       nan  acccccc0       nan
+  4       nan  acccccc0       nan       nan  acccccc0       nan
+  5       nan  acccccc0       nan       nan  acccccc0       nan
+  6       nan  acccccc0       nan       nan  acccccc0       nan
+  7       nan  acccccc0       nan       nan  acccccc0       nan
+  8       nan  acccccc0       nan       nan  acccccc0       nan
+  9       nan  acccccc0       nan       nan  acccccc0       nan
+ 10       nan  acccccc0       nan       nan  acccccc0       nan
+ 11       nan  acccccc0       nan       nan  acccccc0       nan
+ 12       nan  acccccc0       nan       nan  acccccc0       nan
+ 13       nan  acccccc0       nan       nan  acccccc0       nan
+ 14       nan  acccccc0       nan       nan  acccccc0       nan
+ 15       nan  acccccc0       nan       nan  acccccc0       nan
+ 16       nan  acccccc0       nan       nan  acccccc0       nan
+ 17       nan  acccccc0       nan       nan  acccccc0       nan
+ 18       nan  acccccc0       nan       nan  acccccc0       nan
+ 19       nan  acccccc0       nan       nan  acccccc0       nan
+ 20       nan  acccccc0       nan       nan  acccccc0       nan
+ 21       nan  acccccc0       nan       nan  acccccc0       nan
+ 22       nan  acccccc0       nan       nan  acccccc0       nan
+ 23       nan  acccccc0       nan       nan  acccccc0       nan
+ 24       nan  acccccc0       nan       nan  acccccc0       nan
+ 25       nan  acccccc0       nan       nan  acccccc0       nan
+ 26       nan  acccccc0       nan       nan  acccccc0       nan
+ 27       nan  acccccc0       nan       nan  acccccc0       nan
+ 28       nan  acccccc0       nan       nan  acccccc0       nan
+ 29       nan  acccccc0       nan       nan  acccccc0       nan
+ 30       nan  acccccc0       nan       nan  acccccc0       nan
+ 31       nan  acccccc0       nan       nan  acccccc0       nan
+ 32       nan  acccccc0       nan       nan  acccccc0       nan
+ 33       nan  acccccc0       nan       nan  acccccc0       nan
+ 34       nan  acccccc0       nan       nan  acccccc0       nan
+ 35       nan  acccccc0       nan       nan  acccccc0       nan
+ 36       nan  acccccc0       nan       nan  acccccc0       nan
+ 37       nan  acccccc0       nan       nan  acccccc0       nan
+ 38       nan  acccccc0       nan       nan  acccccc0       nan
+ 39       nan  acccccc0       nan       nan  acccccc0       nan
+ 40       nan  acccccc0       nan       nan  acccccc0       nan
+ 41       nan  acccccc0       nan       nan  acccccc0       nan
+ 42       nan  acccccc0       nan       nan  acccccc0       nan
+ 43       nan  acccccc0       nan       nan  acccccc0       nan
+ 44       nan  acccccc0       nan       nan  acccccc0       nan
+ 45       nan  acccccc0       nan       nan  acccccc0       nan
+ 46       nan  acccccc0       nan       nan  acccccc0       nan
+ 47       nan  acccccc0       nan       nan  acccccc0       nan
+ 48       nan  acccccc0       nan       nan  acccccc0       nan
+ 49       nan  acccccc0       nan       nan  acccccc0       nan
+ 50       nan  c9d40000       nan       nan  acccccc0       nan
+ 51       nan  3c134000       nan       nan  c9d40000       nan
+ 52       nan  adc5f40c       nan       nan  5426c000       nan
+ 53       nan  8f             nan       nan  adc5f40c       nan
+ 54       nan  7d             nan       nan  bf             nan
+ 55       nan  d7             nan       nan  e6             nan
+ 56       nan  a5             nan       nan  c7             nan
+ 57       nan  8d             nan       nan  a6             nan
+ 58       nan  99             nan       nan  c6             nan
+ 59       nan  9f             nan       nan  92             nan
+ 60       nan  a4             nan       nan  94             nan
+ 61       nan  a7             nan       nan  c1             nan
+ 62       nan  88             nan       nan  a9             nan
+ 63       nan  a0             nan       nan  ce             nan
+ 64       nan  8b             nan       nan  9d             nan
+ 65       nan  9b             nan       nan  62             nan
+ 66       nan  a6             nan       nan  aa             nan
+ 67       nan  79             nan       nan  ab             nan
+ 68       nan  9a             nan       nan  9e             nan
+ 69       nan  a1             nan       nan  9d             nan
+ 70       nan  be             nan       nan  be             nan
+ 71       nan  80021895       nan       nan  b7             nan
+ 72       nan  af             nan       nan  800188b1       nan
+ 73       nan  98             nan       nan  c6             nan
+ 74       nan  70             nan       nan  b1             nan
+ 75       nan  8e             nan       nan  81             nan
+ 76       nan  9a             nan       nan  9b             nan
+ 77       nan  78             nan       nan  7c             nan
+ 78       nan  a0             nan       nan  9d             nan
+ 79       nan  ab             nan       nan  72             nan
+ 80       nan  bd             nan       nan  b4             nan
+ 81       nan  a6             nan       nan  bd             nan
+ 82       nan  c8             nan       nan  a8             nan
+ 83       nan  9f             nan       nan  b7             nan
+ 84       nan  88             nan       nan  bb             nan
+ 85       nan  d3             nan       nan  af             nan
+ 86       nan  bf             nan       nan  ae             nan
+ 87       nan  ad             nan       nan  b7             nan
+ 88       nan  9a             nan       nan  b1             nan
+ 89       nan  88             nan       nan  ad             nan
+ 90       nan  ac             nan       nan  bd             nan
+ 91       nan  adc5f41c       nan       nan  9e             nan
+ 92       nan  bc             nan       nan  adc5f41c       nan
+ 93       nan  a6             nan       nan  d6             nan
+ 94       nan  ac             nan       nan  bd             nan
+ 95       nan  ce             nan       nan  d7             nan
+ 96       nan  9b             nan       nan  c9             nan
+ 97       nan  9b             nan       nan  b7             nan
+ 98       nan  ce             nan       nan  91             nan
+ 99       nan  bf             nan       nan  83             nan
+100       nan  9d             nan       nan  bf             nan
+101       nan  c9             nan       nan  ba             nan
+102       nan  af             nan       nan  bc             nan
+103       nan  c6             nan       nan  7c             nan
+104       nan  a5             nan       nan  de             nan
+105       nan  89             nan       nan  a4             nan
+106       nan  c7             nan       nan  c9             nan
+107       nan  9c             nan       nan  ca             nan
+108       nan  b8             nan       nan  ac             nan
+109       nan  be             nan       nan  ef             nan
+110       nan  80024caf       nan       nan  be             nan
+111       nan  b2             nan       nan  800244bf       nan
+112       nan  b6             nan       nan  cd             nan
+113       nan  95             nan       nan  d0             nan
+114       nan  b2             nan       nan  cc             nan
+115       nan  b5             nan       nan  c1             nan
+116       nan  b4             nan       nan  bf             nan
+117       nan  cf             nan       nan  b7             nan
+118       nan  a1             nan       nan  a5             nan
+119       nan  c9             nan       nan  c1             nan
+120       nan  ca             nan       nan  c9             nan
+121       nan  a5             nan       nan  af             nan
+122       nan  b5             nan       nan  a9             nan
+123       nan  a7             nan       nan  d3             nan
+124       nan  9f             nan       nan  cd             nan
+125       nan  cb             nan       nan  de             nan
+126       nan  8b             nan       nan  ad             nan
+127       nan  d3             nan       nan  99             nan
+128       nan  98             nan       nan  af             nan
+129       nan  ae             nan       nan  ad             nan
+130       nan  adc5f42c       nan       nan  9c             nan
+131       nan  f2             nan       nan  adc5f42c       nan
+132       nan  e9             nan       nan  bf             nan
+133       nan  eb             nan       nan  a7             nan
+134       nan  de             nan       nan  c3             nan
+135       nan  c7             nan       nan  ca             nan
+136       nan  ce             nan       nan  97             nan
+137       nan  c0             nan       nan  fb             nan
+138       nan  d3             nan       nan  c1             nan
+139       nan  b9             nan       nan  db             nan
+140       nan  fd             nan       nan  d1             nan
+141       nan  c9             nan       nan  db             nan
+142       nan  cb             nan       nan  b0             nan
+143       nan  d5             nan       nan  b1             nan
+144       nan  cd             nan       nan  b6             nan
+145       nan  c3             nan       nan  c5             nan
+146       nan  e8             nan       nan  af             nan
+147       nan  b2             nan       nan  e0             nan
+148       nan  ad             nan       nan  ae             nan
+149       nan  8002b8ea       nan       nan  a1             nan
+150       nan  c9             nan       nan  800158cb       nan
+151       nan  da             nan       nan  c5             nan
+152       nan  ca             nan       nan  db             nan
+153       nan  be             nan       nan  b6             nan
+154       nan  c7             nan       nan  ab             nan
+155       nan  b5             nan       nan  ad             nan
+156       nan  d1             nan       nan  c9             nan
+157       nan  c2             nan       nan  b9             nan
+158       nan  103            nan       nan  c2             nan
+159       nan  c9             nan       nan  cd             nan
+160       nan  e5             nan       nan  b7             nan
+161       nan  cf             nan       nan  d2             nan
+162       nan  b5             nan       nan  a6             nan
+163       nan  ac             nan       nan  9b             nan
+164       nan  e7             nan       nan  ad             nan
+165       nan  98             nan       nan  93             nan
+166       nan  b9             nan       nan  b3             nan
+167       nan  9d             nan       nan  9c             nan
+168       nan  d4             nan       nan  b1             nan
+169       nan  adc5f43c       nan       nan  81             nan
+170       nan  b9             nan       nan  adc5f43c       nan
+171       nan  a5             nan       nan  f9             nan
+172       nan  be             nan       nan  b3             nan
+173       nan  bf             nan       nan  af             nan
+174       nan  ad             nan       nan  cd             nan
+175       nan  8b             nan       nan  c1             nan
+176       nan  bb             nan       nan  a9             nan
+177       nan  91             nan       nan  c5             nan
+178       nan  ab             nan       nan  cd             nan
+179       nan  b8             nan       nan  9b             nan
+180       nan  c3             nan       nan  e3             nan
+181       nan  a9             nan       nan  be             nan
+182       nan  bd             nan       nan  95             nan
+183       nan  86             nan       nan  bd             nan
+184       nan  b5             nan       nan  cb             nan
+185       nan  a6             nan       nan  d2             nan
+186       nan  b3             nan       nan  bf             nan
+187       nan  b2             nan       nan  c2             nan
+188       nan  8003fc7c       nan       nan  be             nan
+189       nan  8b             nan       nan  8002e4b3       nan
+190       nan  83             nan       nan  e1             nan
+191       nan  ab             nan       nan  a0             nan
+192       nan  cd             nan       nan  b2             nan
+193       nan  a2             nan       nan  bf             nan
+194       nan  9b             nan       nan  af             nan
+195       nan  a7             nan       nan  c4             nan
+196       nan  99             nan       nan  90             nan
+197       nan  99             nan       nan  b5             nan
+198       nan  9d             nan       nan  a8             nan
+199       nan  97             nan       nan  a1             nan
+200       nan  78             nan       nan  9b             nan
+201       nan  7b             nan       nan  b5             nan
+202       nan  c7             nan       nan  cd             nan
+203       nan  b1             nan       nan  c1             nan
+204       nan  b1             nan       nan  d2             nan
+205       nan  94             nan       nan  e2             nan
+206       nan  a5             nan       nan  aa             nan
+207       nan  a5             nan       nan  bf             nan
+208       nan  adc5f44c       nan       nan  ca             nan
+209       nan  8f             nan       nan  adc5f44c       nan
+210       nan  89             nan       nan  bf             nan
+211       nan  98             nan       nan  c5             nan
+212       nan  ab             nan       nan  b8             nan
+213       nan  8e             nan       nan  9a             nan
+214       nan  9d             nan       nan  9a             nan
+215       nan  93             nan       nan  bd             nan
+216       nan  8e             nan       nan  b3             nan
+217       nan  d8             nan       nan  b5             nan
+218       nan  81             nan       nan  b7             nan
+219       nan  97             nan       nan  c7             nan
+220       nan  79             nan       nan  7d             nan
+221       nan  8a             nan       nan  a3             nan
+222       nan  93             nan       nan  ad             nan
+223       nan  99             nan       nan  8e             nan
+224       nan  5f             nan       nan  d3             nan
+225       nan  a1             nan       nan  8c             nan
+226       nan  89             nan       nan  7f             nan
+227       nan  8002d8d2       nan       nan  d9             nan
+228       nan  96             nan       nan  800254bd       nan
+229       nan  a1             nan       nan  a2             nan
+230       nan  85             nan       nan  a3             nan
+231       nan  5f             nan       nan  be             nan
+232       nan  89             nan       nan  a9             nan
+233       nan  51             nan       nan  8f             nan
+234       nan  80             nan       nan  8a             nan
+235       nan  6f             nan       nan  a7             nan
+236       nan  83             nan       nan  9f             nan
+237       nan  90             nan       nan  9f             nan
+238       nan  96             nan       nan  a3             nan
+239       nan  73             nan       nan  ae             nan
+240       nan  95             nan       nan  6e             nan
+241       nan  8c             nan       nan  a3             nan
+242       nan  88             nan       nan  87             nan
+243       nan  b6             nan       nan  ab             nan
+244       nan  91             nan       nan  cf             nan
+245       nan  95             nan       nan  b5             nan
+246       nan  8a             nan       nan  c9             nan
+247       nan  adc5f45c       nan       nan  c3             nan
+248       nan  a5             nan       nan  adc5f45c       nan
+249       nan  96             nan       nan  89             nan
+250       nan  99             nan       nan  92             nan
+251       nan  aa             nan       nan  95             nan
+252       nan  55             nan       nan  b3             nan
+253       nan  ad             nan       nan  96             nan
+254       nan  8d             nan       nan  9e             nan
+255       nan  98             nan       nan  86             nan
+256       nan  75             nan       nan  7f             nan
+257       nan  88             nan       nan  90             nan
+258       nan  83             nan       nan  76             nan
+259       nan  bb             nan       nan  7b             nan
+260       nan  8c             nan       nan  a7             nan
+261       nan  85             nan       nan  84             nan
+262       nan  64             nan       nan  65             nan
+263       nan  65             nan       nan  7d             nan
+264       nan  8a             nan       nan  7d             nan
+265       nan  aa             nan       nan  80             nan
+266       nan  8001709e       nan       nan  ab             nan
+267       nan  a1             nan       nan  80013c87       nan
+268       nan  91             nan       nan  b1             nan
+269       nan  88             nan       nan  79             nan
+270       nan  7a             nan       nan  7d             nan
+271       nan  76             nan       nan  87             nan
+272       nan  6d             nan       nan  65             nan
+273       nan  95             nan       nan  76             nan
+274       nan  77             nan       nan  79             nan
+275       nan  99             nan       nan  ad             nan
+276       nan  be             nan       nan  88             nan
+277       nan  bb             nan       nan  93             nan
+278       nan  8b             nan       nan  a1             nan
+279       nan  83             nan       nan  81             nan
+280       nan  6a             nan       nan  89             nan
+281       nan  87             nan       nan  6a             nan
+282       nan  70             nan       nan  a0             nan
+283       nan  83             nan       nan  96             nan
+284       nan  68             nan       nan  77             nan
+285       nan  ae             nan       nan  67             nan
+286       nan  0              nan       nan  9f             nan
+287       nan  acccccc0       nan       nan  0              nan
+288       nan  acccccc0       nan       nan  acccccc0       nan
+289       nan  acccccc0       nan       nan  acccccc0       nan
+290       nan  acccccc0       nan       nan  acccccc0       nan
+291       nan  acccccc0       nan       nan  acccccc0       nan
+292       nan  acccccc0       nan       nan  acccccc0       nan
+293       nan  acccccc0       nan       nan  acccccc0       nan
+294       nan  acccccc0       nan       nan  acccccc0       nan
+295       nan  acccccc0       nan       nan  acccccc0       nan
+296       nan  acccccc0       nan       nan  acccccc0       nan
+297       nan  acccccc0       nan       nan  acccccc0       nan
+298       nan  acccccc0       nan       nan  acccccc0       nan
+299       nan  acccccc0       nan       nan  acccccc0       nan

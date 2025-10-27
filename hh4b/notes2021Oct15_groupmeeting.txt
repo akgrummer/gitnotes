@@ -1,0 +1,15 @@
+CWR
+EDR
+
+why do we loose so much efficiency for the last jet to pass the loose
+requirements
+HT300 for those 4
+is there a trigger efficiency cut applied to this?
+trigger turn on?
+did they pass trigger or no?
+trigger scale factors are not applied yet - 
+
+need to understand how to apply the trigger scale factors
+
+don't care about S/B - care about relative
+ROC curves Signal - Background rejection:

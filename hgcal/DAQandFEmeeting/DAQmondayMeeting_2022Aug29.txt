@@ -1,0 +1,34 @@
+sfp+ on new Kria's
+- IC configuration not possible with latest engine v3 firmware
+hexaboard doesn't have an ldo - at minnesota
+
+state function? Econ robot testing - need to place correctly on the socket
+tid tests? lost hexacontrollers - replaced sd card and fixed hexacontroller...
+sd card stopped working in radiation campaign
+x-ray testing at cern?
+
+transactor
+zcu firmware xillinx 
+should be version:
+2021.2
+other verions - 2019.1,2019.2, 2020.2
+
+- enginev3 from Minnesota
+- LDOs have shipped from CERN- they need a few weeks to build them 
+- they will have  a steering meeting to decide where to send them
+
+switch in the sw to have IC work
+communication paths
+
+swamp trasaction vs standard transaction
+
+
+ping pong ram
+
+CMS HGCal Area on gitlab - restricted firmware area
+EconD in a hexacontroller formatter buffer
+make fpga friendly
+
+Jon:
+uhal code setup on his board
+

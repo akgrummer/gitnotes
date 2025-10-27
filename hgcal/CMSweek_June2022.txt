@@ -1,0 +1,9 @@
+find bad channels, mask toa and run again
+toa will always sample at the same phase
+won't suffer from modulation
+delta pedestal definition - peak to peak?
+
+
+cold solder
+
+SiPMs register map is not the same but communication protocol is the same

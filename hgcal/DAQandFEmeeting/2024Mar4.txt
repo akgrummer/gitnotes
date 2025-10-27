@@ -1,0 +1,87 @@
+# 2024 Mar 4
+
+- Setup at CERN: missing  
+
+Bora: 
+First shipments are in progress
+8 controllers to ship to US, more to Germany (DESY, KIT)
+
+next wave of boards is coming up - component orders are in progress.
+
+Also working on a multimodule climate chamber
+
+Arnaud: Alp is working on new image - being tested. 
+GPIO lines issues - define as input or output.
+Alp: new images will be in provided through gitlab.
+
+Mattias
+Kria Hexa are on the way to CERN and will come to DESY next.
+- will talk to Arnaud
+- pre-series module tests
+
+Jia-Hoa
+old swamp library (Armando) seems stable
+IO error flag
+ROC object not working in new version of software.
+
+external trigger - 4th value block
+force value to 0 or 1
+
+# Arnaud
+- Experience with Kria was discussed earlier.
+- I2C issues - 6 module train
+    - after workshop added bus bar and switched to new engine.
+    - many I2C issues disappeared
+    - first time tested, only saw errors on west side of train (then switched engines)
+    - 4 million i2C issues - no errors.
+    - bus bar better - ground of engine location an issue?
+    - bus bar was easy (compared to web of wires)
+
+    - Continued work on train with 6 modules Martim and Milos. Serenity backend. EconT data with L1A
+    - Will work with the backend groups - L1A data from train to DTH to get pedestals
+
+
+- Andre: Poor experience with old engine. Can we have more engines?
+- Devin: not sure how many we can spare.
+Multiple trains is a next goal
+
+- Milos question for Aidan: when did you get the engines you have? do you know if there are differences in the silicon engines?
+- Aidan, Devin, Andre: two engines (one at SiDet, one at WH) were provided earlier maybe an earlier batch one at SiDet was provided later. LDO on some engines at CERN were added. 
+
+Pawel D, Andre, Arnaud, Aidan: Progress was made on a cassette tester for cosmics at CERN. System still has some bugs, but good enough for gaining experience. Pawel will try to find some module sized scintillator/PMTs to use in bldg. 27 (before full 3m x 3m plane in built)
+
+Pawel questions on schedule of mini-serenity.
+Andre:
+Bug in the layout of connectors - will not have board in April, but maybe May. Needs to be ready for PRR in August - probably ready for cassette tests more like Sept or Oct.
+
+Martim: EMP wrapper
+Making progress with read and write buffers 
+no lpgbt in these links but it is going
+new readout enable for several minidaq on one slink
+
+DAQ implementation meetings were on Wednesdays - now will be on Mondays @ 2pm or 3pm CERN time - before this meeting.
+
+Jon
+- trigger fw implementation for Jia-Hao
+- I2C issues for single ROC
+- SEU data analysis.
+- Eight-engine fw build merge with Martim and 
+
+ROC issues
+I2C writes to ADC fails after 5 SCL cycles
+
+Cristina:
+- setting up
+Econ DP2
+packaged are like that
+mezzanine old econ packaged - now replaced with packaged P2.
+
+Aidan:
+- setting up multiple test systems
+- One partial right, one left CM
+
+Devin:
+- work with HD engine tester 
+    - debugging with fw 
+    - some parts not understood.
+

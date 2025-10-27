@@ -1,0 +1,113 @@
+Status of ROCS on power up
+GPIO                        values
+------------------------  --------
+data.roc_rstb                    7
+data.roc_rstb_i2c                7
+data.roc_resyncLoad              0
+data.roc_pwrEnable               5
+data.roc_pwrGood                 1
+data.roc_error                   0
+data.ext_clk_act                 1
+data.CFGRSTB_HGCROC              0
+data.RSTB_HARD_ECON              0
+data.RSTB_SOFT_ECOND             0
+data.RSTB_SOFT_ECONT             0
+direction.roc_rstb               7
+direction.roc_rstb_i2c           7
+direction.roc_resyncLoad         7
+direction.roc_pwrEnable          7
+
+Status after first ROC config step (set direction nodes to 0)
+GPIO                        values
+------------------------  --------
+data.roc_rstb                    0
+data.roc_rstb_i2c                0
+data.roc_resyncLoad              0
+data.roc_pwrEnable               0
+data.roc_pwrGood                 0
+data.roc_error                   0
+data.ext_clk_act                 1
+data.CFGRSTB_HGCROC              0
+data.RSTB_HARD_ECON              0
+data.RSTB_SOFT_ECOND             0
+data.RSTB_SOFT_ECONT             0
+direction.roc_rstb               0
+direction.roc_rstb_i2c           0
+direction.roc_resyncLoad         0
+direction.roc_pwrEnable          0
+
+Status after second ROC config
+GPIO                        values
+------------------------  --------
+data.roc_rstb                    7
+data.roc_rstb_i2c                7
+data.roc_resyncLoad              0
+data.roc_pwrEnable               7
+data.roc_pwrGood                 1
+data.roc_error                   0
+data.ext_clk_act                 1
+data.CFGRSTB_HGCROC              0
+data.RSTB_HARD_ECON              0
+data.RSTB_SOFT_ECOND             0
+data.RSTB_SOFT_ECONT             0
+direction.roc_rstb               0
+direction.roc_rstb_i2c           0
+direction.roc_resyncLoad         0
+direction.roc_pwrEnable          0
+
+Status after third ROC config step:
+GPIO                        values
+------------------------  --------
+data.roc_rstb                    7
+data.roc_rstb_i2c                7
+data.roc_resyncLoad              7
+data.roc_pwrEnable               7
+data.roc_pwrGood                 1
+data.roc_error                   0
+data.ext_clk_act                 1
+data.CFGRSTB_HGCROC              0
+data.RSTB_HARD_ECON              0
+data.RSTB_SOFT_ECOND             0
+data.RSTB_SOFT_ECONT             0
+direction.roc_rstb               0
+direction.roc_rstb_i2c           0
+direction.roc_resyncLoad         0
+direction.roc_pwrEnable          0
+
+Status after 4th ROC config step:
+GPIO                        values
+------------------------  --------
+data.roc_rstb                    7
+data.roc_rstb_i2c                7
+data.roc_resyncLoad              0
+data.roc_pwrEnable               7
+data.roc_pwrGood                 1
+data.roc_error                   0
+data.ext_clk_act                 1
+data.CFGRSTB_HGCROC              0
+data.RSTB_HARD_ECON              0
+data.RSTB_SOFT_ECOND             0
+data.RSTB_SOFT_ECONT             0
+direction.roc_rstb               0
+direction.roc_rstb_i2c           0
+direction.roc_resyncLoad         0
+direction.roc_pwrEnable          0
+
+The system is now ready for EconD configuration
+
+
+ctrl_gpio address:
+<node id="ctrl_gpio"                    module="file://modules/ctrl_gpio.xml"                  address="0x80060000"/>
+
+ctrl_gpio uhal node descriptions:
+<node>  <node id="data"       address="0x0" description="data register">
+    <node id="roc_rstb"        mask="0x00000007" permission="rw" description="ROC chip reset" />    <node id="roc_rstb_i2c"    mask="0x00000038" permission="rw" description="ROC I2C reset" />
+    <node id="roc_resyncLoad"  mask="0x000001c0" permission="rw" description="ROC resyncLoad" />    <node id="roc_pwrEnable"   mask="0x00000e00" permission="rw" description="ROC power enable" />
+    <node id="roc_pwrGood"     mask="0x00007000" permission="r"  description="ROC power good" />    <node id="roc_error"       mask="0x00038000" permission="r"  description="ROC error" />
+    <node id="force_int_clk"   mask="0x00040000" permission="w"  description="Force internal clock" />    <node id="ext_clk_act"     mask="0x08000000" permission="r"  description="External clock active" />
+    <node id="CFGRSTB_HGCROC"  mask="0x10000000" permission="r"  description="ROC reset" />    <node id="RSTB_HARD_ECON"  mask="0x20000000" permission="r"  description="ECON hard reset" />
+    <node id="RSTB_SOFT_ECOND" mask="0x40000000" permission="r"  description="ECON d soft reset" />    <node id="RSTB_SOFT_ECONT" mask="0x80000000" permission="r"  description="ECON t soft reset" />  </node>  <node id="direction"  address="0x1" description="direction register (1 means read only, 0 meas read write)">
+    <node id="roc_rstb"        mask="0x00000007" permission="rw" description="ROC chip reset" />    <node id="roc_rstb_i2c"    mask="0x00000038" permission="rw" description="ROC I2C reset" />
+    <node id="roc_resyncLoad"  mask="0x000001c0" permission="rw" description="ROC resyncLoad" />    <node id="roc_pwrEnable"   mask="0x00000e00" permission="rw" description="ROC power enable" />
+    <node id="force_int_clk"   mask="0x00040000" permission="w"  description="Force internal clock" />  </node>
+</node >

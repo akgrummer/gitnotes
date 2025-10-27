@@ -1,0 +1,92 @@
+event based tagger
+- 4 bs events failing the b-tagging
+= event b-tagging - using the whole tagging score
+= need to know how to 
+- 6 b is a test bed
+- mc sample
+selecting signal events
+object based
+- interplay with the background estimate
+events - signal like
+machine learning algorithm
+matching tracks
+avoid biasing
+h to bb struc
+regression
+b-tagging and the signal itselg
+event correlation
+- Nick, Nahn, Jennet, Fabio
+Sergy iglazier
+higgs events
+new analysis
+limitation of the current one
+BDT reweighting
+method applicable?
+decoralation for object tagger 
+R&D
+
+ed board - ARC review
+
+
+resonant, 6b some 
+run 3 a to z
+
+
+Commitee
+high profile analysis
+proper knowledge
+timely manner
+Tagger for both suzanne
+CDF and D0 - 
+reveiw the literature - 
+
+
+
+H to bb how did they do the decorrelation??
+Martin, Cristina
+
+Christina gave a talk on a tagger...
+
+Committee??
+
+Seminars, 
+Nick - want to learn
+correlation: tagging and the mass - 
+object to event 
+one jet to 4 jets
+
+Gabriele
+
+
+DAS 2022?
+
+
+learn about all the b taggers in CMS
+given b tagger and the observables
+how to translate it to event based
+
+
+
+Machine Learning HATS@LPC (July 12, 2021) - Indico Agenda
+Jets Energy Corrections and Pile-Up Mitigation HATS@LPC (June 29, 2021) - Indico Agenda
+Jet Algorithms and Substructure HATS@LPC (June 28, 2021) - Indico Agenda
+
+
+pheno paper?
+
+induction course:
+https://indico.cern.ch/event/819222/timetable/
+
+biweekly meeting - 
+3-4 on Mondays meet with Anadi 
+November calendar
+
+
+slides - look at other peoples
+intro, where did you get your phd 
+proposal
+
+ARC?
+group leaders a
+
+

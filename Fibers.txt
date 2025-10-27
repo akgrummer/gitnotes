@@ -1,0 +1,6 @@
+important parameters for fiber optic cables include:
+    - diameter of the cable
+    - clading: the material used to suround the glass. You want a low index of
+      refraction - but you don't want to use air because you need to avoid
+getting finger prints on the glass, the oil, from which, would be bad for the
+critical angle of the light inside the fiber.

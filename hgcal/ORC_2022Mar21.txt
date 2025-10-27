@@ -1,0 +1,25 @@
+ORC checklist
+- wires, writing on them, what are they rated for in Volts and Amps?
+- need to twist the wires? - dont have the right stap ties
+- print ORC paper
+- upload documents.
+
+contact:
+- Curtis Danner, Paul Rubinov - fuses
+
+PS is rated for 10 amp max output
+
+AWG values:
+14 for out of PS - max 20 amps
+18 (ground, black cable) - max 12 amps
+20 for most of the board cables - max 8 amps
+
+orange and black to hexacontroller are 20 AWG
+orange, black from the splitter are *16 gauge (*orange is 16 or 18 gauge, partially rubbed off)
+
+
+The output power supply has a maximum 10 A output - but only when the voltage is set to 0.7 V
+
+
+
+

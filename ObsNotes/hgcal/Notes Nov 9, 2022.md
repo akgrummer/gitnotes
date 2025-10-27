@@ -1,0 +1,8 @@
+- Need to be able to automatically find offset values
+	- have a subroutine that sends and L1A, hex listens for it and calculates last idle pattern before data
+	- repeat also for zcu
+- Need to save data and send it to labc computer 
+	- one process sends L1As periodically - slow freq. at first
+	- on process listens for L1A counter to increase, saves fifo and adds it to a stack
+		- in the second process is the socket, the when message is received from client, stack is sent from server
+			- client can only receive a stack of one event at the moment, so L1A send frequency should be slower that labc gui untill that can be settled, or when you figure out how to use a PUSH-PULL socket

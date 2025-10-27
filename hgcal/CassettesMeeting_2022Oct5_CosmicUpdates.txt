@@ -1,0 +1,21 @@
+
+Can we stretch the data collection to 3 bunch crossings instead of just one?
+
+mean timer of the two planes doesn't account for the angle of the muon - have to correct for this with the track in the cassettes?
+Do we need 0 suppression? This could be an issue if you need to recontruct the track
+    - could set the threshold for 0 suppression low
+    - could do 0 suppression offline
+
+plot - scatter plot 
+
+instead of saving DRS4 data (which is going to be large!)
+sub nano second clock in the zcu?
+save TDC  - to get the phase of the signal
+
+wider scintillator bars, worse resolution??
+
+
+Next steps:
+test with smaller fiber
+cool down the system
+

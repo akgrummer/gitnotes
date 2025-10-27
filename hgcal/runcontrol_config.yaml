@@ -1,0 +1,70 @@
+BoardRunControl.exe
+19-06-25 19:00:13.845506 [140332646112256] WARNING - Derived node "LpGbtMGTRegionNode" already exists in map of creators. Continuing for now, but be warned.
+
+Halted:
+ 1 = Configure
+ 2 = StartRelay
+ 9 = ColdStart
+ 0 = Exit
+===>> 1
+Configuration yaml file: VcuNew_6unpackers.yaml
+BoardTransitions::Configure called for relay 1750377629
+BoardTransitions::relayReset called
+EmpCommands::fullReset called
+EmpCommands::fullReset finished
+DaqCommands::fullReset called
+DaqCommands::fullReset finished
+Stage1Commands::fullReset called
+Stage1Commands::fullReset finished
+BoardTransitions::readConstants called
+EmpCommands::readConstants called
+SlinkCommands::readConstants called
+DaqCommands::readConstants called
+Stage1Commands::readConstants called
+BoardTransitions::writeConfiguration called
+EmpCommands::writeConfiguration called
+Tcds2EmulatorNode::writeConfiguration Tcds2Emulator found
+EmpCommands::writeConfiguration CommonReadout found
+SlinkCommands::writeConfiguration SlinkLocal found
+DaqCommands::writeConfiguration called
+Stage1Commands::writeConfiguration called
+Stage1Commands::writeConfiguration finished
+BoardTransitions::Configure finished for relay 1750377629
+
+Configured:
+ 1 = Start
+ 2 = Reconfigure
+ 0 = Halt
+===>> 2
+Configuration yaml file: SlinkLocal.yaml
+BoardTransitions::Reconfigure called
+BoardTransitions::writeConfiguration called
+EmpCommands::writeConfiguration called
+Tcds2EmulatorNode::writeConfiguration Tcds2Emulator found
+SlinkCommands::writeConfiguration SlinkLocal found
+DaqCommands::writeConfiguration called
+Stage1Commands::writeConfiguration called
+Stage1Commands::writeConfiguration finished
+BoardTransitions::Reconfigure finished
+
+Configured:
+ 1 = Start
+ 2 = Reconfigure
+ 0 = Halt
+===>> 2
+Configuration yaml file: CRtemp.yaml
+BoardTransitions::Reconfigure called
+BoardTransitions::writeConfiguration called
+EmpCommands::writeConfiguration called
+EmpCommands::writeConfiguration CommonReadout found
+DaqCommands::writeConfiguration called
+Stage1Commands::writeConfiguration called
+Stage1Commands::writeConfiguration finished
+BoardTransitions::Reconfigure finished
+
+Configured:
+ 1 = Start
+ 2 = Reconfigure
+ 0 = Halt
+===>>
+

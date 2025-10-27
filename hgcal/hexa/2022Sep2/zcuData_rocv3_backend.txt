@@ -1,0 +1,303 @@
+[agrummer@zcufnal]$ ./uhal_string.py --fifo
+     link 0      link 1  link 2      link 3    link 4  link 5
+---  --------  --------  --------  --------  --------  --------
+  0  dff0789f         0  acccccc0         0         0  ecdcffcf
+  1  ffd8381f         0  acccccc0         0         0  fcfcffcd
+  2  fff8189f         0  acccccc0         0         0  ccdcddc1
+  3  ffd0189f         0  acccccc0         0         0  ccdcffc7
+  4  fff8189f         0  acccccc0         0         0  ec9cffcd
+  5  dff0389f         0  acccccc0         0         0  ccdcffef
+  6  fff0188f         0  acccccc0         0         0  ecffffc5
+  7  ffd0189f         0  acccccc0         0         0  fc9cfdcd
+  8  dff8188f         0  acccccc0         0         0  fcfcffcf
+  9  ffd8189f         0  acccccc0         0         0  ccfcffcd
+ 10  fff8388f         0  acccccc0         0         0  fcdcdccf
+ 11  fff838df         0  acccccc0         0         0  dcacffcf
+ 12  fff0188f         0  acccccc0         0         0  fcdcffcf
+ 13  fff0189f         0  acccccc0         0         0  fc5cdfcf
+ 14  fff0081f         0  acccccc0         0         0  ecdcffcf
+ 15  dff878df         0  acccccc0         0         0  fcfcffcf
+ 16  dff8189f         0  acccccc0         0         0  fc8fc8fc
+ 17  ffd0589f         0  acccccc0         0         0  dfcddfcd
+ 18  fff0181f         0  acccccc0         0         0  fccdffcf
+ 19  fff0189f         0  acccccc0         0         0  fce8dfef
+ 20  ffd0189f         0  acccccc0         0         0  dcdcffcf
+ 21  fff8989f         0  acccccc0         0         0  fcdcffcf
+ 22  ffd8189f         0  acccccc0         0         0  fefcffef
+ 23  fff8189f         0  acccccc0         0         0  fc7cffc7
+ 24  fff0189f         0  acccccc0         0         0  fcfcffcf
+ 25  fff8189f         0  acccccc0         0         0  ecdcfdcf
+ 26  dff8189f         0  acccccc0         0         0  cc7cffcf
+ 27  dfd0189f         0  acccccc0         0         0  fcfeffcf
+ 28  ffd838df         0  acccccc0         0         0  eefcffc7
+ 29  fff0189f         0  acccccc0         0         0  ecdcffcf
+ 30  fff0189f         0  acccccc0         0         0  cc9cffcf
+ 31  fff0189f         0  acccccc0         0         0  ecdcffef
+ 32  fff0189f         0  acccccc0         0         0  fcfcffcf
+ 33  ffd0f88f         0  acccccc0         0         0  fe9cffcf
+ 34  fff038df         0  acccccc0         0         0  fcfcffcd
+ 35  fff0189f         0  acccccc0         0         0  ecdcffcf
+ 36  ffd8188f         0  acccccc0         0         0  fe7cffcf
+ 37  fff8389f         0  acccccc0         0         0  dcecffcf
+ 38  fff8188f         0  acccccc0         0         0  dcdc7fcf
+ 39  ffd0389f         0  acccccc0         0         0  ecdcffcf
+ 40  ffd8189f         0  acccccc0         0         0  eeccfdc7
+ 41  dff0189f         0  acccccc0         0         0  fefcffcd
+ 42  fff0189f         0  acccccc0         0         0  e8dcffcf
+ 43  fff818df         0  acccccc0         0         0  ccdcffc1
+ 44  ffd8189f         0  acccccc0         0         0  fcfcdfcf
+ 45  fff0389f         0  acccccc0         0         0  fc5cffef
+ 46  dff8389f         0  acccccc0         0         0  fc5cffcd
+ 47  fff8189f         0  acccccc0         0         0  ecfcffc1
+ 48  fff818df         0  acccccc0         0         0  fcd8dfcd
+ 49  fff0389f         0  acccccc0         0         0  c8ccddc9
+ 50  ffd8389f         0  acccccc0         0         0  ccdcffc3
+ 51  fff8389f         0  acccccc0         0         0  cc9cdfcf
+ 52  fff818df         0  acccccc0         0         0  fc8cffcd
+ 53  fff0189f         0  acccccc0         0         0  ecc8ffcf
+ 54  dff8189f         0  acccccc0         0         0  dcfcfdc7
+ 55  fff8989f         0  acccccc0         0         0  fc1cfd85
+ 56  ffd8189f         0  acccccc0         0         0  8c3cdcc1
+ 57  fff0189f         0  acccccc0         0         0  cc0cdfcf
+ 58  fff0188f         0  acccccc0         0         0  fc8cffc3
+ 59  fff8381f         0  acccccc0         0         0  dcdcffcd
+ 60  dff818df         0  acccccc0         0         0  ee7cffcf
+ 61  fff8189f         0  acccccc0         0         0  ecdcffcf
+ 62  ffd0789f         0  acccccc0         0         0  ccdcddcd
+ 63  ffd8188f         0  acccccc0         0         0  ffccffcf
+ 64  fff018df         0  acccccc0         0         0  fefcffff
+ 65  fff8188f         0  acccccc0         0         0  feccffcf
+ 66  fff8189f         0  acccccc0         0         0  fdffffef
+ 67  fff8b8df         0  acccccc0         0         0  fffcffcf
+ 68  fff8189f         0  acccccc0         0         0  fffcffcf
+ 69  fff018df         0  acccccc0         0         0  fe9cffcf
+ 70  fff8f89f         0  acccccc0         0         0  ecfeffcf
+ 71  fff8189f         0  acccccc0         0         0  fedcffcf
+ 72  fff8389f         0  acccccc0         0         0  feffffff
+ 73  fff8f89f         0  acccccc0         0         0  fdfdffef
+ 74  fff838df         0  acccccc0         0         0  fefcffff
+ 75  fff818bf         0  c9d40000         0         0  fedeffcf
+ 76  fff030df         0  4294000          0         0  fefeffcf
+ 77  fff0789f         0  adc48c0c         0         0  fcfcffef
+ 78  fff199df         0  15200000         0         0  fefcffcf
+ 79  fff0991f         0  11500000         0         0  ffffffcf
+ 80  fff0d91f         0  11b00000         0         0  ffffffff
+ 81  fff0993f         0  11900000         0         0  fffcffcf
+ 82  fff0993f         0  11d00000         0         0  ffffffef
+ 83  fff1f93f         0  13000000         0         0  ffffffef
+ 84  fff0193f         0  11100000         0         0  ffffffcf
+ 85  fff0f93f         0  13d00000         0         0  fefcffef
+ 86  fff0b93f         0  13c00000         0         0  fcffffff
+ 87  fff0f91f         0  10a00000         0         0  fe9cffef
+ 88  fff1b17f         0  12100000         0         0  fcfdffcf
+ 89  fff1f97f         0  13900000         0         0  ecdcffcf
+ 90  fff0993f         0  13300000         0         0  feeeffcf
+ 91  fff0f9df         0  14b00000         0         0  fcdfffcf
+ 92  fff0b97f         0  13900000         0         0  ccdcdfcf
+ 93  fff0d91f         0  10d00000         0         0  fefcffef
+ 94  fff0f93f         0  11800000         0         0  dddcffcf
+ 95  fff099bf         0  13f00000         0         0  ecfcffef
+ 96  fff0993f         0  12800000         0         0  fcdfffcf
+ 97  fff0991f         0  10c00000         0         0  fcfcffcf
+ 98  fff1d9df         0  14900000         0         0  fcfcffcf
+ 99  fff0f93f         0  12b00000         0         0  fcfcffef
+100  fff0b93f         0  13300000         0         0  feffffff
+101  fff1983f         0  11d00000         0         0  fedcffdf
+102  fff1f93f         0  13e00000         0         0  feffffef
+103  fff199ff         0  13100000         0         0  fcfcffef
+104  fff1f93f         0  13800000         0         0  fcfcffff
+105  fff1b93f         0  13900000         0         0  fcfcffcf
+106  fff1b93f         0  11500000         0         0  fefcffef
+107  fff0993f         0  12500000         0         0  fcfcffcf
+108  fff1d95f         0  14e00000         0         0  fcddffcf
+109  fff0f93f         0  12600000         0         0  ecfcffcd
+110  fff0b91f         0  10f00000         0         0  feddffcf
+111  fff1991f         0  10500000         0         0  ec9dffcf
+112  fff0b93f         0  11c00000         0         0  eefcffcf
+113  fff0993f         0  13b00000         0         0  fedcdfcf
+114  fff0f93f         0  12f00000         0         0  de9cffcf
+115  fff1981f         0  f950729d         0         0  ccfcdfcb
+116  fff1989f         0  adc48c1c         0         0  dc08ffcf
+117  fff1992f         0  12300000         0         0  fcfcffcd
+118  fff1b93f         0  12f00000         0         0  ecdcffcf
+119  fff0992f         0  12200000         0         0  ececffcf
+120  fff0b15f         0  14600000         0         0  ccfcffcf
+121  fff1d92f         0  12400000         0         0  fc5cffcf
+122  fff0193f         0  13f00000         0         0  ccfcffcf
+123  fff0d9df         0  15100000         0         0  fe7cffcd
+124  fff0993f         0  13300000         0         0  fefdffcf
+125  fff0993f         0  11900000         0         0  fefcffcf
+126  fff0b81f         0  14400000         0         0  fcdcffc7
+127  fff0997f         0  13300000         0         0  fe1cfdcf
+128  fff0f91f         0  14e00000         0         0  fefcffcf
+129  fff0993f         0  11a00000         0         0  ccdcffcf
+130  fff0993f         0  11500000         0         0  ecccffcf
+131  fff1f9df         0  14300000         0         0  eefcffcf
+132  fff0193f         0  12100000         0         0  fcfddfc7
+133  fff0193f         0  12900000         0         0  efffffcf
+134  fff1993f         0  12700000         0         0  fffcffff
+135  fff0b93f         0  13d00000         0         0  fefcffcf
+136  fff0993f         0  13f00000         0         0  fcfcffef
+137  fff0987f         0  12900000         0         0  fcfcdfcf
+138  fff0113f         0  12500000         0         0  fc7cffcd
+139  fff0b12f         0  12700000         0         0  ee1cdfc5
+140  fff0b96f         0  12100000         0         0  ec9cdfc7
+141  fff0d93f         0  11b00000         0         0  dc7cdfc7
+142  fff0912f         0  12500000         0         0  fcdcfdcd
+143  fff0193f         0  11700000         0         0  ecdcdfcd
+144  fff0990f         0  12700000         0         0  cc58dd87
+145  fff0983f         0  13400000         0         0  ccccffcb
+146  fff0d93f         0  12900000         0         0  ce00dfcd
+147  fff0993f         0  12600000         0         0  ec8c5fcd
+148  fff0101f         0  14e00000         0         0  ecdcffcf
+149  fff0983f         0  12900000         0         0  ec5cddc9
+150  fff0991f         0  10e00000         0         0  dcccffc7
+151  fff0187f         0  13800000         0         0  fc9cffcf
+152  fff0184f         0  16000000         0         0  ec9cffc9
+153  fff0183f         0  13c00000         0         0  ccccfdc7
+154  fff051cf         0  1ebd8a10         0         0  fc9cffcf
+155  fff1389f         0  adc48c2c         0         0  fcdcffc7
+156  fff0893f         0  12800000         0         0  eedcdfcf
+157  fff0991f         0  10a00000         0         0  fcccffcd
+158  fff038ff         0  fd00000          0         0  ccdcffcd
+159  fff0193f         0  13100000         0         0  dcccdfc7
+160  fff0b91f         0  10c00000         0         0  ecdcfdcf
+161  fff0993f         0  11a00000         0         0  ecdcffcd
+162  fff0b90f         0  10300000         0         0  ccdcdfcf
+163  fff1991f         0  10800000         0         0  ecfcffc5
+164  fff0993f         0  13300000         0         0  fc9cfd8f
+165  fff0183f         0  13100000         0         0  fedcffcf
+166  fff0993f         0  11d00000         0         0  fc3cffcf
+167  fff0113f         0  12f00000         0         0  ecdcffef
+168  fff0991f         0  10000000         0         0  fefcffcf
+169  fff0993f         0  11600000         0         0  ffffffcd
+170  fff0193f         0  12800000         0         0  fcfcffcf
+171  fff0911f         0  10300000         0         0  ccdcffff
+172  fff0d91f         0  11f00000         0         0  deccffc5
+173  fff1193f         0  12c00000         0         0  dcdcdfed
+174  fff1193f         0  10f00000         0         0  ccfcdfc7
+175  fff0b9ff         0  ff00000          0         0  ecccfdc7
+176  fff1d91f         0  11e00000         0         0  fcdcffcf
+177  fff018ef         0  f600000          0         0  fcdcffc7
+178  fff0313f         0  11600000         0         0  ec9cffcf
+179  fff0102f         0  12f00000         0         0  ccccfdcf
+180  fff0193f         0  13800000         0         0  f81cfecd
+181  fff0113f         0  13200000         0         0  cc0cddc1
+182  fff0902f         0  12400000         0         0  cc58dd87
+183  fff0112f         0  12700000         0         0  cc8cdfc1
+184  fff0911f         0  11700000         0         0  cc8cffcf
+185  fff010df         0  fd00000          0         0  cc1cffcd
+186  fff0103f         0  12100000         0         0  ec0cffcd
+187  fff0f1ff         0  ff00000          0         0  cccc5fc1
+188  fff1903f         0  12e00000         0         0  ecbcdcc7
+189  fff0189f         0  300000           0         0  cc8cdfcd
+190  fff0991f         0  15300000         0         0  dc9cdfc5
+191  fff0d81f         0  100000           0         0  c8ccd8c7
+192  fff0113f         0  11200000         0         0  ecfc5fcd
+193  fff0181f         0  5061c5c8         0         0  cccdffcf
+194  fff0989f         0  adc48c3c         0         0  ecccdfcf
+195  fff1895f         0  14200000         0         0  ee7cffcd
+196  fff0191f         0  10d00000         0         0  cc9cdccf
+197  fff0993f         0  12c00000         0         0  ceccffc1
+198  fff0191f         0  11500000         0         0  fcfcfc8d
+199  fff0f97f         0  13900000         0         0  dcdc7fc7
+200  fff0b9df         0  14500000         0         0  ccccdfcf
+201  fff1993f         0  13900000         0         0  ecdcdfcf
+202  fff0197f         0  13900000         0         0  cefcffcf
+203  fff199df         0  15100000         0         0  fcccffcf
+204  fff0b93f         0  12f00000         0         0  fcdcffcf
+205  fff0993f         0  12e00000         0         0  fcdcdfcf
+206  fff0193f         0  11900000         0         0  dc9cffcf
+207  fff0b93f         0  12500000         0         0  cc9cfccd
+208  fff1b93f         0  12b00000         0         0  ecfcdec1
+209  fff1b91f         0  14b00000         0         0  ccfcdfcd
+210  fff0993f         0  11b00000         0         0  ecdcdfcd
+211  fff0997f         0  12800000         0         0  ecdcffcf
+212  fff0993f         0  12b00000         0         0  fcfcfdcf
+213  fff0b8bf         0  100000           0         0  fc8c5dcf
+214  fff0f93f         0  11f00000         0         0  cc5cdfcd
+215  fff1991f         0  10e00000         0         0  ecfcdfc7
+216  fff1993f         0  11400000         0         0  fcdcdfcf
+217  fff0b93f         0  12600000         0         0  dcccdcc7
+218  fff0d91f         0  10a00000         0         0  ecfcffcf
+219  fff1b9bf         0  13300000         0         0  cffcffcf
+220  fff1983f         0  13900000         0         0  fedcdfcf
+221  fff1993f         0  11f00000         0         0  fcdcfdcf
+222  fff0393f         0  12700000         0         0  fcfcffcf
+223  fff0b93f         0  12500000         0         0  ecdcdfef
+224  fff0192f         0  12700000         0         0  ccdcffcf
+225  fff0993f         0  12b00000         0         0  ccfcfccd
+226  fff1991f         0  10d00000         0         0  fcdeffcf
+227  fff0993f         0  13600000         0         0  fcfdffcd
+228  fff0b83f         0  13400000         0         0  ecfcffcb
+229  fff1991f         0  10f00000         0         0  dcdc5fcf
+230  fff0192f         0  12100000         0         0  fcecfccd
+231  fff0993f         0  11b00000         0         0  fcdcffc5
+232  fff1fc9f         0  680a7599         0         0  cc9cffcd
+233  fff1189f         0  adc48c4c         0         0  ecfcffed
+234  ffd0917f         0  13000000         0         0  fedcffcf
+235  fff0b91f         0  14200000         0         0  fefcffcf
+236  fff0383f         0  13100000         0         0  fcfcffcf
+237  fff1b99f         0  15b00000         0         0  dcfcffcf
+238  fff0997f         0  12500000         0         0  fffcffcf
+239  fff0b85f         0  14800000         0         0  fefcffcf
+240  fff1f91f         0  14600000         0         0  fcfcffcf
+241  fff1f97f         0  13900000         0         0  fcddffcf
+242  fff0993f         0  13500000         0         0  fcffffff
+243  fff0f9df         0  14100000         0         0  fcdcffcf
+244  fff0997f         0  12800000         0         0  fcfcffcd
+245  fff1f9df         0  14000000         0         0  fcfdffcf
+246  fff0b93f         0  13f00000         0         0  dedcffcf
+247  fff1f93f         0  12600000         0         0  dccfffcf
+248  fff1b94f         0  14200000         0         0  fcfcffcf
+249  fff0b94f         0  16700000         0         0  dffcffef
+250  fff039df         0  15000000         0         0  fefdfdcf
+251  fff0d93f         0  11d00000         0         0  dfdcffcf
+252  fff0993f         0  13a00000         0         0  fcdcffc7
+253  fff0f83f         0  13900000         0         0  dcfcffcf
+254  fff0f91f         0  15500000         0         0  fcfcffcf
+255  fff099ff         0  12100000         0         0  ccfcffcf
+256  fff0f93f         0  12700000         0         0  fefcffcf
+257  fff1993f         0  13300000         0         0  fcdcffcf
+258  fff0b9df         0  15500000         0         0  dcfcffcf
+259  fff0993f         0  13700000         0         0  fcdcffcf
+260  fff1993f         0  13700000         0         0  ecddffef
+261  fff0d93f         0  12b00000         0         0  ccdcffcf
+262  fff0991f         0  10100000         0         0  fe7cffcf
+263  fff1991f         0  14d00000         0         0  fc9dffc7
+264  fff0993f         0  12a00000         0         0  eefdffcf
+265  fff1b1df         0  14500000         0         0  ecdcffcf
+266  fff0997f         0  13e00000         0         0  fcfcffcf
+267  fff0197f         0  12900000         0         0  ecdcffcf
+268  fff0b93f         0  13900000         0         0  d8ccffcf
+269  fff0993f         0  11300000         0         0  d85cfdcf
+270  fff0b83f         0  11500000         0         0  feffffcf
+271  fff0b97f         0  179c16c8         0         0  fcbcdfcf
+272  fff1989f         0  adc48c5c         0         0  ecdcffcf
+273  fff191cf         0  16100000         0         0  feffffef
+274  fff0b91f         0  15200000         0         0  fffcffef
+275  fff0912f         0  12200000         0         0  feffffcf
+276  fff0913f         0  12f00000         0         0  fcdcffcf
+277  fff0399f         0  14100000         0         0  fcfcffcf
+278  fff0d81f         0  100000           0         0  fefcffcf
+279  fff0b9cf         0  14700000         0         0  fcddffcf
+280  fff0392f         0  12200000         0         0  fedcffcf
+281  fff0314f         0  16400000         0         0  ffdcffcf
+282  fff0915f         0  14900000         0         0  fcfcffcf
+283  fff0993f         0  12f00000         0         0  fcdcffcf
+284  fff0993f         0  12f00000         0         0  ecccffcf
+285  fff0993f         0  13000000         0         0  ecdcffcd
+286  fff0993f         0  13200000         0         0  ec7cffcf
+287  fff0999f         0  14f00000         0         0  ec9cdfcd
+288  fff0f99f         0  14700000         0         0  defcffcf
+289  fff0183f         0  12c00000         0         0  fcfcffcd
+290  fff0311f         0  14900000         0         0  fcfcffcf
+291  fff0193f         0  13500000         0         0  ecfcffcf
+292  fff1993f         0  12e00000         0         0  ecfeffcf
+293  fff1f97f         0  13f00000         0         0  fc7cffcd
+294  fff0f99f         0  14700000       200         0  ccfcffe7
+295  fff0999f         0  14000000         0         0  ec9cffcf
+296  fff0993f         0  13600000         0         0  fefeffcf
+297  fff0996f         0  12300000         0         0  ec9cffef
+298  fff0b95f         0  14e00000         0         0  fdfcffef
+299  fff1f97f         0  13500000         0         0  fcccffcf

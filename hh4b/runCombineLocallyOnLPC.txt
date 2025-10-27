@@ -1,0 +1,20 @@
+python prepareModels/prepareHistos.py --config prepareModels/config/LimitsConfig_$1.cfg --signal $n
+python prepareModels/prepareHistos.py --config prepareModels/config/LimitsConfig_2016.cfg --signal sig_NMSSM_bbbb_MX_600_MY_400
+
+python prepareModels/makeDatacardsAndWorkspaces.py --config prepareModels/config/LimitsConfig_$1.cfg  --no-comb --signal  sig_NMSSM_bbbb_MX_600_MY_400 --bkgNorm 
+python prepareModels/makeDatacardsAndWorkspaces.py --config prepareModels/config/LimitsConfig_2016.cfg  --no-comb --signal sig_NMSSM_bbbb_MX_600_MY_400 --bkgNorm 
+
+combine <workspaceName> -M AsymptoticLimits --rMax 30 [ --run blind ] --X-rtd  MINIMIZER_analytic --X-rtd  FAST_VERTICAL_MORPH [--freezeParameters allConstrainedNuisances]
+freeze parameters is for statOnly
+combine ...root -M AsymptoticLimits --rMax 30 --X-rtd  MINIMIZER_analytic --X-rtd  FAST_VERTICAL_MORPH
+
+bkgNormPerMassGroupDictionaty = {
+  "2016" : { "0" : "1.010", "1" :  "1.010", "2" :  "1.010", "3" :  "1.010", "4" :  "1.031", "none" : "1.010"},
+  "2017" : { "0" : "1.010", "1" :  "1.010", "2" :  "1.010", "3" :  "1.010", "4" :  "1.010", "none" : "1.010"},
+  "2018" : { "0" : "1.010", "1" :  "1.010", "2" :  "1.010", "3" :  "1.015", "4" :  "1.024", "none" : "1.013"},
+}
+
+combineCards.py c2016=<datacard2016> c2017=<datacard2017> c2018=<datacard2016> > <datacardRunII>
+
+text2workspace.py datacardRunII
+

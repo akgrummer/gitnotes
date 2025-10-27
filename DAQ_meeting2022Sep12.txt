@@ -1,0 +1,49 @@
+1. Burst read/write the best way?
+2. ROC config repo - is Alex's ready? should I try to use this to avoid bugs? 
+3. FIFO readout - fastest way possible. readblock of FIFO is the way or is there something eles?
+    - question for Jon, Joe, or Arnaud?
+    - DAQ manager?
+
+- Jon - why does data only go through one time?
+- I have 41 words in the new data, but 39 are passed out of the input links
+
+bit errors and eye widths are much better
+rocV3 configured
+send rocV3 fast commands
+can configure pEconD, align links,
+collect data on l1a sent from BE
+    - on input links to pEconD and
+    - on back end 
+
+align link in py script
+alignlink.py
+aquire data
+status of the pll is on one of the registers
+i2c something address
+
+f command error count
+255
+lock count is always 1
+direct address registers
+swap polarity of fast command
+links
+align links
+debug prints lock rams
+
+
+enginev3 / tileboard stuff
+functionality 
+align links locally then send globally
+talk to many servers
+
+back channel of each tileboard as well
+
+align links locally, then send them globally
+
+understand the internal external clk switching
+
+
+clk and fast command is down
+
+adc, toa
+

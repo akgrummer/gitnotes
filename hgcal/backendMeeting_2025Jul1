@@ -1,0 +1,10 @@
+##
+
+IPbus has to be upgraded all data taking software will be updated...
+will also need another special emp-toolbox and hgc-toolbox
+
+backpressure issue in the firmware
+
+DPG having trouble reading out empty captureblocks
+Martim - will be difficult to handle.
+Can configure a capture block to receive no elinks - but still sees a backend header with no data.

@@ -1,0 +1,137 @@
+Running the hexaboards:
+from
+ssh hcalpro@cmsnghcal01
+
+
+login to zcu:
+ssh HGCAL_dev@192.168.1.47
+(need to wait a couple minutes after turnon)
+
+from this directory:
+/home/jmmans/fw
+load the firmware:
+./do_load.sh single_engine_fe204_be522.bit.xz
+./do_load.sh +the latest firmware
+
+then from /home/pastika
+run . setup.sh commands which include:
+export LD_LIBRARY_PATH=/opt/cactus/lib
+export HGC_FW_BASE=~jmmans/src
+
+you can do
+echo $HGC_FW_BASE/
+to check that it works, and get:
+/home/jmmans/src/
+
+then from:
+/home/pastika/hgc-enginev1/
+run ./zcu_multitool.py --status
+./zcu_multitool.py --resetlink
+
+the reference clock doesn't read 320 so:
+"Ref:"
+./zcu_multitool.py --setrefclk
+
+now on the Raspberrypi set up the lpgbt:
+ssh HGCAL_dev@192.168.1.94
+in ~/sw/
+./setup_lpgbt.py
+you can run 
+./setup_lpgbt.py --help
+
+ok - followed the directions to setup from Jeremy's coldstart cookbook
+./setup_lpgbt.py
+./lpgbt_status.py
+--> check if 1c7 says '12'
+./setup_lpgbt.py --linktrick
+
+then tried to run ./wagoneer on from zcu - /home/pastika/hgc-enginev1
+but have to setup the environent first:
+cd gbt-sca-sw/
+. env.sh
+
+./wagoneer_sca.py
+replies:
+Working with wagons with SCA S/N 29416 (0x72e8) and 29366 (0x72b6)
+works after setting:
+./setup_lpgbt.py --daqonly
+
+
+then logged in to the interposer and check the clock rates:
+
+ssh HGCAL_dev@192.168.1.91
+or .95
+and these could theoretically change - so should probably set the MAC addresses
+they should lie between 90 and 99?
+
+from mylittledt/
+sudo make interposer
+
+from /home/HGCAL_dev/source/test
+sudo ./interposer
+sudo ./clkRates
+can also run sudo ./clkSource
+
+then from the home:
+/home/HGCAL_dev
+run 
+sudo ./runLC.sh
+
+then 
+block0
+st
+al
+st
+length 64
+st
+acq
+st
+dump
+
+
+
+  Link capture block 0
+  Number of links:          6
+  Block ram depth per link: 4096
+-- 2 links per HGCROC
+
+
+  Link capture block 1
+  Number of links:          2
+  Block ram depth per link: 1024
+-- ECON-D emulator - concatenates the links from the HGCROCs down to 2
+
+  Link capture block 2
+  Number of links:          12
+  Block ram depth per link: 1024
+-- for the trigger
+4 links per HGCROC - (for low density boards)
+
+
+  Link capture block 3
+  Number of links:          4
+  Block ram depth per link: 1024
+-- ECON-T concatinates the trigger links down to 4
+
+
+these are outputs from the ./clkSource file in source/test in the interposer:
+1 means things will not be reset
+0 means they will be
+           RSTB:  1 1 1
+       RSTB I2C:  1 1 1 -- means reset the I2C communication
+    Resync load:  0 0 0
+     Pwr Enable:  1 1 1 -- means DCDC power is good - 
+       Pwr good:  1 0 0
+        ROC err:  0 0 0
+   External Clk:  1 -- means external clock is being read (ie from zcu102)
+     fw version:          6
+    pattern spy:   70707070
+      OrbitSync:    2300609
+            OCR:    1591351
+          Calib:     154857
+       CalibL1A:     344581
+      Linkreset:    5941314
+            L1A:     641679
+      FC errors:  215631569
+
+

@@ -1,0 +1,147 @@
+- Aidan (FNAL):
+    - working with Jon on 8 engine design. Currenly 6 engines fit in FPGA resource budget. Will consider removing unnessecary functionality.
+    - Cold tests to be continued this week. Need to add hexacontroller RTD to tests
+    
+
+
+Stage 1 fw working 
+communication to GBTSCA
+ROC is connecting to clock
+Then things 
+
+Mini DAQ - Alp
+not too o
+
+Arnaud
+will use meeting DAQ- FE 
+
+link to what is discussed in last Friday.
+
+hexacontroller - what is the plan
+two meetings in the past two weeks.
+Kria based hexacontroller. Still waiting on the PCBs
+when we have them in hand.
+DAQ - we have a few of them.
+populate 20 modules not yet - 
+we have 2-3 
+electrical tests. What was done at CERN.
+Assembly process worked. 
+Loop back test with SFPs, distributing them
+who gets how many in the first batch. who pays what and how.
+when can we sell them? Then we can produce more.
+
+components for 20 modules
+50 pcbs.
+
+~139 krias total
+needed without any spares.
+waiting on the PCBs. converters DCDC = 2 in hand.
+Start the testing process on them
+
+KIT - HGCal week
+Adapter betwwen VLDB+ 
+no Econs
+tile boards - enough to excercise slow and fast control
+GBTSCA working quite nicely.
+Fast commands in STage one FW from Raghu
+GBTSCA
+ROC is locking to the Fast clock 
+tileboard with Serenity connection working
+Stablity issue - link issues. Reading out the buffers. Unlocking.
+E-links.
+ROC from I2C
+Milos - input similar to what 
+Attenuate the optical power in the downlink for the recovered clock in the front end to be stable.
+pull out the connectors a bit.
+Initial tests did not help.
+fibers are clean -
+maybe need to add an attenuator.
+
+milos: jist of the system works in beam test
+dropped data. 
+Arnaud - error rate was 10^-10
+25% errors for Fabian - also when talk directly to the LPGbt
+GBTSCA via EC port and I2C
+different VTRX
+also with lpgbt
+serenity
+mechanic to repeat the transaction
+
+
+Milos- many points of failure. Don't try to reach furthest chip the soonest. 
+lpGBT first
+optical scope clk and probe points. Splitter  - 
+Jan Troska pulled the fiber out...
+splitters are used for attenuating
+
+VTRX saturates when exposed to too high optical power -
+out of Spec?? Firefly has some power 
+Not a problem of VTRX to Firefly
+dont see this ussue on the trigger path
+VTRX+ has enough power to communicator - but not the problem here.
+
+attenuator in series. Not connecting to 0db atto
+Jan's lab - test system - different but still firefly to vtrx
+
+on the ZCU there is not a problem.
+on the ZCU the 10 G was less prominent
+
+Milos had a presentation at BE meeting last week on GB links
+Fabian to check on which Firefly is being used at KIT
+Fixed alternators in the lab??
+Milos ordered a dozen of these. Should arrive in 2 weeks. Currently solved with splitters.
+1.05 
+
+
+CERN - Martim, 
+consolidating MiniDAQ 
+debug and non-debug branches.
+FW developed by stavros update to new designs.
+Slow control 
+Status bits on lpGBT side
+no reset at beginning of I2C transaction
+when you start a new one
+poll the status register
+failed transaction - 
+
+Train with 6 engines working.
+Almost have data going from Front end to backend
+
+One of the 12 link missing...
+Will try to acquire full pedestal data.
+For the missing elink
+Then 
+
+Milos - testing each of the interfaces what adds to the overall error rate. 
+Optical power issue is probably the most severe issue.
+
+LpGBT uplink
+Fast control stream with that fix maybe we have solved many issues.
+ECON D interface 
+phase trianing is used
+ROC to Econ interface.
+
+ROOT file - 
+ADC count
+
+
+Jai hoa - made progress on SWAMP
+
+
+Jon - 
+ECON mezzanine testing - QA testing
+small test stand 
+2 ECON D and 2 ECONT asics!!
+no CM
+issue on the board by board 
+2 pins on the Econ D that has to be lifted.
+Produced but not assembled
+Fix to the design - production version will not need this 
+VDB pins
+earlier iteration of the pinnout - they were grounded in the schematic - when moved to VDB - the ground was not removed CMs.
+
+Single ROC tester addapted to ZCU102 system for Omega - 
+Request from Rajdeep - not heard taht it is in use.
+
+
+

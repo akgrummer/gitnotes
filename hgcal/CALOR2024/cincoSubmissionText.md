@@ -1,0 +1,1 @@
+Self-nomination. I would be very happy to give this talk on material closely related to my work. I am helping developing readout for system tests in preparation for HGCAL Cassette production at FNAL. I've been a postdoc on CMS for 2.5 years. 

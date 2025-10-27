@@ -1,0 +1,52 @@
+LV0a page
+- special log in
+- 01476529  014765296
+- cms_proxy.pac file is not sorkign
+- that might work but...
+instead use:
+- ssh -D 7333 snorberg@cmsusr -o "proxycommand ssh snorberg@lxplus.cern.ch nc %h %p" 
+number on the fermi computer 6666
+number needs to be unique for the remote machine (won't work if someone else is already using the number)
+- 
+Bookmars 
+watch the fish on the HCAL LV0A
+shifts user name 
+toppro
+the password is the same as username
+
+to open the LV0A page -
+don't generally create
+use ATTACH only
+
+Locked message can be controlled with the unlock/lock button
+
+FED & TTS
+FED - pixel and strip 
+each sub system has a front end detector - 
+ES is part of ECAL
+pre-shower
+
+FED - TTS: how to control taking in and out subsystems from the run.
+ - Pixel, tracker, muon systems, DAQ, etc
+
+check marks should both marked  - FED and tts are controled
+
+colission menuse
+backup collision menu is in the manual mode
+beam splash 
+in manual mode there will be drop down for each subsystem - need to cross check this with the shift news page
+
+Red recycle, green recycle
+
+
+Start run - does automatic recycle and then starts the run
+- There will be grey "system not usable message" BUT the individual systems will be recycling.
+
+Manual mode start - do TCDS first! or TRG first
+
+
+CMS online - check that the runs are transfering to tier 0
+FEDs in run page
+ need proxy - LV0A (main apge)
+
+

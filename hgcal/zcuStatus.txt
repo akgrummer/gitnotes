@@ -1,0 +1,21 @@
+[agrummer@zcufnal]$ ./zcu_multitool.py --status
+ Back FW 0000  Backend Status = 7173701b
+ Errors =     6   Unlocks =    0  RX Polarity = 3
+     100 MHz: 100.00000000 MHz
+         Ref: 320.64000000 MHz
+          TX: 320.64000000 MHz
+        TX40: 40.08000000 MHz
+         RX0: 320.64000000 MHz
+         RX1: 320.64000000 MHz
+         RX2: 320.64000000 MHz
+      RX0-DV: 40.08000000 MHz
+      RX1-DV: 40.08000000 MHz
+      RX2-DV: 40.08000000 MHz
+        ERR0: 0
+        ERR1: 0
+        ERR2: 0
+ Downlink modes:
+   EGROUP0: (0)          FastControl
+   EGROUP1: (0)          FastControl
+   EGROUP2: (0)          FastControl
+   EGROUP3: (0)          FastControl

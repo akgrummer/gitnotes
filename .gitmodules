@@ -1,0 +1,6 @@
+[submodule "Notes2023Jan"]
+	path = Notes2023Jan
+	url = git@github.com:akgrummer/Notes2023Jan.git
+[submodule "docs"]
+	path = docs
+	url = git@github.com:akgrummer/mydocs.git

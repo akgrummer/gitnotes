@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "9ac678e6d65133cb",
+    "type": "split",
+    "children": [
+      {
+        "id": "2004e5530f8822dd",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "hh4b/Untitled.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c177039c41c55e66",
+    "type": "split",
+    "children": [
+      {
+        "id": "0f7bd88bf5d91435",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "406caae92334611a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "4173959169fc0ae4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 271.5
+  },
+  "right": {
+    "id": "31df78dfb5f2b53d",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d36c8f8c500ec39",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4950670ddae50021",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "hh4b/Untitled.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "2004e5530f8822dd",
+  "lastOpenFiles": [
+    "hh4b/HH boosted - May 3.md",
+    "hgcal/Cassette SW.md",
+    "hgcal/Integration SW.md",
+    "Coffee Hour.md",
+    "hh4b/HH Workshop Oct 2022.md",
+    "hh4b/hh4bAnalysisNotes.md",
+    "Untitled.md",
+    "hgcal/Firmware repo.md",
+    "hh4b/UL Skimming.md",
+    "hh4b/Goals.md"
+  ]
+}

@@ -1,0 +1,225 @@
+# DAQ and FE Coordination
+
+Fabian:
+
+mother board pcbs
+no econs 
+prototyp of the chain
+might need to reoder a stensil
+
+News from Kivanc and Bora about Kria boards: https://indico.cern.ch/event/1370066/contributions/5761469/attachments/2781625/4852035/kria_testreults.pdf
+
+DESY:
+
+multimodule tester
+testers available for dasy
+5 kria mezzannines
+
+hexacontroller motherboards
+
+Jia-Hao
+merge swamp between two version
+v12
+pieces are all there
+library - old. 
+hex sw
+gbtsca included
+
+aiming for single tile module system
+functions with swamp ones.
+
+Andre: CERN
+miniserenity
+
+
+high tech global - low support for bsp pbs
+zyncs
+inclustra
+trenz
+
+serenity interface between two
+GTHs GTYs Axi 
+10GTYs
+SATA board
+cant boot linux - might be able to use jtag, but dont want to
+
+
+Arnaud:
+CPP swamp
+factor of 10 
+regmap
+10x faster at run time to compile regmap 
+info not in exported header files.
+
+Jeremy - don't put everything in header files
+
+interface code for ROC 
+.h file include for roc
+
+Train with 6 modules
+looking for reliable i2c situation.
+Matt Noy.
+Changing pull ups - not as stable as before
+looking at this with Matt
+250 ohm
+removed all pull ups except concentrator mezz and (engine?)
+increased engine resistance to match the original total resistance.
+
+Jeremy - look for scope traces
+some scope traces wasn't good
+pull down was working
+Andre - long lines
+if can't pull down
+termination is in the middle or the end - waveguide
+in a capacitor
+if failing at MHz check at kHz - if works at kHz not a termination issue
+
+Jeremy - would be good to add other engineers to the conversation
+
+Zoltan  - asked for summary of research on i2c from the beginning
+
+Milos shows pull ups with Econ Emulators
+Milos says this is a hard result to repeat
+Similar issues with v2 at FNAL and DESY
+
+Chiara
+- pedestal runs
+- reading the roc registers in a loop during pedestal aquisition
+- relative difference of noise
+- with and without i2c transactions
+some further checks relative difference in noise but not in pedestal
+noise does increase though
+LD modules 
+different thicknesses
+HD modules??
+Jeremy - is it chip or board related?
+how many transitions?
+600 of 1million pedestals?
+i2C is slower, would be interesting to 
+
+Milos
+Over the winter break, the BER measurements have entered O(1E-17) for the TPG path and are about to enter O(1E-16) for the DAQ path.
+more elinks on trigger path. Not always data on DAQ. 100kHz regular rate of L1As.
+Interesting to BER while irradiating.
+Unpack data
+Nadja - proposal to do irradiation at Charm facility. 2 week timeslots.
+type of backend.
+ready infrastruction.
+Schedule for 2024 is not set. request is made. 2 slots requested.
+
+
+Pawel
+stage of a single train. bldg. 27
+optimistically
+october - start setting up somthing DAQ like for cold houses at SX5
+multi-cassette tests.
+number of reasons - earlier date.
+CERN on ZCU in February - or maybe new board in April May.
+
+Zoltan
+- on the short term cannot move away from ZCU. 
+- is there interest
+- does CERN have modules for cassette testers
+Pawel
+- cassette pre-series modules are to be shipped.
+- DAQ and train testing - some copper and wagon get away from separation mismatch.
+- engine short of a system.
+Jeremy
+- are there optical connectors for the train.
+Zoltan
+- the rest of parts are not a waste.
+Pawel
+- lets discuss
+
+Stavros
+- stage 2 outputs
+- two engineers for the tracker team
+- merging 
+- simulation
+- resources are looking good
+- Thursday meeting reports
+- Run with Raghu Serenity and DTH
+- Dominique team
+- trying to take data - DTH was freezing
+- half packet
+- everything had to be reset
+- 200kHz
+- 200 TB of data
+- no issues.
+- feedback to Dominique
+- short test at higher rate
+- 750 kHz (nominal rate) PC giving back pressure
+- default sw for DTH not fast enough.
+- looking in to this.
+- issue is at 400kHz, but maybe somewhere between 200-300
+
+Martim
+- mini-serenity.
+- multi mini-daq readout to one s-link.
+Stavros - multi econ-Ds
+talk to alp?
+Martim is working on this - ongoing
+
+Bora - assembled kria boards.
+17 are operational!
+Boards will be distributed
+
+another batch of 30 boards in May will be distributed
+hex testing and econ testing
+mostly to get systems commissioned.
+start developement from core devs
+one to NTU
+India 
+need a cooling solution for KRIAs - doesn't come with kit.
+heat syncs in hand 
+part number.
+10 krias at CERN no cooling -  Avnet part.
+
+
+Jon
+I have to go to another meeting at 10:00.  I'm traveling to FNAL tomorrow for the ECON SEU tests on Saturday.  The ECON-T2-tester and ECON-D2-tester firmwares are ready.  The eight-engine firmware is debugged and in use by Aidan.
+
+
+P1v2 mounted on boards.
+Setup today.
+focusing on production testing
+prepared tests of chips as we get them. 
+scaled back
+Paula workign on partial concentra
+
+Minnesota - 
+Devin - HD engine!
+Wagon designs.
+preping requests
+LD fw - HD configurable.
+Motherboard side  - tileboard side
+Jeremy
+i2c relable to sca
+follow on with work for Fabian and Jao.
+SW stack neither EMP or Tileborad tester
+- would like to take pedestal data
+- instantiate script stack to take pedestals.
+- ROCs econd by pass
+
+mezz have a trace that needs to be cut
+new pcbs are being finalized 
+Nadja - 
+
+
+design flaw in current wingboard
+eng board - flex boards 
+power ground shorts.
+
+rotation and mirroring of connectors.
+ENG type testing
+at least 4 weeks.
+with cables are workign
+flex leads are not working
+11 d8 boards
+preseries production
+tile assembly. - cassettes don;t need yet, but maybe fnal can assemble
+wingboard tileboard
+Jeremy - 
+
+
+

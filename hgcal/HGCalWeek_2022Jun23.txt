@@ -1,0 +1,28 @@
+emulate the chip with mulitple module readtout
+or emulate the individual modules with final EconD:
+
+
+- select events in tails - and look at the wave forms!
+- try bigger PMTs from Jim Freeman
+- tube or base that was replaced.
+
+- bin on the amplitude of smaller PMT amplitude.
+
+write data every 10Hz
+from zcu to hardware
+
+monitoring data as they are coming 
+error counters
+event counters
+
+gui - checks registers and displays them
+make a dashboard - continuosly see what is going on
+adding and removing numbers from the gui - displaying numbers
+current value, input text box to write value
+bottom right have a button to write
+
+loop behind the scenes to constantly read registers
+link reset
+useful for cassette testing
+python gui 
+

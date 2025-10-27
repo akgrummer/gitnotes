@@ -1,0 +1,9 @@
+photek signal to nim 
+nim to ttl convertere (inverter)
+
+plot total charge
+scatter plot of the pulse heights
+time resolution vs pmt 1, or pmt 2, or (pmt1+pmt2)
+ratio of light yield BCF and Y11  
+
+

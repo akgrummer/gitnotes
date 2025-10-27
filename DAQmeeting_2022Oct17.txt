@@ -1,0 +1,7 @@
+FMC to carrier board adapter
+2 FMCs to 8 mezzanines
+what is the software stack to program the LDO
+- even to program all of the front end asics
+
+
+kria board, many links can be be passed through... not all trig links

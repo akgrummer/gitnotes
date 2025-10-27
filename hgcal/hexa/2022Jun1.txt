@@ -1,0 +1,80 @@
+hexa 91 (east 2)
+Econ D Out (Block 1)       link 0    link 1
+-----------------------  --------  --------
+link_enable                     1         1
+capture_mode_in                 0         0
+aquire_length                 500       500
+status.link_aligned             1         0
+link_aligned_count            128         0
+link_error_count                0         0
+walign_state                    0         3
+status.waiting_for_trig         0         0
+fifo_occupancy                500       500
+[agrummer@hexactr-91]$ ./uhal_string.py --fifo out
+     link 0    link 1
+---  --------  --------
+  0  acccccc0  feccccc0
+  1  acccccc0  feccccc0
+  2  acccccc0  feccccc0
+  3  acccccc0  feccccc0
+  4  acccccc0  feccccc0
+  5  acccccc0  feccccc0
+  6  acccccc0  feccccc0
+  7  acccccc0  feccccc0
+  8  acccccc0  feccccc0
+  9  acccccc0  feccccc0
+ 10  acccccc0  feccccc0
+
+hexa 95 (east 1)
+Econ D Out (Block 1)       link 0    link 1
+-----------------------  --------  --------
+link_enable                     1         1
+capture_mode_in                 0         0
+aquire_length                 500       500
+status.link_aligned             0         0
+link_aligned_count              0         0
+link_error_count                0         0
+walign_state                    3         3
+status.waiting_for_trig         0         0
+fifo_occupancy                500       500
+[agrummer@hexactr-95]$ ./uhal_string.py --fifo out
+     link 0    link 1
+---  --------  --------
+  0  acccc080  8cccc880
+  1  acccc080  8cccc880
+  2  acccc080  8cccc880
+  3  acccc080  8cccc880
+  4  acccc080  8cccc880
+  5  acccc080  8cccc880
+  6  acccc080  8cccc880
+  7  acccc080  8cccc880
+  8  acccc080  8cccc880
+  9  acccc080  8cccc880
+ 10  acccc080  8cccc880
+
+hexa 90 (west 1)
+Econ D Out (Block 1)       link 0    link 1
+-----------------------  --------  --------
+link_enable                     1         1
+capture_mode_in                 0         0
+aquire_length                 500       500
+status.link_aligned             0         0
+link_aligned_count              0         0
+link_error_count                0         0
+walign_state                    3         3
+status.waiting_for_trig         0         0
+fifo_occupancy                500       500
+[agrummer@hexactr-90]$ ./uhal_string.py --fifo out
+     link 0    link 1
+---  --------  --------
+  0  acccc080  dfdcc880
+  1  8cccc080  dfdcc880
+  2  8cccc080  dfdcc880
+  3  8cccc080  dfdcc880
+  4  acccc080  dfdcc880
+  5  8cccc080  dfdcc880
+  6  8cccc080  dfdcc880
+  7  8cccc080  dfdcc880
+  8  8cccc080  dfdcc880
+  9  8cccc080  dfdcc880
+ 10  8cccc080  dfdcc880

@@ -1,0 +1,26 @@
+on Aidan's mac - 
+
+5GS/s (not recalibrated)
+
+1channel saved:
+5000 events saved in 12 sec.
+pulse generator 500 Hz
+
+
+1channel saved:
+5000 events saved in 10 sec 
+pulse generator 50 kHz
+
+4 channel saved:
+5000 events saved in 12 sec.
+pulse generator 50 kHz
+
+- - - - - - - - - - 
+Jingyu's computer:
+
+2 GS/s (calibrated)
+
+4 channels
+5000 events saved in: 10.76 
+pulse generator 50kHz
+

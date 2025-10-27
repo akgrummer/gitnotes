@@ -1,0 +1,103 @@
+- TDC masked
+- FMC connector voltage
+- LVDS to TTL
+ - DRS4 oscilloscope
+
+ capture on the econ T and capture
+ trigger on the capture
+ align EconT P1 links using the  
+
+ pseudo EconD
+debug things
+trigger on the link capture
+use the aligner - align the ROC and EconT inputs
+
+got to sit with Arnaud, Stephano, Milos
+
+Reciever on EconT is serenity and DPG backend firmware
+EconT
+
+firmware
+L1A can also be sent out
+tileboard tester
+pins on the FPGA
+Jon Wilson - 
+Tileboard, tileboard testers
+I2C software using SWAMP with Alex, EconT, emulator, EconD emulator 4CG drive inputs, does have a link capture - EconD 
+
+sequence of fast commands
+Get submodule
+fast commands
+
+
+
+To take data - important to have periodic generators
+brian and charlie - at Minnisota
+send one register
+brian is working on the transport thing for the lpgbt
+
+
+sig/noise = 8 for 300 um thick sensors
+
+self tirggering
+common estimation
+common mode noise subtraction
+LDV3 module
+
+small scintillatore
+KCU
+
+can you self trigger
+
+continuous phase tracking is in the lpGBT and the EconT
+
+
+calibration and reencoding
+fast command polarity issue
+in the ROC the polarity of the fast command is wrong - the pll does not lock in the ROC
+link reset ROC-T is being 
+polarity of the ROC is probably flipped
+ROC and the econ probably get flippo
+Mat Noy - behind the fast command block
+expectation for this fast command reciever was wrong
+fast command receiver
+
+lock ECONT P1 with the ROC on a (reset ?)
+move the snapshot window
+parameter orb_sync_cnc_snapshot - how does it work?
+relative BX delay to the time the snapshot starts recording - relative to the BCR?
+BX3554 - roc t reset
+BX counter on BCR 3560 BX will have a counter of 1
+marker after 15
+
+snapshot on top of the orbit marker
+width of the snapshot window
+
+Arnaud
+scripts andrew robert?
+train - instantiate the right objects
+plan to continue developing the configuration....?
+Milos and Raghu
+hexacontroller software - needs to be better for the HD boards
+run it with trigger data
+
+finalize it and merge to the main branch
+bringing the HD to the same level as the LD
+update - software - when running the trigger data, needs 2 DAQ and 4 Trigger links
+some of the software needed to be updated
+
+ROCs with the new package.. new substrate
+4 boards with Endcap HGCROC - new package
+3/4 are working
+4th cannot be found on I2C
+tested the 3 working boards, noise and digital modulation is a bit smaller than previous version
+
+another mac
+need to asemble the boards
+chips on the trophy temperature and voltage
+2 ADC on the trphy v3 and used for calibrating injection and measure the thermal resistor on the hexaboard
+
+hammer the Prob DC, worry about the TDR? later
+ADCs have internal temperature sensors? on the trophy?
+one shot vs continuous
+

@@ -1,0 +1,29 @@
+introduce attenuation  - buy an attenuator
+bit error rate test
+
+representative of down stream errors
+
+aging of the transmitter
+
+- test of splice
+plug in trhoug the web?
+software whould read optical signal strength
+is signal strength poor?
+
+check optical attenuation
+otdr?
+machine injects optical 
+send a pulse, measure the reflection of the pulse
+QC step
+
+this set up works, this much margin
+
+absolute determination of the splice
+don't see a reflection at the time - timing measurement
+may reflect on vtrx
+4 ns?
+send pulses measure timeing
+
+what QC is this area responsible for?
+
+here are the summary of the QC items that we will perform

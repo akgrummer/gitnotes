@@ -1,0 +1,8 @@
+List of things to work on the mac:
+
+- how to take notes on Mac
+- change copy paste behavior in Vim
+- root default plotting
+    - add legend in TBrowser
+- window manager, amethist? 
+- 

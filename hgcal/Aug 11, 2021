@@ -1,0 +1,27 @@
+Aug 11, 2021
+Met with Jeff Berryhill this afternoon.
+- Sounds like some nice ideas coming from L1 trigger developement to create Particle Flow (PF) alogrithms that can be quickly (re-)programmed with FPGA firmware. 
+- Possibly interesting prospects for B physics 
+    - although I don't understand how you get better performance than the present configuration of the trigger
+    - Slides from Phil Harris (MIT) suggest the possibility of studying B to tau tau for the first time at the LHC
+    - The benefit is suppose to come from particle flow recon at the trigger level ... does that mean that you can collect more signal like events that can then be saved and then through out more background. What happens to your background events? combinatoric is still and issue right? what about peaking background and semi-leptonic? --- you must still have these?
+- Machine learning is on a chip - how do you validate the training? what is your training data? Can't be only simulation. Can you use previously collected data... because the trigger has already been applied - so nothing is the same. Also, the pileup conditions will be different!
+
+
+Also met with Harry Cheung.
+- He was telling me about the milimeter diameter scintillators (or fibers?) that were being manufactured during his time as a post-doc building a calorimeter. We got cut off and didn't finish that conversation.
+- Potentially best possibility to go to CERN for integration of the detector in the Prevesin site if I work on the Cassette integration
+- Said that there were definitely possibilities to work on FPGA in the absence of Joe Pastica (baylor postdoc that is going to the Fermilab test beam).
+He said there is still work to do on the FPGA with the test beam studies
+This work would collaborate with Michael Kann (postdoc from FSU) and an FSU professor
+Maral is split pay with SiDet and HGCAL
+
+
+Questions for Jim for tomorrow:
+cold scinitillator suppresses noise? What is the relationship here? Harry said it was like a factor of two when the temperature was dropped to 0C
+now we are going to opperate the detector at -30C
+- need to perform studies on the actual temperature of the SiPMs
+He was telling me about lots of the meetings
+Wagons, Cassets, V2 chip
+ECON
+Emulator

@@ -1,0 +1,17 @@
+  1  h   "test/skim_trigger.cpp"             line 736
+  2  h   "privateTools/usefullCommands.txt" line 11
+  3  h   "config/Resonant_NMSSM_bbbb/skim_2017_TriggerEfficiencyMeasurement.cfg" line 30
+  4  h   "scripts/TriggerEfficiencyByFilter_evenBetter.C" line 614
+  5  h   "Makefile"                  line 1
+  6  h   "scripts/TriggerEfficiencyByFilter_evenBetterRebin.C" line 128
+  7 #h   "src/OfflineProducerHelper.cc" line 1500
+  8  h   "config/Resonant_NMSSM_bbbb/skim_2016Resonant_NMSSM_XYH_bbbb.cfg" line 168
+  9  h   "test/skim_ntuple.cpp"              line 606
+ 10 %a   "src/TriggerEfficiencyCalculator.cc" line 1089, line 1111
+
+ difference btw calo jet and particle flow
+ line 565
+
+ PF jets use everything
+ CaloJets don't use muons, cut out
+ skim_trigger line 559 

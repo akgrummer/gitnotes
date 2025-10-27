@@ -1,0 +1,36 @@
+- how to reset the hexacontroler
+- how to use the hexacontroler clock
+
+- want to measure the bit error rate - like read back the header of the the BX?
+-- inject charge, or inject signal
+
+- how to edit firmware, how to compile
+
+- what tasks still need to be done - how will I read out one module? multiple
+  modules? full cassette?
+
+
+
+
+2021 Nov 18.
+Setup commands run smoothly 
+logged in to hexacontroller 95
+all links aligned on block 0
+
+
+what is sudo make interposer doing?
+
+
+
+axi communication
+ps processing system
+logic is cpu?
+
+
+-- to-do:
+
+read data from hexacontroller at ZCU
+program the rocs
+read data from L1a on interposer
+combine
+

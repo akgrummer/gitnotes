@@ -1,0 +1,4 @@
+I'm afraid that I have to leave in 5 min or so. The situation with Trenz modules is not easy: 
+1) we have a couple spares (literally 2) in hand. 
+2) the Zynq SoC parts themselves are on 1 year delays 
+3) Trenz has proposed to procure missing power converters (8 per Trenz module) at 30EUR each, so +240EUR per module, i.e. ~100% price increase on our order from August 2021. (This is better than the October proposal of 100EUR/power converter). So, I agree with Michael that whatever we do, we should try to get a count of how many Trenz modules we would like to have in the project until the end of production so as to understand (as Jeremy suggested) what negotiating power we can have with Trenz.

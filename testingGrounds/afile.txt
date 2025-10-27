@@ -1,0 +1,10 @@
+
+
+
+test - ifile = compid1[icomp]+myYearPU[ii]+varid[ivar]+compid2[icomp]+"_"+pileupid[ii]+dateidPU[icomp][ivar]
+test - ifile = compid1[icomp]+myYearPU[ii]+varid[ivar]+compid2[icomp]+"_"+pileupid[ii]+dateidPU[icomp][ivar]
+test - ifile = compid1[icomp]+myYearPU[ii]+varid[ivar]+compid2[icomp]+"_"+pileupid[ii]+dateidPU[icomp][ivar]
+ifile = compid1[icomp]+myYearPU[ii]+varid[ivar]+compid2[icomp]+"_"+pileupid[ii]+dateidPU[icomp][ivar]
+ifile = compid1[icomp]+myYearPU[ii]+varid[ivar]+compid2[icomp]+"_"+pileupid[ii]+dateidPU[icomp][ivar]
+ifile = compid1[icomp]+myYearPU[ii]+varid[ivar]+compid2[icomp]+"_"+pileupid[ii]+dateidPU[icomp][ivar]
+

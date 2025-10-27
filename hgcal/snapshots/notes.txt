@@ -1,0 +1,10 @@
+2 and 1 were don
+were done in situ after many configurations - starting with only V3 branch, then forced to move to fnal branch
+
+3 was completed with the 
+./setup_lpgbt.py
+./setup_lpgbt.py --mode V3_ALL
+steps
+maybe capcitors to the ROCs were not fully discharged
+
+4 will be done using the dll hack

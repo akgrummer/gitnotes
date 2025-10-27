@@ -1,0 +1,89 @@
+200 kOhm
+1kOhm
+8 mAmps
+
+lpGBT
+SCA is close to the HGCROC on the tileboards - i2c is closer
+different on the hexaboards
+allow up to 10 mA
+nice to operate in the 3 regime
+engine v3
+hexaboards v3
+3 mA
+4 mWatts of power
+600 Ohms
+
+
+Jeremy: v2 interposer board is complicated - have to look at how it was assembled
+drive the i2c from hexacontroller or from the sca if you used the resistors in the right way
+some 0 ohm resistors
+the pull up would be handled through the io
+
+! Measure something on the interposer board
+bcc sca sco
+disconnect the qsh connectors
+if hexacontroller is asserting a voltage on that bus it is a problem
+tri-state 
+should be able to measure with the hexacontroller present
+
+issue of soldering of sca to
+
+
+RC circuit - 
+smaller ohms get sharper edges
+gbt-sca
+i2c driving strength
+
+
+Milos  - got trigger data
+cant configure i2c 
+swing for one of the i2c lines does not go from 1.5 to 0 v
+
+corresponding lpgbt
+bit flips
+
+legs of the connector
+CERN:
+scribing of the solder - and now don't see bit corruption
+
+bit error rate, scan the clock. bath tub curve
+"wagon wheel" can loop back
+
+
+CERN lpGBT not working
+Milos wants to test this on our system now
+
+engines with LDO
+engines to their power supplies
+
+temporary power solution
+
+most recent power have LDOs
+final style connector
+crimp wires
+one month for this operation to complete
+
+engines to got o FNAL
+multiple concentrator mezaniines
+
+hexaboards
+with Rafael and LDOs
+roc v3s
+
+
+hexaboard from Minnesota is coming
+
+v3 system... either DAQ or Trigger but not both
+one ROCs output elinks
+output of one of the ROC DAQs
+routed in the econt mezzanine
+
+half of two rocs
+
+hexaboard coming to FNAL
+
+
+SCA can probably control these lines on the slide 7
+
+pseudo econ D reset
+

@@ -1,0 +1,31 @@
+  Capture block  0     (bram size: 4096)
+  Link                  : <1>         <2>         <3>         <4>         <5>         <6>         
+ --------------------------------------------------------------------------------------------
+  enable                : 1           1           1           1           1           1           
+  delay mode            : 0           0           0           0           0           0           
+  delay input           : 0           0           0           0           0           0           
+  delay offset          : 0           0           0           0           0           0           
+  delay output P        : 0           0           0           0           0           0           
+  delay output N        : 0           0           0           0           0           0           
+  delay ready           : 0           0           0           0           0           0           
+  align pattern         : accccccc    accccccc    accccccc    accccccc    accccccc    accccccc    
+  align inhibit         : 0           0           0           0           0           0           
+  link aligned          : 0           1           1           1           1           1           
+  aligned count         : 20          128         128         128         128         128         
+  error count           : 255         0           0           16          0           0           
+  align state           : 0           0           0           0           0           0           
+  capture mode          : 3           3           3           3           3           3           
+  l1 offset or BX       : 0           0           0           0           0           0           
+  fifo latency          : 0           0           0           0           0           0           
+  cont. acquire         : 0           0           0           0           0           0           
+  inhibit acquire       : 0           0           0           0           0           0           
+  acquire length        : 64          64          64          64          64          64          
+  total length          : 0           0           0           0           0           0           
+  interlink align       : 0           0           0           0           0           0           
+  waiting for trig      : 0           0           1           0           0           0           
+  writing data          : 0           0           0           0           0           0           
+  fifo occupancy        : 0           0           0           0           0           0           
+  interrupt             : 1           1           1           1           1           1           
+  word error count      : 0           0           0           0           0           0           
+  bit error count       : 0           0           0           0           0           0           
+ --------------------------------------------------------------------------------------------

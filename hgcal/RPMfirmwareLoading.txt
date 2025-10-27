@@ -1,0 +1,9 @@
+sudo yum update interposer-ROCv2
+fw-loader load interposer-ROCv2
+
+
+rpm -i 
+-U for upgrade
+
+interposer-2022.03.04.22.51.14-fc50a7ec.noarch.rpm
+

@@ -1,0 +1,6 @@
+for the same distributions:
+KS test 1.000000e+00
+KS test, UO 1.000000e+00
+KS test, M 0.000000e+00
+KS test, X 1.000000e+00
+

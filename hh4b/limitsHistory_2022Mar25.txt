@@ -1,0 +1,1000 @@
+vim datacard_RunII_sig_NMSSM_bbbb_MX_600_MY_400.txt
+goTo_bbbbAnalysis2
+ll
+fill_histograms.exe config/Resonant_NMSSM_bbbb/plotter_2016Resonant_NMSSM_XYH_bbbb_Full_ttbarClosure.cfg
+ll
+ll VarPlots/rootHists/
+cd VarPlots/rootHists/2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/
+ll
+root -l outPlotter.root 
+fg
+ll
+cd ..
+pwd
+ll
+fill_histograms.exe config/Resonant_NMSSM_bbbb/plotter_2016Resonant_NMSSM_XYH_bbbb_Full_ttbarClosure.cfg
+ll
+ll VarPlots/rootHists/
+ll
+root -l VarPlots/rootHists/2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root 
+pwd
+ll
+pwd
+cd scripts && g++  -std=c++17 -I `root-config --incdir` -o BkgShape_ttbar BkgShape_ttbar.cc `root-config --libs` -O3 ; cd -
+exit
+goTo_bbbbAnalysis2
+fill_histograms.exe config/Resonant_NMSSM_bbbb/plotter_2018Resonant_NMSSM_XYH_bbbb_Full_ttbarClosure.cfg
+goTo_bbbbAnalysis2
+fill_histograms.exe config/Resonant_NMSSM_bbbb/plotter_2017Resonant_NMSSM_XYH_bbbb_Full_ttbarClosure.cfg
+cd VarPlots/rootHists/
+ll
+cd 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data
+ll
+root -l outPlotter.root
+cd ..
+ll
+rm -r 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data
+cd 2017DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data
+ll
+root -l outPlotter.root
+ll
+cd ..
+root -l 2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root 
+fg
+pwd
+ll
+cd 2016DataPlots_2022Mar4_fullBDT_withTTBAR_MassWindow_3b_sig
+ll
+cd ..
+ll
+cd 2018DataPlots_2022Mar4_fullBDT_withTTBAR_allvars_3b
+ll
+cd ..
+ll
+cd 2018DataPlots_2022Mar2_without_mXmY_VR
+ll
+root -l outPlotter_massGroup0.root
+cd ../../
+pwd
+cd ..
+ll
+cd DataPlots_fullSubmission_2018_v34_aidan_2022Jan26_VR
+ll
+root -l outPlotter_massGroup0.root
+root -l outPlotter.root
+cd ../../
+pwd
+cd bbbbAnalysis/
+ll
+ll VarPlots/rootHists/
+ll
+cd DataPlots_fullSubmission_2016_v34_aidan_2022Jan26_VR
+ll
+root -l outPlotter_massGroup0.root
+cd ../../
+cd -
+cd ..
+ll
+cd scripts && g++  -std=c++17 -I `root-config --incdir` -o BkgShape_ttbar BkgShape_ttbar.cc `root-config --libs` -O3 ; cd -
+ll
+ll VarPlots/rootHists/
+root -l -q './scripts/BkgShape_ttbar.C("VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotterTTBAR.root", "selectionbJets_ValidationRegionBlinded")'
+root -l -q './scripts/BkgShape_ttbar.cc("VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotterTTBAR.root", "selectionbJets_ValidationRegionBlinded")'
+ll
+ll VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotterTTBAR.root
+        `root -l -q './scripts/BkgShape_ttbar.C("VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "selectionbJets_ValidationRegionBlinded")'`
+        `root -l -q './scripts/BkgShape_ttbar.cc("VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "selectionbJets_ValidationRegionBlinded")'`
+root -l -q './scripts/BkgShape_ttbar.cc("VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "selectionbJets_ValidationRegionBlinded")'
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root
+root -l -q './scripts/BkgShape_ttbar.cc("VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "selectionbJets_ControlRegionBlinded")'
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root
+root -l -q './scripts/BkgShape_ttbar.cc("VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "selectionbJets_ControlRegionBlinded")'
+root -l -q './scripts/BkgShape_ttbar.cc("VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "selectionbJets_ValidationRegionBlinded")'
+ll
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root 
+pwd
+ll
+source ./scripts/UnrollAllSubdirValidationTest.sh 2016
+root -l -q './scripts/BkgShape_ttbar.cc("VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "selectionbJets_SignalRegion")'
+source ./scripts/UnrollAllSubdirValidationTest.sh 2016
+ll
+cd VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/
+ll
+root -l outPlotter_massGroup0.root
+root -l ./
+ll
+root -l outPlotter_massGroup0.root outPlotter_massGroup1.root outPlotter_massGroup2.root outPlotter_massGroup3.root outPlotter_massGroup4.root
+root -l outPlotter_massGroup{0..4}.root
+ll
+cd ..
+ll
+mkdir 2017DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR
+mkdir 2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR
+mkdir 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR
+mv 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup* 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/
+mv 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup* 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/
+ll
+ll 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data
+ll 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR
+root -l -q './scripts/BkgShape_ttbar.cc("VarPlots/rootHists/2017DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "selectionbJets_ValidationRegionBlinded")'
+pwd
+cd ../..
+root -l -q './scripts/BkgShape_ttbar.cc("VarPlots/rootHists/2017DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "selectionbJets_ValidationRegionBlinded")'
+root -l -q './scripts/BkgShape_ttbar.cc("VarPlots/rootHists/2017DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "selectionbJets_ControlRegionBlinded")'
+root -l -q './scripts/BkgShape_ttbar.cc("VarPlots/rootHists/2017DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "selectionbJets_SignalRegion")'
+root -l -q './scripts/BkgShape_ttbar.cc("VarPlots/rootHists/2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "selectionbJets_ValidationRegionBlinded")'
+root -l -q './scripts/BkgShape_ttbar.cc("VarPlots/rootHists/2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "selectionbJets_ControlRegionBlinded")'
+root -l -q './scripts/BkgShape_ttbar.cc("VarPlots/rootHists/2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter.root", "selectionbJets_SignalRegion")'
+source ./scripts/UnrollAllSubdirValidationTest.sh 2017
+source ./scripts/UnrollAllSubdirValidationTest.sh 2018
+source ./scripts/UnrollAllSubdirControlTest.sh 2016
+cd VarPlots/rootHists/
+ll
+mv 2017DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup* 2017DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/
+mv 2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup* 2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/
+cd ../..
+ll
+source ./scripts/UnrollAllSubdirControlTest.sh 2017
+source ./scripts/UnrollAllSubdirControlTest.sh 2018
+pwd
+ll
+root -l -q './scripts/modifyAllPlotForControlTest.C("2022Mar17_fullBDT_TTBAR_MassWindow_data")'
+root -l -q './scripts/calculateAllBKGshape.C("2022Mar17_fullBDT_TTBAR_MassWindow_data")'
+root -l -q './scripts/calculateAllBKGshape.C("2022Mar17_fullBDT_TTBAR_MassWindow_data_VR")'
+root -l -q './scripts/modifyAllPlotForControlTest.C("2022Mar17_fullBDT_TTBAR_MassWindow_data")'
+root -l -q './scripts/modifyAllPlotForValidationTest.C("2022Mar17_fullBDT_TTBAR_MassWindow_data_VR")'
+pwd
+ll
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup{0..3}.root
+pwd
+ll
+condorme
+ll
+pwd
+ll
+eosls
+eoslsh
+eosls /store/user/agrummer/bbbb_ntuples
+eoslsh
+eosls /store/user/agrummer/bbbb_limits
+eosls /store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBAR_MassWindow_data_VR
+eosls /store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/HistogramFiles_2016
+root -l 
+ll
+eoslsh
+eosls /store/user/agrummer/bbbb_limits/
+eosls /store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBAR_MassWindow_data_VR
+eosls /store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/HistogramFiles_2016
+eosls /store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/HistogramFiles_2016/outPlotter_massGroup2.root
+root -l /store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/HistogramFiles_2016/outPlotter_massGroup2.root
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/HistogramFiles_2016/outPlotter_massGroup2.root
+eosls /store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/HistogramFiles_2016
+vim  $GRID/store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/HistogramFiles_2016/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt
+xrdcp $GRID/store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/HistogramFiles_2016/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt ./
+ll
+vim datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt
+eosls /store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/HistogramFiles_2016/
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+eosls /store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/HistogramFiles_2016/
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/HistogramFiles_2016/outPlotter_massGroup1.root
+pwd
+ll
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar17_fullBDT_TTBAR_MassWindow_data_VR --year RunII --group auto --unblind
+pwd
+eoslsh
+eosls /store/user/agrummer/bbbb_ntuples
+eosls /store/user/agrummer/bbbb_ntuples/fullSubmission_2018_v27
+eosls /store/user/agrummer/bbbb_ntuples/fullSubmission_2018_v27/SKIM_JetHT_Data
+eosls /store/user/agrummer/bbbb_ntuples/
+root -l $GRID/store/user/agrummer/bbbb_ntuples/fullSubmission_2018_v27/SKIM_JetHT_Data/output/bbbbNtuple_99.root
+eosls /store/user/agrummer/bbbb_ntuples/fullSubmission_2017_v27/
+eosls /store/user/agrummer/bbbb_ntuples/fullSubmission_2017_v27/SKIM_BTagCSV_Data/
+eosls /store/user/agrummer/bbbb_ntuples/fullSubmission_2017_v27/SKIM_BTagCSV_Data/output/bbbbNtuple_99.root
+root -l $GRID/store/user/agrummer/bbbb_ntuples/fullSubmission_2017_v27/SKIM_BTagCSV_Data/output/bbbbNtuple_99.root
+pwd
+ll
+pwd
+ll
+pwd
+ll
+goTo_Limits2
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar17_fullBDT_TTBAR_MassWindow_data --year RunII --group auto --unblind
+ll
+ll CondorJobs/
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar17_fullBDT_TTBAR_MassWindow_data_VR --year RunII --group auto --unblind
+condorme
+condorall
+condorme
+ll
+ll CondorJobs/
+condorme
+cd CondorJobs/jobsLimits_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/
+ll
+vim job_sig_NMSSM_bbbb_MX_600_MY_400.sh_16454306.stdout 
+pwd
+ls
+ll
+vim job_sig_NMSSM_bbbb_MX_600_MY_400.sh_16454306.log 
+vim job_sig_NMSSM_bbbb_MX_600_MY_400.sh_16454306.stdout 
+ll
+pwd
+ll
+pwd
+cd ..
+ll
+rm -r jobsLimits_2022Mar17_fullBDT_TTBAR_MassWindow_data jobsLimits_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR
+ll
+cd ..
+ll
+pwd
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar17_fullBDT_TTBAR_MassWindow_data_VR --year RunII --group auto --unblind
+pwd
+ll
+condorme
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar17_fullBDT_TTBAR_MassWindow_data --year RunII --group auto --unblind
+condorme
+ll
+cd jobsLimits_VR_2022Jan26_mx600_my400a
+ll
+vim job_sig_NMSSM_bbbb_MX_600_MY_400.sh_16109128.stdout
+cd ..
+ll
+cd jobsLimits_VR_2022Jan26_mx600_my400
+ll
+vim job_sig_NMSSM_bbbb_MX_600_MY_400.sh_74580179.stdout
+cd ..
+ll
+ll CondorJobs/
+condorme
+ll
+pwd
+ll
+cd CondorJobs/
+ll
+cd jobsLimits_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/
+ll
+vim job_sig_NMSSM_bbbb_MX_600_MY_400.sh_75092526.stdout
+pwd
+cd ..
+ll
+cd ..
+ll
+cd jobsLimits_2022Feb8_BDTmasscut_VR/
+ll
+vim job_sig_NMSSM_bbbb_MX_600_MY_400.sh_74683951.stdout 
+cd ..
+ll
+mv jobsLimits_* CondorJobs/
+ll
+cd CondorJobs/
+ll
+ll jobsLimits_VR_2022Jan26_mx600_my400a
+ll jobsLimits_VR_2022Jan26_mx600_my400
+ll
+mv jobsLimits_VR_2022Jan26_mx600_my400 jobsLimits_VR_2022Jan26_mx600_my400_wrongInputDir
+ll
+ll jobsLimits_VR_2022Jan26_mx600_my400a
+ll
+cd jobsLimits_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR
+ll
+vim job_sig_NMSSM_bbbb_MX_600_MY_400.sh_75092526.stdout
+pwd
+cd ../..
+pwd
+ll
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar17_fullBDT_TTBAR_MassWindow_data_VR_n2 --year RunII --group auto --unblind
+rm -r CondorJobs/jobsLimits_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR_n2
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar17_fullBDT_TTBAR_MassWindow_data_VR_n2 --year RunII --group auto --unblind
+condorme
+ll
+cd CondorJobs/
+ll
+cd jobsLimits_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR_n2/
+ll
+vim job_sig_NMSSM_bbbb_MX_600_MY_400.sh_16454910.stdout 
+pwd
+cd ..
+pwd
+cd ..
+ll
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar17_fullBDT_TTBAR_MassWindow_data_VR_n5 --year RunII --group auto --unblind
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar17_fullBDT_TTBARasBKG_MassWindow_data_VR --year RunII --group auto --unblind
+condorme
+ll
+cd CondorJobs/
+ll
+goTo_bbbbAnalysis2
+pwd
+ll
+pwd
+ll
+pwd
+ll
+pwd
+ll
+pwd
+ll
+cd limits/
+ls
+cd CondorJobs/
+ls
+cd ../..
+pwd
+ll
+cd VarPlots/rootHists/
+ll
+cd 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data
+ll
+root -l outPlotter_massGroup1.root
+ll
+cd ..
+ll
+cd 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR
+ll
+root -l outPlotter_massGroup1.root
+~.
+goTo_bbbbAnalysis2
+pwd
+ll
+pwd
+ll
+eoslsh
+eosls /store/user/agrummer/bbbb_limits
+eosls /store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBARasBKG_MassWindow_data_VR
+eosls /store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBARasBKG_MassWindow_data_VR/HistogramFiles_2016
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar17_fullBDT_TTBARasBKG_MassWindow_data_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+ll
+pwd
+cd VarPlots/rootHists/
+ll
+cd 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR
+ll
+root -l outPlotter_massGroup1.root
+jobs
+kill %1
+cd ..
+pwd
+cd ..
+ll
+root -l -q './scripts/modifyAllPlotForValidationTest.C("2022Mar17_fullBDT_TTBAR_MassWindow_data_VR")'
+cd ../..
+cd bbbbAnalysis/
+ll
+root -l -q './scripts/modifyAllPlotForValidationTest.C("2022Mar17_fullBDT_TTBAR_MassWindow_data_VR")'
+cd VarPlots/rootHists/
+ll
+cd 2017DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR
+ll
+root -l outPlotter_massGroup1.root
+cd ..
+ll
+cd 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR
+l
+ll
+root -l outPlotter_massGroup1.root
+cd ..
+ll
+cd ..
+pwd
+ll
+eoslsh
+eosls /store/user/agrummer/bbbb_limits
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_ttbarShape_VR
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_ttbarShape_VR/HistogramFiles_2016
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_ttbarShape_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+pwd
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_ttbarShape_VR/HistogramFiles_2016
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_tt*
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_*
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_TTBARasBKG_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+goTo_Limits2
+pwd
+ll
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar18_fullBDT_MassWindow_ttbarShape_VR --year RunII --group auto --unblind
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar18_fullBDT_MassWindow_TTBARasBKG_VR --year RunII --group auto --unblind
+condorme
+ll
+cd CondorJobs/
+ll
+cd jobsLimits_2022Mar18_fullBDT_MassWindow_ttbarShape_VR
+ll
+vim job_sig_NMSSM_bbbb_MX_600_MY_400.sh_75105254.stdout
+cd ..
+ll
+condorme
+ll
+eoslsh
+eosls /store/user/agrummer/bbbb_limits/
+eosls /store/user/agrummer/bbbb_limits/VR_2022Jan26_mx600_my400a
+eosls /store/user/agrummer/bbbb_limits/VR_2022Jan26_mx600_my400a/HistogramFiles_2016
+eosls /
+eosls /store/user/agrummer/bbbb_limits/VR_2022Jan26_mx600_my400a/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+pwd
+cd ..
+ll
+pwd
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar18_fullBDT_MassWindow_noTTBAR_VR --year RunII --group auto --unblind
+condorme
+ll
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar18_fullBDT_MassWindow_TTBARasBKG_VR_2 --year RunII --group auto --unblind
+condorme
+ll
+cd CondorJobs/
+ll
+cd ..
+goTo_bbbbAnalysis2
+wd
+pwd
+ll
+pwd
+ll
+pwd
+ll
+eoslsh
+echo $GRID
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_TTBARasBKG_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+ll
+pwd
+ll
+vim ~/.profile 
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_TTBARasBKG_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+pwd
+ll
+mkdir VarPlots/UnrolledPlots_2022Mar18
+pwd
+ll
+python plotUnrolledVars_2022Mar.py 
+pwd
+ll
+python plotUnrolledVars_2022Mar.py 
+pwd
+ll
+eoslsh
+eosls /store/user/agrummer/bbbb_limits/
+echo $GRID
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_TTBARasBKG_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+pwd
+ll
+python plotUnrolledVars_2022Mar.py 
+goTo_bbbbAnalysis2
+ll
+pwd
+ll
+pwd
+ll
+ll VarPlots/rootHists/
+ll VarPlots/rootHists/2017DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR
+root -l VarPlots/rootHists/2017DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/outPlotter_massGroup0.root
+pwd
+ll
+root -l VarPlots/rootHists/2017DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/outPlotter_massGroup0.root
+goTo_bbbbAnalysis2
+ll
+python plotUnrolledVars_2022Mar.py 
+rm -r VarPlots/UnrolledPlots_2022Mar22/
+python plotUnrolledVars_2022Mar.py 
+jobs
+kill %1
+python plotUnrolledVars_2022Mar.py 
+jobs
+kill %1
+ll VarPlots/rootHists/
+ll VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root
+pwd
+python plotUnrolledVars_2022Mar.py 
+jobs
+kill %1
+python plotUnrolledVars_2022Mar.py 
+jobS
+jobs
+kill %1
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root
+python plotUnrolledVars_2022Mar.py 
+ll
+rm -r VarPlots/UnrolledPlots_2022Mar22
+python plotUnrolledVars_2022Mar.py 
+eoslsh
+eosls /store/user/agrummer/
+vim ~./profile
+vim ~/.profile 
+eosls /store/user/agrummer/bbbb_limits
+eosls /store/user/agrummer/bbbb_limits/2022Feb7_BDTmasscut_CR
+eosls /store/user/agrummer/bbbb_limits/2022Feb7_BDTmasscut_CR/HistogramFiles_2016
+root -l $GRID//store/user/agrummer/bbbb_limits/2022Feb7_BDTmasscut_CR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+ll
+cd VarPlots/
+ll
+cd rootHists/
+ll
+2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data
+ll
+cd 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data
+ll
+cd ..
+pd
+ll
+cd ..
+ll
+pwd
+ll
+root -l $GRID//store/user/agrummer/bbbb_limits/2022Feb7_BDTmasscut_CR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+eosls /store/user/agrummer/bbbb_limits/
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016
+root -l  $GRID/store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_massGroup0.root
+root -l  $GRID/store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+eosls /store/user/agrummer/bbbb_limits/
+eosls /store/user/agrummer/bbbb_limits/VR_2022Jan26
+eosls /store/user/agrummer/bbbb_limits/VR_2022Jan26/HistogramFiles_2016
+eosls /store/user/agrummer/bbbb_limits/VR_2022Jan26/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+root -l /store/user/agrummer/bbbb_limits/VR_2022Jan26/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+root -l $GRID/store/user/agrummer/bbbb_limits/VR_2022Jan26/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+root -l $GRID/store/user/agrummer/bbbb_limits/VR_2022Jan26/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID/store/user/agrummer/bbbb_limits/CR_2022Jan26/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+pwd
+ll
+pwd
+cd VarPlots/
+ll
+cd rootHists/
+ll
+cd ../..
+ll
+python reorderUnrolledVars_2022Mar.py 
+exit
+pwd
+ll
+pwd
+goTo_bbbbAnalysis2
+pwd
+ll
+python reorderUnrolledVars_2022Mar.py
+ll
+ll VarPlots/rootHists/
+root -l -q './scripts/modifyAllPlotForControlTest.C("2022Mar17_fullBDT_TTBAR_MassWindow_data")'
+ll
+python reorderUnrolledVars_2022Mar.py 
+ll
+ll VarPlots/rootHists/
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root 
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root 
+ll
+python reorderUnrolledVars_2022Mar.py 
+ll VarPlots/rootHists/
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered2/outPlotter_massGroup0.root 
+pwd
+ll
+python reorderUnrolledVars_2022Mar.py 
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered2/outPlotter_massGroup0.root 
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root 
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered2/outPlotter_massGroup0.root 
+python reorderUnrolledVars_2022Mar.py 
+ll
+ll VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root
+python reorderUnrolledVars_2022Mar.py 
+ll VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered3/
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered3/outPlotter_massGroup0.root
+python reorderUnrolledVars_2022Mar.py 
+ll
+ll VarPlots/rootHists/
+ll VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root
+exit
+goTo_Limits2
+pwd
+ll
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar24_binsReordered --year RunII --group auto --unblind
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar24_binsReordered_VR --year RunII --group auto --unblind
+condorme
+ll
+ll CondorJobs/
+ll
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar18_fullBDT_MassWindow_noTTBAR --year RunII --group auto --unblind
+pwd
+ll
+condorme
+ll
+ll CondorJobs/
+exit
+goTo_bbbbAnalysis2
+condorme
+ll
+python reorderUnrolledVars_2022Mar.py 
+ll
+ll VarPlots/rootHists/
+ll VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered
+ll 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data
+ll VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data
+ll VarPlots/rootHists/2017DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data
+ll
+eosls
+eoslsh
+eosls /store/user/agrummer/bbbb_limits/
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016
+pwd
+ll
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root 
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root 
+fg
+exit
+goTo_bbbbAnalysis2
+pwd
+ll
+ll VarPlots/rootHists/
+rm -r VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered2
+rm -r VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered3
+ll VarPlots/rootHists/
+pwd
+ll
+condorme
+goTo_Limits2
+pwd
+ll
+ll CondorJobs/
+rm -r CondorJobs/jobsLimits_2022Mar24_binsReordered_VR CondorJobs/jobsLimits_2022Mar24_binsReordered
+ll
+ll CondorJobs/
+eoslsh
+eosls /store/user/agrummer/bbbb_limits/
+eosls /store/user/agrummer/bbbb_limits/2022Mar24_binsReordered
+eosls /store/user/agrummer/bbbb_limits/2022Mar24_binsReordered/HistogramFiles_2016
+eoslsh
+eosls /store/user/agrummer/bbbb_limits/2022Mar24_binsReordered/HistogramFiles_2016/
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar24_binsReordered/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar24_binsReordered/HistogramFiles_2016/outPlotter_massGroup0.root
+eosls -ltr /store/user/agrummer/bbbb_limits/2022Mar24_binsReordered/HistogramFiles_2016/
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar24_binsReordered --year RunII --group auto --unblind
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar24_binsReordered_VR --year RunII --group auto --unblind
+ll
+condorme
+condorm
+condorme
+ll
+ll CondorJobs/
+l[; 
+goTo_bbbbAnalysis2
+ll
+pwd
+ll
+ll VarPlots/rootHists/
+root -l VarPlots/rootHists/2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root 
+ll VarPlots/rootHists/
+root -l VarPlots/rootHists/2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root VarPlots/rootHists/2018DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root 
+ll
+python reorderUnrolledVars_2022Mar.py 
+root -l VarPlots/rootHists/2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root VarPlots/rootHists/2018DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root 
+ll VarPlots/rootHists/
+pwd
+ll
+python reorderUnrolledVars_2022Mar.py 
+root -l VarPlots/rootHists/2018DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root 
+pwd
+ll
+cd VarPlots/rootHists/
+ll
+cd 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data
+ls
+root -l outPlotter.root
+ll
+cd ../
+cd ../..
+pwd
+ll
+python plotVars_2022Feb.py
+ll
+python plotVars_2022Feb.py
+pwd
+ll
+python plotVars_2022Feb.py
+eoslsh
+eosls /store/user/agrummer/bbbb_limits
+eosls /store/user/agrummer/bbbb_limits/2022Mar24_binsReordered_syst
+eosls /store/user/agrummer/bbbb_limits/2022Mar24_binsReordered_syst/HistogramFiles_2018
+xrdcp /store/user/agrummer/bbbb_limits/2022Mar24_binsReordered_syst/HistogramFiles_2018/datacard_2018_sig_NMSSM_bbbb_MX_600_MY_400.txt .
+eoslsh
+xrdcp root://cmseos.fnal.gov//store/user/agrummer/bbbb_limits/2022Mar24_binsReordered_syst/HistogramFiles_2018/datacard_2018_sig_NMSSM_bbbb_MX_600_MY_400.txt .
+ll
+mv datacard_2018_sig_NMSSM_bbbb_MX_600_MY_400.txt datacard_2018_sig_NMSSM_bbbb_MX_600_MY_400_reordered.txt
+eoslsh
+eosls /store/user/agrummer/bbbb_limits/
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR/HistogramFiles_2018/datacard_2018_sig_NMSSM_bbbb_MX_600_MY_400.txt
+xrdcp root://cmseos.fnal.gov//store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR/HistogramFiles_2018/datacard_2018_sig_NMSSM_bbbb_MX_600_MY_400.txt .
+ll
+pwd
+ll
+ll VarPlots/rootHists/
+ll VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root 
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root 
+pwd
+ll
+pwd
+ll
+python reorderUnrolledVars_2022Mar.py 
+ll
+cd VarPlots/rootHists/
+ll
+root -l 2016DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root 2018DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root 2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root 2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root 
+ll
+pwd
+ll
+eoslsh
+eosls /store/user/agrummer/bbbb_limits/
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR/
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR/HistogramFiles_2016
+echo #EOS
+echo $EOS
+xrdcp $EOS/store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR/HistogramFiles_2016/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt ./datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400_nottbarCR.txt
+ll
+mv datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400_nottbarCR.txt ../..
+cd ../..
+ll
+python plotVars_2022Feb.py 
+rm -r VarPlots/sig_2D_2022Mar24/
+python plotVars_2022Feb.py 
+eoslsh
+eosls /store/user/agrummer/bbbb_limits
+eosls /store/user/agrummer/bbbb_limits/2022Mar24_binsReordered_syst
+eosls /store/user/agrummer/bbbb_limits/2022Mar24_binsReordered_syst/HistogramFiles_2016
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar24_binsReordered_syst/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+ll
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root 
+ll
+eoslsh
+eosls /store/user/agrummer/bbbb_limits
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR/
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR/HistogramFiles_2016
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+jobs
+fg %1
+fg%2
+fg %2
+fg %1
+fg %2
+ll
+ll VarPlots/rootHists/
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root 
+jobs
+kill %1
+kill %2
+eoslsh
+eosls /store/user/agrummer/bbbb_limits/
+eosls /store/user/agrummer/bbbb_limits/2022Mar24_binsReordered
+eosls /store/user/agrummer/bbbb_limits/2022Mar24_binsReordered/HistogramFiles_2016
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar24_binsReordered/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID/store/user/agrummer/bbbb_limits/2022Mar24_binsReordered/HistogramFiles_2016/outPlotter_massGroup0.root
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar24_binsReordered/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID/store/user/agrummer/bbbb_limits/2022Mar24_binsReordered/HistogramFiles_2016/outPlotter_massGroup0.root $GRID/store/user/agrummer/bbbb_limits/2022Mar24_binsReordered/HistogramFiles_2016/outPlotter_massGroup1.root
+ll /uscms/home/agrummer/nobackup/DiHiggs_v2/CMSSW_10_2_5/src/bbbbAnalysis/VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered/
+root -l /uscms/home/agrummer/nobackup/DiHiggs_v2/CMSSW_10_2_5/src/bbbbAnalysis/VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root
+ll
+python reorderUnrolledVars_2022Mar.py 
+jobs
+kill %1
+python reorderUnrolledVars_2022Mar.py 
+ll
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root 
+ll
+python plotVars_2022Feb.py 
+exit
+ll
+pwd
+goTo_Limits2
+pwd
+ll
+cd CondorJobs/
+ll
+rm -r jobsLimits_2022Mar24_binsReordered jobsLimits_2022Mar24_binsReordered_VR
+ll
+cd ..
+ll
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar24_binsReordered_VR --year RunII --group auto --unblind
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar24_binsReordered --year RunII --group auto --unblind
+condorme
+ll
+jobs
+ll CondorJobs/
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar24_binsReordered_syst --year RunII --group auto --unblind
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar24_binsReordered_syst_VR --year RunII --group auto --unblind
+condorme
+ll
+eoslsh
+eosls /store/user/agrummer/bbbb_limits/
+eosls /store/user/agrummer/bbbb_limits/2022Mar24_binsReordered_syst/
+eosls /store/user/agrummer/bbbb_limits/2022Mar24_binsReordered_syst/HistogramFiles_2018
+xrdcp root://cmseos.fnal.gov//store/user/agrummer/bbbb_limits/2022Mar24_binsReordered_syst/HistogramFiles_2018/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt .
+xrdcp root://cmseos.fnal.gov//store/user/agrummer/bbbb_limits/2022Mar24_binsReordered_syst/HistogramFiles_2016/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt .
+ll
+vim datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt
+rm datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt
+ll
+ll CondorJobs/
+rm -r CondorJobs/jobsLimits_2022Mar24_binsReordered_syst
+rm -r CondorJobs/jobsLimits_2022Mar24_binsReordered_syst_VR/
+ll
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar24_binsReordered_syst_VR --year RunII --group auto --unblind
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar24_binsReordered_syst --year RunII --group auto --unblind
+condorme
+ll
+pwd
+ll
+ll CondorJobs/
+ll CondorJobs/jobsLimits_2022Mar18_fullBDT_MassWindow_noTTBAR
+pwd
+ll
+ll CondorJobs/
+pwd
+ll
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar24_test --year RunII --group auto --unblind
+ll
+condorme
+ll
+ll CondorJobs/
+ll CondorJobs/jobsLimits_2022Mar24_test
+condorme
+jobs
+ll CondorJobs/
+rm -r CondorJobs/jobsLimits_2022Mar24_test CondorJobs/jobsLimits_2022Mar24_binsReordered_syst_VR CondorJobs/jobsLimits_2022Mar24_binsReordered_syst
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar24_binsReordered_syst --year RunII --group auto --unblind
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar24_binsReordered_syst_VR --year RunII --group auto --unblind
+condorme
+ll
+exit
+goTo_bbbbAnalysis2
+ll
+python plotVars_2022Feb.py 
+goTo_Limits2
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar25_binsReordered_syst --year RunII --group auto --unblind
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar25_binsReordered_syst_VR --year RunII --group auto --unblind
+condorme
+condorall
+condorme
+goTo_Limits2
+ll
+cd CondorJobs/
+ll
+ll jobsLimits_2022Mar25_binsReordered_syst
+v jobsLimits_2022Mar25_binsReordered_syst/job_sig_NMSSM_bbbb_MX_600_MY_400.sh_75163565.log
+vim jobsLimits_2022Mar25_binsReordered_syst/job_sig_NMSSM_bbbb_MX_600_MY_400.sh_75163565.log
+condorme
+condorall
+condorme
+ll
+ll jobsLimits_2022Mar25_binsReordered_syst
+ll jobsLimits_2022Mar25_binsReordered_syst_VR
+pwd
+ll
+condorme
+jobs
+condorme
+ll
+rm -r jobsLimits_2022Mar25_binsReordered_syst_VR jobsLimits_2022Mar25_binsReordered_syst
+ll
+cd ..
+ll
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar25_binsReordered --year RunII --group auto --unblind
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar25_binsReordered2 --year RunII --group auto --unblind
+python prepareModels/SubmitFullRunIILimits.py --tag 2022Mar25_binsReordered_VR --year RunII --group auto --unblind
+ll
+condorme
+condorall
+ll
+ll CondorJobs/
+eoslsh
+eosls /store/user/agrummer/bbbb_limits
+eosls /store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_VR
+eosls /store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_VR/HistogramFiles_2016
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root
+eosls /store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_VR/HistogramFiles_2016
+pwd
+ll
+pwd
+python prepareModels/prepareHistos.py              --config prepareModels/config/LimitsConfig_2016.cfg --signal sig_NMSSM_bbbb_MX_600_MY_400 --group 0
+ll
+ll Limits_kinFit_2016/
+ll Limits_kinFit_2016/sig_NMSSM_bbbb_MX_600_MY_400/
+python prepareModels/makeDatacardsAndWorkspaces.py --config prepareModels/config/LimitsConfig_2016.cfg  --no-comb --signal sig_NMSSM_bbbb_MX_600_MY_400 --bkgNorm 1.010
+ll
+ll Limits_kinFit_2016/sig_NMSSM_bbbb_MX_600_MY_400/
+v Limits_kinFit_2016/sig_NMSSM_bbbb_MX_600_MY_400/datacard2016_selectionbJets_SignalRegion.txt
+vim Limits_kinFit_2016/sig_NMSSM_bbbb_MX_600_MY_400/datacard2016_selectionbJets_SignalRegion.txt
+combine Limits_kinFit_2016/sig_NMSSM_bbbb_MX_600_MY_400/datacard2016_selectionbJets_SignalRegion.root -M AsymptoticLimits --rMax 30 --X-rtd  MINIMIZER_analytic --X-rtd  FAST_VERTICAL_MORPH
+combine Limits_kinFit_2016/sig_NMSSM_bbbb_MX_600_MY_400/datacard2016_selectionbJets_SignalRegion.root -M AsymptoticLimits --rMax 30 --X-rtd  MINIMIZER_analytic --X-rtd  FAST_VERTICAL_MORPH --freezeParameters allConstrainedNuisances
+python prepareModels/makeDatacardsAndWorkspaces.py --config prepareModels/config/LimitsConfig_2017.cfg  --no-comb --signal sig_NMSSM_bbbb_MX_600_MY_400 --bkgNorm 1.010
+mkdir Limits_kinFit_2017
+mkdir Limits_kinFit_2018
+python prepareModels/makeDatacardsAndWorkspaces.py --config prepareModels/config/LimitsConfig_2017.cfg  --no-comb --signal sig_NMSSM_bbbb_MX_600_MY_400 --bkgNorm 1.010
+python prepareModels/prepareHistos.py              --config prepareModels/config/LimitsConfig_2017.cfg --signal sig_NMSSM_bbbb_MX_600_MY_400 --group 0
+python prepareModels/prepareHistos.py              --config prepareModels/config/LimitsConfig_2018.cfg --signal sig_NMSSM_bbbb_MX_600_MY_400 --group 0
+python prepareModels/makeDatacardsAndWorkspaces.py --config prepareModels/config/LimitsConfig_2017.cfg  --no-comb --signal sig_NMSSM_bbbb_MX_600_MY_400 --bkgNorm 1.010
+python prepareModels/makeDatacardsAndWorkspaces.py --config prepareModels/config/LimitsConfig_2018.cfg  --no-comb --signal sig_NMSSM_bbbb_MX_600_MY_400 --bkgNorm 1.010
+combine Limits_kinFit_2017/sig_NMSSM_bbbb_MX_600_MY_400/datacard2017_selectionbJets_SignalRegion.root -M AsymptoticLimits --rMax 30 --X-rtd  MINIMIZER_analytic --X-rtd  FAST_VERTICAL_MORPH
+combineCards.py c2016=Limits_kinFit_2016/sig_NMSSM_bbbb_MX_600_MY_400/datacard2016_selectionbJets_SignalRegion.root c2017=Limits_kinFit_2017/sig_NMSSM_bbbb_MX_600_MY_400/datacard2017_selectionbJets_SignalRegion.txt c2018=Limits_kinFit_2018/sig_NMSSM_bbbb_MX_600_MY_400/datacard2018_selectionbJets_SignalRegion.root > Limits_kinFit_RunII/sig_NMSSM_bbbb_MX_600_MY_400/datacardRunII_selectionbJets_SignalRegion.root
+combineCards.py c2016=Limits_kinFit_2016/sig_NMSSM_bbbb_MX_600_MY_400/datacard2016_selectionbJets_SignalRegion.root c2017=Limits_kinFit_2017/sig_NMSSM_bbbb_MX_600_MY_400/datacard2017_selectionbJets_SignalRegion.txt c2018=Limits_kinFit_2018/sig_NMSSM_bbbb_MX_600_MY_400/datacard2018_selectionbJets_SignalRegion.txt > Limits_kinFit_RunII/sig_NMSSM_bbbb_MX_600_MY_400/datacardRunII_selectionbJets_SignalRegion.txt
+mkdir -p Limits_kinFit_RunII/sig_NMSSM_bbbb_MX_600_MY_400/
+combineCards.py c2016=Limits_kinFit_2016/sig_NMSSM_bbbb_MX_600_MY_400/datacard2016_selectionbJets_SignalRegion.root c2017=Limits_kinFit_2017/sig_NMSSM_bbbb_MX_600_MY_400/datacard2017_selectionbJets_SignalRegion.txt c2018=Limits_kinFit_2018/sig_NMSSM_bbbb_MX_600_MY_400/datacard2018_selectionbJets_SignalRegion.txt > Limits_kinFit_RunII/sig_NMSSM_bbbb_MX_600_MY_400/datacardRunII_selectionbJets_SignalRegion.txt
+ll Limits_kinFit_RunII/sig_NMSSM_bbbb_MX_600_MY_400/
+vim Limits_kinFit_RunII/sig_NMSSM_bbbb_MX_600_MY_400/datacardRunII_selectionbJets_SignalRegion.txt
+combineCards.py c2016=Limits_kinFit_2016/sig_NMSSM_bbbb_MX_600_MY_400/datacard2016_selectionbJets_SignalRegion.txt c2017=Limits_kinFit_2017/sig_NMSSM_bbbb_MX_600_MY_400/datacard2017_selectionbJets_SignalRegion.txt c2018=Limits_kinFit_2018/sig_NMSSM_bbbb_MX_600_MY_400/datacard2018_selectionbJets_SignalRegion.txt > Limits_kinFit_RunII/sig_NMSSM_bbbb_MX_600_MY_400/datacardRunII_selectionbJets_SignalRegion.txt
+vim Limits_kinFit_RunII/sig_NMSSM_bbbb_MX_600_MY_400/datacardRunII_selectionbJets_SignalRegion.txt
+text2workspace.py Limits_kinFit_RunII/sig_NMSSM_bbbb_MX_600_MY_400/datacardRunII_selectionbJets_SignalRegion.txt
+ll Limits_kinFit_RunII/sig_NMSSM_bbbb_MX_600_MY_400/
+combine Limits_kinFit_RunII/sig_NMSSM_bbbb_MX_600_MY_400/datacardRunII_selectionbJets_SignalRegion.root -M AsymptoticLimits --rMax 30 --X-rtd  MINIMIZER_analytic --X-rtd  FAST_VERTICAL_MORPH
+exit
+pwd
+goTo_bbbbAnalysis2
+condorme
+eoslsh
+eosls /store/user/agrummer/bbbb_limits/
+eosls /store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/
+eosls /store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/
+eosls /store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt
+mkdir datacardsCopied
+xrdcp $EOS//store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt datacardsCopied/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400_2022Mar25_binsReordered_syst_VR.txt
+eosls /store/user/agrummer/bbbb_limits/
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt datacardsCopied/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400_2022Mar18_fullBDT_MassWindow_noTTBAR_VR.txt
+xrdcp $EOS//store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt datacardsCopied/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400_2022Mar18_fullBDT_MassWindow_noTTBAR_VR.txt
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/
+eosls /store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/
+root -l $EOS//store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $EOS//store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/outPlotter_massGroup0.root $EOS//store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $EOS//store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_massGroup0.root
+root -l $GRID//store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID//store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/outPlotter_massGroup0.root $GRID//store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID//store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_massGroup0.root
+ll
+python reorderUnrolledVars_2022Mar.py 
+pwd
+ll
+root -l VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root 
+root -l $GRID//store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID//store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/outPlotter_massGroup0.root $GRID//store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID//store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_massGroup0.root VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered/outPlotter_massGroup0.root
+root -l $GRID//store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID//store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/outPlotter_massGroup0.root $GRID//store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID//store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_massGroup0.root VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered_VR/outPlotter_massGroup0.root
+root -l $GRID//store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID//store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/outPlotter_massGroup0.root $GRID//store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID//store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_massGroup0.root VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered_VR/outPlotter_massGroup0.root VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/outPlotter_massGroup0.root 
+ll
+python reorderUnrolledVars_2022Mar.py 
+root -l $GRID//store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID//store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_syst_VR/HistogramFiles_2016/outPlotter_massGroup0.root $GRID//store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID//store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_massGroup0.root VarPlots/rootHists/2016DataPlots_2022Mar17_binsReordered_VR/outPlotter_massGroup0.root VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/outPlotter_massGroup0.root 
+ll
+python reorderUnrolledVars_2022Mar.py 
+ll VarPlots/rootHists/
+root -l VarPlots/rootHists/2016DataPlots_2022Mar25_binsReordered_VR/outPlotter_massGroup0.root 
+python reorderUnrolledVars_2022Mar.py 
+ll
+rm -r VarPlots/rootHists/201*DataPlots_2022Mar25_binsReordered*
+jobs
+kill %1
+rm -r VarPlots/rootHists/201*DataPlots_2022Mar25_binsReordered*
+python reorderUnrolledVars_2022Mar.py 
+ll
+ll VarPlots/rootHists/2016DataPlots_2022Mar25_binsReordered
+ll /uscms/home/agrummer/nobackup/DiHiggs_v2/CMSSW_10_2_5/src/bbbbAnalysis/VarPlots/rootHists/2018DataPlots_2022Mar25_binsReordered/
+condorme
+ll VarPlots/rootHists/
+root -l VarPlots/rootHists/2016DataPlots_2022Mar25_binsReordered/outPlotter_massGroup0.root VarPlots/rootHists/2016DataPlots_2022Mar25_binsReordered_VR/outPlotter_massGroup0.root VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root VarPlots/rootHists/2016DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data_VR/outPlotter_massGroup0.root 
+condorme
+ll
+eosls /store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_VR/HistogramFiles_2016
+xrdcp /store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_VR/HistogramFiles_2016/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt datacardsCopied/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400_binsReorderedVR.txt
+xrdcp $EOS/store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_VR/HistogramFiles_2016/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt datacardsCopied/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400_binsReorderedVR.txt
+eosls /store/user/agrummer/bbbb_limits/
+xrdcp $EOS/store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt datacardsCopied/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400_normalbinningVR.txt
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/
+xrdcp $EOS/store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400.txt datacardsCopied/datacard_2016_sig_NMSSM_bbbb_MX_600_MY_400_normalbinningVR.txt
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/
+root -l $GRID/store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID/store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR_VR/HistogramFiles_2016/outPlotter_massGroup0.root $GRID/store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_VR/HistogramFiles_2016/outPlotter_2016_sig_NMSSM_bbbb_MX_600_MY_400.root $GRID/store/user/agrummer/bbbb_limits/2022Mar25_binsReordered_VR/HistogramFiles_2016/outPlotter_massGroup0.root
+ll
+eoslsh
+eosls /store/user/agrummer/bbbb_limits
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR
+eosls /store/user/agrummer/bbbb_limits/2022Mar18_fullBDT_MassWindow_noTTBAR/HistogramFiles_2017
+exit
+goTo_bbbbAnalysis2
+pwd
+ll
+python reorderUnrolledVars_2022Mar.py 
+ll VarPlots/rootHists/
+ll VarPlots/rootHists/2016DataPlots_2022Mar25_binsReordered_test_VR
+root -l VarPlots/rootHists/2016DataPlots_2022Mar25_binsReordered_test_VR/outPlotter_massGroup0.root
+python reorderUnrolledVars_2022Mar.py 
+root -l VarPlots/rootHists/2016DataPlots_2022Mar25_binsReordered_test_VR/outPlotter_massGroup0.root
+ls VarPlots/rootHists/2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root 
+root -l VarPlots/rootHists/2018DataPlots_2022Mar17_fullBDT_TTBAR_MassWindow_data/outPlotter_massGroup0.root 
+pwd
+jobs

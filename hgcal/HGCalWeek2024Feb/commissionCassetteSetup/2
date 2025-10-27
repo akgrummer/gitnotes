@@ -1,0 +1,100 @@
+# First day of working
+
+using pre-existing zcu sd card provided by CERN
+hostname: hgczcu102-mbv3
+
+did not have usb to usb-c adapter - so was not able to log in to zcu through the UART. Some intstructions on this were in my previous notes from August beam test.
+- Arnaud did log in over UART to find hostname of the image
+
+
+# software installations:
+
+`sudo yum update`
+- some errors on cactus core asking for el9
+
+## global python3.9 install:
+used (similar instructions to above):
+https://www.liquidweb.com/kb/how-to-install-python-3-on-centos-7/
+and got version Python-3.9.13 from python.org
+
+```bash
+yum install gcc openssl-devel bzip2-devel libffi-devel
+```
+
+```bash
+# https://www.liquidweb.com/kb/how-to-install-python-3-on-centos-7/
+wget https://www.python.org/ftp/python/3.9.18/Python-3.9.18.tgz
+tar -xzf Python-3.9.18.tgz
+cd Python-3.9.18/
+sudo ./configure --enable-optimizations
+sudo make altinstall
+```
+
+uhal:
+git clone -b hgcal-uio https://gitlab.cern.ch/asteen/ipbus-software.git ipbus-software-python3.9
+python3.9 -m pip install "pybind11[global]"
+
+```
+cd ipbus-software-python3.9
+```
+
+In `config/Makefile.macros`, line 8, change `python` to `python3.9`. Need full path to python3.9 location though (use `which` if needed)
+
+```bash
+-PYTHON ?= python
++PYTHON ?= /usr/local/bin/python3.9
+```
+
+and in uhal/Makefile, lines 22:
+```bash
+PACKAGES := $(filter-out python, $(PACKAGES))
+PACKAGES := $(filter-out /usr/local/bin/python3.9, $(PACKAGES))
+```
+and line 57:
+```bash
+-PYTHON ?= python
++PYTHON ?= /usr/local/bin/python3.9
+```
+
+```bash
+# compile uHal
+sudo make -j2 Set=uhal
+sudo make install -j2 Set=uhal
+```
+## clean up old data files 
+
+on first attempt to clone ipbus repo (again), there wasn't enough space on the sd card. There really should be enough space, but it complained. 
+
+removed data from this directory:
+./simon_dev/hgc-engine-tools/unicorn_sw/data/
+error_monitoring_run_0001.pkl
+error_monitoring_run_0002.pkl
+
+removed data from this directory:
+0.8 Gb
+./simon_dev/hgc-engine-tools/unicorn_sw/roc_outputs_to_l1a_sequences
+*.txt
+
+1.4 Gb
+rm -r ./.vscode-server
+
+## python venv:
+
+python3.9 -m venv --system-site-packages python39-venv
+
+## edits in bashrc
+
+```bash
+export PS1="\[\e[0;34m\][\u@hgczcu102-mbv3 (\W)]\$ \[\e[0m\]"
+export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
+##python virtual environment:
+export VIRTUAL_ENV_DISABLE_PROMPT=1 #don't change command prompt
+source ./python39-venv/bin/activate
+```
+
+## installs in python3.9 venv
+
+pip install numpy tabulate matplotlib smbus2
+
+
+

@@ -1,0 +1,14 @@
+.DS_Store
+*.swp
+*.swo
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.eps
+*.xlsx
+*.root
+cmsdas*
+
+
+

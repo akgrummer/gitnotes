@@ -1,0 +1,26 @@
+
+- present slides in a different program - show single slide at a time?
+- Entertain the idea of boosted? state a plan to do this?
+- question about traction of Triple Higgs Model
+- Slide 4: greater than or equal to on Slide 4
+	- hhh dominates when 
+	- example of a model
+- Slide 5:
+	- Presentation Overview, what has been done so far, development towards a full analysis chain 
+	- Analysis Plan
+	- consider resolved topology - move from Slide 3 to here
+- slide 6: correct range, put the numbers on the slide 
+- slide 8: one number for acceptance
+- slide 9: trigger efficiency is in progress
+- QCD and ttbar samples added to slides
+- slide 10 PF  on bullet 2; CHS?
+- slide 12 explain H_X?
+- Left Plot, Right Plot in labels
+- slide 16 - went back to discuss cut based approach
+- slide 18 skipped
+- slide 19 - we are interested
+- style - to ask how can we do something
+- skipped over systematics
+- request a CADI line
+
+ - started at 4:05 - finished at 4:35
