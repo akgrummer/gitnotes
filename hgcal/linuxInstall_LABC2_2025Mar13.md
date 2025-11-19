@@ -24,6 +24,8 @@ groupadd -g 5063 us_cms
 useradd -g us_cms -u 58219 -d /home/agrummer agrummer
 useradd -g us_cms -u 15485 -d /home/sculac sculac
 useradd -g us_cms -u 43188 -d /home/dauncey dauncey
+useradd -g us_cms -u 45508 -d /home/pastika pastika
+
 
 ssh-copy-id -i .ssh/id_ed25519.pub agrummer@labc2
 

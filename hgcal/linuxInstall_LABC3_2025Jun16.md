@@ -288,4 +288,27 @@ systemctl restart bluetooth
 
 
 
+## updating to EMP10
+
+new firmware (with all quads setup) should use emp version 0.10
+
+https://emp-fwk.web.cern.ch/sw/release/0.10/repos/el9/x86_64/
+
+/etc/yum.repos.d/emp.repo
+
+previusly used
+https://emp-fwk.web.cern.ch/sw/release/0.9/repos/el9/x86_64/
+
+
+did a make remove of
+yum remove cactusboards-emp*
+then yum install of the same command after changing the url in the .repo file.
+
+
+rebuilt swamp-cpp in:
+/root/swamp-cpp/build_emp10
+with
+cmake3 ..
+make -j 20
+
 
